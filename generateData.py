@@ -5,7 +5,7 @@ from colorama import *
 init(autoreset=True)
 
 RandomMagnitudeDict = []
-i = 0
+i = 0 
 QuantityMagnitude =  500
 print(Back.GREEN + " Das Programm arbeitet! ")
 
