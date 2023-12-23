@@ -19,8 +19,9 @@ def MainGeneration():
     else:
        lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
        lastGeneratedTime = generatedData[lastGeneratedLen]
+        # Beachten, dass durch neue Daten dies nicht mehr funktioniert, da die Time in der Json verrückt wird
     
-    NewTime = datetime.datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(hours=1)
+    NewTime = datetime.datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(minutes=1)
 
     StringifyNewTime = str(NewTime)
     generatedData.append(StringifyNewTime)
