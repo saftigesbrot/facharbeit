@@ -2,7 +2,7 @@
     "general-settings": {
         "hurricane-probability": 30,
         "hurricane-multiplicator": 2,
-        "generate-data-factor": 2,
+        "generate-data-factor": 12,
         "generated-data-sets": 0,
         "start-date": "2023-04-23 15:18:28.044869"
 
@@ -37,6 +37,6 @@
     },
     "air-pressure": {
         "minimal": 500,
-        "maximum": 1200
+        "maximum": 1201
     }
 }

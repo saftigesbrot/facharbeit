@@ -151,7 +151,6 @@ def MainGeneration():
    global hurricaneProbability
    global hurricaneMultiplicator
    global generatedDataFactor
-   global generateDataSets
 
    global StringifyNewTime
 
@@ -170,49 +169,55 @@ def MainGeneration():
    SaveData()
 
 def DataGeneration(hurricaneBoolean):
-   # Generiere das Datum und den Zeitpunkt
-   global generateDataSets
-   global hurricaneProbability
-   global hurricaneMultiplicator
-   global generatedDataFactor
-   global generateDataSets
-
-
-
+ 
    # Generiere das Datum
    GenerateDate()
-   global StringifyNewTime
-   print(StringifyNewTime)
+   global Time
 
    # Generiere die Windrichtung 
    GenerateWindDirection()
 
+   # Generiere die Temperatur
+   GenerateTemperature()
+   global Temperature
+
    # Generiere die Windgeschwindgikeit 
    GenerateWindSpeed()
+   global WindSpeed
 
    # Generiere den Luftdruck
    GenerateAirPressure()
+   global AirPressure
 
-   buildetDataSet = StringifyNewTime
-   generatedData.append(buildetDataSet)
+   generatedData.append(
+      {
+        "Time": Time,
+        "Wind-Direction": "NNO",
+        "Temperature": Temperature,
+        "Wind-Speed": WindSpeed,
+        "Air-Pressure": AirPressure
+      }
+   )
 
 
 
 def GenerateDate():
 
    global startDate
+   global generateDataSets
 
    if generateDataSets == 0:
        lastGeneratedTime = startDate
    else:
        lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
-       lastGeneratedTime = generatedData[lastGeneratedLen]
+       lastGeneratedTime = generatedData[lastGeneratedLen]["Time"]
 
         # Beachten, dass durch neue Daten dies nicht mehr funktioniert, da die Time in der Json verrückt wird
     
-   NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(minutes=1)
-   global StringifyNewTime
-   StringifyNewTime = str(NewTime)
+   NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(hours=1)
+   
+   global Time
+   Time = str(NewTime)
 
    print(Back.CYAN + " generateWindDirection ")
 
@@ -221,12 +226,9 @@ def GenerateWindDirection():
    # Getting Data form settings.json 
    global windDirection
    global hurricaneMultiplicator
+   global generateDataSets
    
    print(Back.BLUE + " generateWindDirection ")
-
-
-
-
 
    # Nur einmal bestimmen, damit die richtung nicht dauerhaft wechselt
 
@@ -236,17 +238,49 @@ def GenerateTemperature():
    global temperatureMaximum
    global hurricaneMultiplicator
 
+   if generateDataSets == 0:
+       lastGeneratedTemperature = round(random.uniform(temperatureMinimal,temperatureMaximum))
+
+   else:
+       lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
+       lastGeneratedTemperature = generatedData[lastGeneratedLen]["Temperature"]
+
+       lastGeneratedTemperatureMinimal = lastGeneratedTemperature - 2 
+       lastGeneratedTemperatureMaximum = lastGeneratedTemperature + 2 
+
+       if temperatureMinimal <= lastGeneratedTemperatureMinimal or temperatureMaximum >= lastGeneratedTemperatureMaximum:
+         lastGeneratedTemperature = round(random.uniform(lastGeneratedTemperatureMinimal, lastGeneratedTemperatureMaximum))
 
 
+   global Temperature
+   Temperature = lastGeneratedTemperature
 
 
    print(Back.RED + " generateTemperatur ")
-   # muss sich an der erste den vorherigen Temperaturen orientieren, um ein realisitisches
 
 def GenerateWindSpeed():
    global windSpeedMinimal
    global windSpeedMaximum
    global hurricaneMultiplicator
+   global generateDataSets
+
+   if generateDataSets == 0:
+       lastGeneratedWindSpeed = round(random.uniform(windSpeedMinimal,windSpeedMaximum))
+
+   else:
+       lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
+       lastGeneratedWindSpeed = generatedData[lastGeneratedLen]["Wind-Speed"]
+
+       lastGeneratedWindSpeedMinimal = lastGeneratedWindSpeed - 20
+       lastGeneratedWindSpeedMaximum = lastGeneratedWindSpeed + 20
+
+       if windSpeedMinimal <= lastGeneratedWindSpeedMinimal or windSpeedMaximum >= lastGeneratedWindSpeedMaximum:
+         lastGeneratedWindSpeed = round(random.uniform(lastGeneratedWindSpeedMinimal, lastGeneratedWindSpeedMaximum))
+
+
+   global WindSpeed
+   WindSpeed = lastGeneratedWindSpeed
+
 
    print(Back.YELLOW + " generateWindSpeed ")
 
@@ -254,11 +288,30 @@ def GenerateAirPressure():
    global airPressureMinimal
    global airPressureMaximum
    global hurricaneMultiplicator
+   global generateDataSets
+
+
+   if generateDataSets == 0:
+       lastGeneratedAirPressure = round(random.uniform(airPressureMinimal,airPressureMaximum))
+
+   else:
+       lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
+       lastGeneratedAirPressure = generatedData[lastGeneratedLen]["Air-Pressure"]
+
+       lastGeneratedAirPressureMinimal = lastGeneratedAirPressure - 20
+       lastGeneratedAirPressureMaximum = lastGeneratedAirPressure + 20
+
+       if airPressureMinimal <= lastGeneratedAirPressureMinimal or airPressureMaximum >= lastGeneratedAirPressureMaximum:
+         lastGeneratedAirPressure = round(random.uniform(lastGeneratedAirPressureMinimal, lastGeneratedAirPressureMaximum))
+
+
+   global AirPressure
+   AirPressure = lastGeneratedAirPressure
 
    print(Back.MAGENTA + " generateAirPressure ")
 
 def SaveData():
-    JSONData = json.dumps(generatedData, indent=4)
+    JSONData = json.dumps(generatedData,indent=4, separators=(',',': '))
 
     SavingFile = open("massDataGeneration.json", "w")
     SavingFile.write(JSONData)

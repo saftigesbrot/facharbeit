@@ -1,3 +1,9 @@
 [
-    "2023-04-23 16:18:28.044869, Sued-Ost, 25, 60, 1020"
+    {
+        "Time": "2023-04-23 16:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": "25",
+        "Wind-Speed": "60",
+        "Air-Pressure": "1020"
+    }
 ]

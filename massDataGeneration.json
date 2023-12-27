@@ -1,4 +1,86 @@
 [
-    "2023-04-23 15:19:28.044869",
-    "2023-04-23 15:20:28.044869"
+    {
+        "Time": "2023-04-23 16:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 26,
+        "Wind-Speed": 62,
+        "Air-Pressure": 625
+    },
+    {
+        "Time": "2023-04-23 17:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 28,
+        "Wind-Speed": 51,
+        "Air-Pressure": 617
+    },
+    {
+        "Time": "2023-04-23 18:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 26,
+        "Wind-Speed": 54,
+        "Air-Pressure": 625
+    },
+    {
+        "Time": "2023-04-23 19:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 24,
+        "Wind-Speed": 40,
+        "Air-Pressure": 645
+    },
+    {
+        "Time": "2023-04-23 20:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 26,
+        "Wind-Speed": 33,
+        "Air-Pressure": 657
+    },
+    {
+        "Time": "2023-04-23 21:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 24,
+        "Wind-Speed": 41,
+        "Air-Pressure": 663
+    },
+    {
+        "Time": "2023-04-23 22:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 25,
+        "Wind-Speed": 54,
+        "Air-Pressure": 676
+    },
+    {
+        "Time": "2023-04-23 23:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 24,
+        "Wind-Speed": 51,
+        "Air-Pressure": 689
+    },
+    {
+        "Time": "2023-04-24 00:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 25,
+        "Wind-Speed": 47,
+        "Air-Pressure": 692
+    },
+    {
+        "Time": "2023-04-24 01:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 24,
+        "Wind-Speed": 31,
+        "Air-Pressure": 698
+    },
+    {
+        "Time": "2023-04-24 02:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 22,
+        "Wind-Speed": 29,
+        "Air-Pressure": 706
+    },
+    {
+        "Time": "2023-04-24 03:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 22,
+        "Wind-Speed": 36,
+        "Air-Pressure": 711
+    }
 ]
