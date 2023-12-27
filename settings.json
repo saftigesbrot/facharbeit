@@ -1,10 +1,11 @@
 {
     "general-settings": {
-        "hurricane-probability": 100,
+        "hurricane-probability": 30,
         "hurricane-multiplicator": 2,
-        "start-date": "2023-04-23 15:18:28.044869",
-        "generated-data-factor": 1,
-        "generated-data-sets": 0
+        "generate-data-factor": 2,
+        "generated-data-sets": 0,
+        "start-date": "2023-04-23 15:18:28.044869"
+
     },
     "wind-direction": {
         "wind-directions": {
@@ -16,7 +17,7 @@
             "2.1": "OSO",
             "2.2": "SO",
             "2.3": "SSO",
-            "3": "S",
+            "3": 4,
             "3.1": "SSW",
             "3.2": "SW",
             "3.4": "WSW",

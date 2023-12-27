@@ -2,73 +2,260 @@ import json
 import random
 import datetime
 import time
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 from colorama import *
 init(autoreset=True)
 
-generatedDataFactor = 0
-StartDate = "2023-04-23 15:18:28.044869"
 generatedData = []
-GeneratedDataSets = 0
 
-# generatedData: Durch len(generatedData) kann die Anzahl der Tage welche bereits generiert wurde bestimmt werden
+# Mit Settings.json verbinden
+
+
+def ProofSettings():
+   
+   # Überpüftt alle Einstellungen der settings.json Datei auf ihre Kompatibilität
+
+   with open('settings.json','r') as file:
+      obj = json.load(file)
+
+   # Proof GeneralSettings
+   global hurricaneProbability 
+   number = obj['general-settings']['hurricane-probability']
+   name = " Hurrikanwahrscheinlichkeit"
+   
+   ProofSettingsIntSupport(number, name)
+   hurricaneProbability = number
+
+   global hurricaneMultiplicator
+   number = obj['general-settings']['hurricane-multiplicator']
+   name = " Hurrikanmultiplikator"
+
+   ProofSettingsIntSupport(number, name)
+   hurricaneMultiplicator = number
+
+   global generatedDataFactor
+   number = obj['general-settings']['generate-data-factor']
+   name = " Datengenerierungsfakor"
+
+   ProofSettingsIntSupport(number, name)
+   generatedDataFactor = number
+
+   global generateDataSets
+   number = obj['general-settings']['generated-data-sets']
+   name = " Datengenerierungssätze"
+
+   ProofSettingsIntSupport(number, name)
+   generateDataSets = number
+
+   # Proof Date
+   global startDate
+   date = obj['general-settings']['start-date']
+   format = "%Y-%m-%d %H:%M:%S.%f"
+
+   try:
+      bool(datetime.strptime(date, format))
+      print(Back.GREEN + " Datum erfolgreich geladen! ")
+   except ValueError:
+      print(Back.RED + " Datum konnten nicht gelanden werden! Exit Code 1 ")
+      exit()
+   startDate = date
+
+
+   # Proof WindDirection
+   global windDirection
+   windDirections = obj['wind-direction']['wind-directions']
+   windDirectionCounter = 0
+
+   for Direction in windDirections:
+      windDirectionCounter += 1
+   
+   if all(isinstance(Direction, str) for Direction in windDirections) == False:
+      print(Back.RED + " Windrichtungsdaten konnten nicht gelanden werden! Exit Code 1 ")
+   
+   if windDirectionCounter == 16: 
+      print(Back.GREEN + " Windrichtungsdaten erfolgreich geladen! ")
+   else: 
+      print(Back.RED + " Windrichtungsdaten konnten nicht gelanden werden! Exit Code 1 ")
+      exit()
+   
+   windDirection = windDirections
+
+   # Proof Temperature
+   global temperatureMinimal
+   global temperatureMaximum
+
+   minimal = obj['temperature']['minimal']
+   maximum = obj['temperature']['maximum']
+
+   name = " Temperaturdaten"
+   ProofSettingsTypeSupporter(minimal, maximum, name)
+
+   temperatureMinimal = minimal
+   temperatureMaximum = maximum
+
+   # Proof WindSpeed
+   global windSpeedMinimal 
+   global windSpeedMaximum
+
+   minimal= obj['wind-speed']['minimal']
+   maximum = obj['wind-speed']['maximum']
+
+   name = " Windgeschwindigkeitsdaten"
+   ProofSettingsTypeSupporter(minimal, maximum, name)
+
+   windSpeedMinimal = minimal
+   windSpeedMaximum = maximum
+
+   # Proof AirPressure
+   global airPressureMinimal
+   global airPressureMaximum
+
+   minimal = obj['air-pressure']['minimal']
+   maximum = obj['air-pressure']['maximum']
+
+   name = " Luftdruckdaten"
+   ProofSettingsTypeSupporter(minimal, maximum, name)
+
+   airPressureMinimal = minimal
+   airPressureMaximum = maximum
+
+
+def ProofSettingsIntSupport(number, name):
+   if type(number) == int and (number == 0 or number > 0):
+      Outprint = name + " erfolgreich gelanden! "
+      print(Back.GREEN + Outprint)
+   else:
+      Outprint = name + " konnten nicht gelanden werden! Exit Code 1 "
+      print(Back.RED + Outprint)
+      exit()
+
+
+def ProofSettingsTypeSupporter(minimal, maximum, name):
+   if type(minimal and maximum) == int and maximum > minimal: 
+      Outprint = name + " erfolgreich geladen! "
+      print(Back.GREEN + Outprint)
+   else: 
+      Outprint = name + " konnten nicht gelanden werden! Exit Code 1 "
+      print(Back.RED + Outprint)
+      exit() 
+
+
 
 def MainGeneration():
 
-   with open('settings.json','r') as file:
-    obj = json.load(file)
-   
-   hurricaneProbability = obj['general-settings']['hurricane-probability']
-   #try statt if/else
+   # Überprüft die Einstellungen und bestimmt die Variablen
+   ProofSettings()
 
-   if hurricaneProbability == 0 or hurricaneProbability > 0:
-      print(Back.GREEN + " Daten erfolgreich geladen! ")
-   else:
-      print(Back.RED + " Daten konnten nicht gelanden werden! ")
-      exit()
+   # Übernimmt die Variablen
+   global generateDataSets
+   global hurricaneProbability
+   global hurricaneMultiplicator
+   global generatedDataFactor
+   global generateDataSets
 
-   # while GeneratedDataSets != generatedDataFactor:
+   global StringifyNewTime
 
-    # Zufällige Wachrscheinlichkeit ob ein Hurrikan stattfindet oder nicht
-    # Settings Document 
+   while generateDataSets != generatedDataFactor:
+      hurricaneChance = round(random.uniform(0,100))
 
-    # GenerateDate()
-    # GenerateWindDirection()
-    # GenerateTemperature()
-    # GenerateWindSpeed()
-    # GenerateAirPressure()
+      if hurricaneChance > hurricaneProbability:
+         hurricaneBoolean = False
+         DataGeneration(hurricaneBoolean)
 
-    # generatedData.append(StringifyNewTime)
+      elif hurricaneChance == hurricaneProbability or hurricaneChance < hurricaneProbability:
+         hurricaneBoolean = True
+         DataGeneration(hurricaneBoolean)
 
-    # GeneratedDataSets = GeneratedDataSets + 1
-   
+      generateDataSets += 1
    SaveData()
+
+def DataGeneration(hurricaneBoolean):
+   # Generiere das Datum und den Zeitpunkt
+   global generateDataSets
+   global hurricaneProbability
+   global hurricaneMultiplicator
+   global generatedDataFactor
+   global generateDataSets
+
+
+
+   # Generiere das Datum
+   GenerateDate()
+   global StringifyNewTime
+   print(StringifyNewTime)
+
+   # Generiere die Windrichtung 
+   GenerateWindDirection()
+
+   # Generiere die Windgeschwindgikeit 
+   GenerateWindSpeed()
+
+   # Generiere den Luftdruck
+   GenerateAirPressure()
+
+   buildetDataSet = StringifyNewTime
+   generatedData.append(buildetDataSet)
+
+
 
 def GenerateDate():
 
-   if GeneratedDataSets == 0:
-       lastGeneratedTime = StartDate
+   global startDate
+
+   if generateDataSets == 0:
+       lastGeneratedTime = startDate
    else:
        lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
        lastGeneratedTime = generatedData[lastGeneratedLen]
+
         # Beachten, dass durch neue Daten dies nicht mehr funktioniert, da die Time in der Json verrückt wird
     
-   NewTime = datetime.datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(minutes=1)
+   NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(minutes=1)
+   global StringifyNewTime
    StringifyNewTime = str(NewTime)
 
+   print(Back.CYAN + " generateWindDirection ")
+
+
 def GenerateWindDirection():
-   print(Back.BLUE + " GenerateWindDirection ")
+   # Getting Data form settings.json 
+   global windDirection
+   global hurricaneMultiplicator
+   
+   print(Back.BLUE + " generateWindDirection ")
+
+
+
+
+
    # Nur einmal bestimmen, damit die richtung nicht dauerhaft wechselt
 
 def GenerateTemperature():
-   print(Back.RED + " GenerateTemperatur ")
+   # Getting Data from settings.json
+   global temperatureMinimal
+   global temperatureMaximum
+   global hurricaneMultiplicator
+
+
+
+
+
+   print(Back.RED + " generateTemperatur ")
    # muss sich an der erste den vorherigen Temperaturen orientieren, um ein realisitisches
 
 def GenerateWindSpeed():
-   print(Back.YELLOW + " GenerateWindSpeed ")
+   global windSpeedMinimal
+   global windSpeedMaximum
+   global hurricaneMultiplicator
+
+   print(Back.YELLOW + " generateWindSpeed ")
 
 def GenerateAirPressure():
-   print(Back.MAGENTA + " GenerateAirPressure ")
+   global airPressureMinimal
+   global airPressureMaximum
+   global hurricaneMultiplicator
+
+   print(Back.MAGENTA + " generateAirPressure ")
 
 def SaveData():
     JSONData = json.dumps(generatedData, indent=4)
