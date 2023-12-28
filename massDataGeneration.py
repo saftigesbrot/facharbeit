@@ -7,6 +7,9 @@ from colorama import *
 init(autoreset=True)
 
 generatedData = []
+getTemperatureData = True 
+getWindSpeedData = True
+getAirPressureData = True
 
 
 def ProofSettings():
@@ -153,7 +156,12 @@ def MainGeneration():
 
    global StringifyNewTime
 
+
    while generateDataSets != generatedDataFactor:
+      if int(generateDataSets) % 500 == 0: 
+         print("\n ", generateDataSets, Back.GREEN + " Datensätze generiert! \n")
+         time.sleep(1)
+
       hurricaneChance = round(random.uniform(0,100))
 
       if hurricaneChance > hurricaneProbability:
@@ -280,20 +288,47 @@ def GenerateTemperature():
    global temperatureMinimal
    global temperatureMaximum
    global hurricaneMultiplicator
+   global getTemperatureData
 
    if generateDataSets == 0:
+       global lastGeneratedTemperature
        lastGeneratedTemperature = round(random.uniform(temperatureMinimal,temperatureMaximum))
 
    else:
-       lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
-       lastGeneratedTemperature = generatedData[lastGeneratedLen]["Temperature"]
+
+       if getTemperatureData == True: 
+         lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
+         lastGeneratedTemperature = generatedData[lastGeneratedLen]["Temperature"]
 
        lastGeneratedTemperatureMinimal = lastGeneratedTemperature - 2 
        lastGeneratedTemperatureMaximum = lastGeneratedTemperature + 2 
 
-       if temperatureMinimal <= lastGeneratedTemperatureMinimal or temperatureMaximum >= lastGeneratedTemperatureMaximum:
-         lastGeneratedTemperature = round(random.uniform(lastGeneratedTemperatureMinimal, lastGeneratedTemperatureMaximum))
 
+       if lastGeneratedTemperature < 0:
+          
+          if temperatureMinimal < lastGeneratedTemperatureMinimal: 
+            lastGeneratedTemperature = round(random.uniform(lastGeneratedTemperatureMinimal, lastGeneratedTemperatureMaximum))
+            getTemperatureData = True
+
+          elif temperatureMinimal > lastGeneratedTemperatureMinimal or temperatureMinimal == lastGeneratedTemperatureMinimal:
+            lastGeneratedTemperature += 3
+            getTemperatureData = not getTemperatureData
+            GenerateTemperature() 
+
+       elif lastGeneratedTemperature == 0 or lastGeneratedTemperature > 0: 
+          
+          if temperatureMaximum > lastGeneratedTemperatureMaximum:
+            lastGeneratedTemperature = round(random.uniform(lastGeneratedTemperatureMinimal, lastGeneratedTemperatureMaximum))
+            getTemperatureData = True
+
+          elif temperatureMaximum < lastGeneratedTemperatureMaximum or temperatureMaximum == lastGeneratedTemperatureMaximum:
+            lastGeneratedTemperature -= 3
+            getTemperatureData = not getTemperatureData
+            GenerateTemperature() 
+
+            # Die letzte Temperatur so manipulieren, dass sie nicht mehr aus dem raster fällt (Hier muss sie kleiner werden) 
+            # -> Idee Boolean das angibt ob die Letzte Daten genommen werden sollen oder nicht, damit eine überschreibung möglich ist
+         
 
    global Temperature
    Temperature = lastGeneratedTemperature
@@ -307,19 +342,42 @@ def GenerateWindSpeed():
    global windSpeedMaximum
    global hurricaneMultiplicator
    global generateDataSets
+   global getWindSpeedData
 
    if generateDataSets == 0:
+       global lastGeneratedWindSpeed
        lastGeneratedWindSpeed = round(random.uniform(windSpeedMinimal,windSpeedMaximum))
 
    else:
-       lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
-       lastGeneratedWindSpeed = generatedData[lastGeneratedLen]["Wind-Speed"]
+
+       if getWindSpeedData == True:
+         lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
+         lastGeneratedWindSpeed = generatedData[lastGeneratedLen]["Wind-Speed"]
 
        lastGeneratedWindSpeedMinimal = lastGeneratedWindSpeed - 20
        lastGeneratedWindSpeedMaximum = lastGeneratedWindSpeed + 20
 
-       if windSpeedMinimal <= lastGeneratedWindSpeedMinimal or windSpeedMaximum >= lastGeneratedWindSpeedMaximum:
-         lastGeneratedWindSpeed = round(random.uniform(lastGeneratedWindSpeedMinimal, lastGeneratedWindSpeedMaximum))
+       if lastGeneratedWindSpeed < 155:
+
+         if windSpeedMinimal < lastGeneratedWindSpeedMinimal:
+            lastGeneratedWindSpeed = round(random.uniform(lastGeneratedWindSpeedMinimal, lastGeneratedWindSpeedMaximum))
+            getWindSpeedData = True
+
+         elif windSpeedMinimal > lastGeneratedWindSpeedMinimal or windSpeedMinimal == lastGeneratedWindSpeedMinimal: 
+            lastGeneratedWindSpeed += 25
+            getWindSpeedData = not getWindSpeedData
+            GenerateWindSpeed()
+       
+       elif lastGeneratedWindSpeed > 155 or lastGeneratedWindSpeed == 155:
+         
+         if windSpeedMaximum > lastGeneratedWindSpeedMaximum:
+            lastGeneratedWindSpeed = round(random.uniform(lastGeneratedWindSpeedMinimal, lastGeneratedWindSpeedMaximum))
+            getWindSpeedData = True
+
+         elif windSpeedMaximum < lastGeneratedWindSpeedMaximum or windSpeedMaximum == lastGeneratedWindSpeedMaximum:
+            lastGeneratedWindSpeed -= 25
+            getWindSpeedData = not getWindSpeedData
+            GenerateWindSpeed()
 
 
    global WindSpeed
@@ -334,21 +392,41 @@ def GenerateAirPressure():
    global airPressureMaximum
    global hurricaneMultiplicator
    global generateDataSets
-
+   global getAirPressureData
 
    if generateDataSets == 0:
+       global lastGeneratedAirPressure
        lastGeneratedAirPressure = round(random.uniform(airPressureMinimal,airPressureMaximum))
 
    else:
-       lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
-       lastGeneratedAirPressure = generatedData[lastGeneratedLen]["Air-Pressure"]
+       if getAirPressureData == True: 
+         lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
+         lastGeneratedAirPressure = generatedData[lastGeneratedLen]["Air-Pressure"]
 
        lastGeneratedAirPressureMinimal = lastGeneratedAirPressure - 20
        lastGeneratedAirPressureMaximum = lastGeneratedAirPressure + 20
+      
+       if lastGeneratedAirPressure < 850:
+          
+          if airPressureMinimal < lastGeneratedAirPressureMinimal:
+            lastGeneratedAirPressure = round(random.uniform(lastGeneratedAirPressureMinimal, lastGeneratedAirPressureMaximum))
+            getAirPressureData = True
 
-       if airPressureMinimal <= lastGeneratedAirPressureMinimal or airPressureMaximum >= lastGeneratedAirPressureMaximum:
-         lastGeneratedAirPressure = round(random.uniform(lastGeneratedAirPressureMinimal, lastGeneratedAirPressureMaximum))
+          elif airPressureMinimal > lastGeneratedAirPressureMinimal or airPressureMinimal == lastGeneratedAirPressureMinimal:
+            lastGeneratedAirPressure += 25
+            getAirPressureData = not getAirPressureData 
+            GenerateAirPressure()
 
+       elif lastGeneratedAirPressure > 850 or lastGeneratedAirPressure == 850:
+          
+          if airPressureMaximum > lastGeneratedAirPressureMaximum:
+            lastGeneratedAirPressure = round(random.uniform(lastGeneratedAirPressureMinimal, lastGeneratedAirPressureMaximum))
+            getAirPressureData = True
+
+          elif airPressureMaximum < lastGeneratedAirPressureMaximum or airPressureMaximum == lastGeneratedAirPressureMaximum: 
+            lastGeneratedAirPressure -= 25
+            getAirPressureData = not getAirPressureData 
+            GenerateAirPressure()
 
    global AirPressure
    AirPressure = lastGeneratedAirPressure
