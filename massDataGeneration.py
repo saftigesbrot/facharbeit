@@ -5,11 +5,10 @@ import time
 from datetime import date, timedelta, datetime
 from colorama import *
 init(autoreset=True)
+import numpy as np
 
 generatedData = []
-getTemperatureData = True 
-getWindSpeedData = True
-getAirPressureData = True
+
 
 
 def ProofSettings():
@@ -84,6 +83,7 @@ def ProofSettings():
    # Proof Temperature
    global temperatureMinimal
    global temperatureMaximum
+   global temperatureMeanValue
 
    minimal = obj['temperature']['minimal']
    maximum = obj['temperature']['maximum']
@@ -93,10 +93,12 @@ def ProofSettings():
 
    temperatureMinimal = minimal
    temperatureMaximum = maximum
+   temperatureMeanValue = (minimal + maximum) / 2
 
    # Proof WindSpeed
    global windSpeedMinimal 
    global windSpeedMaximum
+   global windSpeedMeanValue
 
    minimal= obj['wind-speed']['minimal']
    maximum = obj['wind-speed']['maximum']
@@ -106,10 +108,12 @@ def ProofSettings():
 
    windSpeedMinimal = minimal
    windSpeedMaximum = maximum
+   windSpeedMeanValue = (minimal + maximum) / 2
 
    # Proof AirPressure
    global airPressureMinimal
    global airPressureMaximum
+   global airPressureMeanValue
 
    minimal = obj['air-pressure']['minimal']
    maximum = obj['air-pressure']['maximum']
@@ -119,6 +123,7 @@ def ProofSettings():
 
    airPressureMinimal = minimal
    airPressureMaximum = maximum
+   airPressureMeanValue = (minimal + maximum) / 2
 
    print("\n", Back.GREEN + " Alle Daten erfolgreich geladen! Beginne mit der Datengenerierung! ", "\n")
 
@@ -154,12 +159,10 @@ def MainGeneration():
    global hurricaneMultiplicator
    global generatedDataFactor
 
-   global StringifyNewTime
-
 
    while generateDataSets != generatedDataFactor:
-      if int(generateDataSets) % 500 == 0: 
-         print("\n ", generateDataSets, Back.GREEN + " Datensätze generiert! \n")
+      if int(generateDataSets) % 500 == 0 and generateDataSets != 0: 
+         print(generateDataSets, Back.GREEN + " Datensätze generiert! \n")
          time.sleep(1)
 
       hurricaneChance = round(random.uniform(0,100))
@@ -177,7 +180,14 @@ def MainGeneration():
 
 
 def DataGeneration(hurricaneBoolean):
- 
+   global getTemperatureData
+   global getWindSpeedData
+   global getAirPressureData
+
+   getTemperatureData = True 
+   getWindSpeedData = True
+   getAirPressureData = True
+
    # Generiere das Datum
    GenerateDate()
    global Time
@@ -222,7 +232,7 @@ def GenerateDate():
 
         # Beachten, dass durch neue Daten dies nicht mehr funktioniert, da die Time in der Json verrückt wird
     
-   NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(hours=1)
+   NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(hours=3)
    
    global Time
    Time = str(NewTime)
@@ -289,6 +299,7 @@ def GenerateTemperature():
    global temperatureMaximum
    global hurricaneMultiplicator
    global getTemperatureData
+   global temperatureMeanValue
 
    if generateDataSets == 0:
        global lastGeneratedTemperature
@@ -304,37 +315,30 @@ def GenerateTemperature():
        lastGeneratedTemperatureMaximum = lastGeneratedTemperature + 2 
 
 
-       if lastGeneratedTemperature < 0:
+       if lastGeneratedTemperature < temperatureMeanValue:
           
           if temperatureMinimal < lastGeneratedTemperatureMinimal: 
             lastGeneratedTemperature = round(random.uniform(lastGeneratedTemperatureMinimal, lastGeneratedTemperatureMaximum))
-            getTemperatureData = True
 
           elif temperatureMinimal > lastGeneratedTemperatureMinimal or temperatureMinimal == lastGeneratedTemperatureMinimal:
             lastGeneratedTemperature += 3
             getTemperatureData = not getTemperatureData
             GenerateTemperature() 
 
-       elif lastGeneratedTemperature == 0 or lastGeneratedTemperature > 0: 
+       elif lastGeneratedTemperature == temperatureMeanValue or lastGeneratedTemperature > temperatureMeanValue: 
           
           if temperatureMaximum > lastGeneratedTemperatureMaximum:
             lastGeneratedTemperature = round(random.uniform(lastGeneratedTemperatureMinimal, lastGeneratedTemperatureMaximum))
-            getTemperatureData = True
 
           elif temperatureMaximum < lastGeneratedTemperatureMaximum or temperatureMaximum == lastGeneratedTemperatureMaximum:
             lastGeneratedTemperature -= 3
             getTemperatureData = not getTemperatureData
             GenerateTemperature() 
-
-            # Die letzte Temperatur so manipulieren, dass sie nicht mehr aus dem raster fällt (Hier muss sie kleiner werden) 
-            # -> Idee Boolean das angibt ob die Letzte Daten genommen werden sollen oder nicht, damit eine überschreibung möglich ist
-         
+        
 
    global Temperature
    Temperature = lastGeneratedTemperature
 
-
-   # print(Back.RED + " generateTemperatur ")
 
 
 def GenerateWindSpeed():
@@ -343,6 +347,7 @@ def GenerateWindSpeed():
    global hurricaneMultiplicator
    global generateDataSets
    global getWindSpeedData
+   global windSpeedMeanValue
 
    if generateDataSets == 0:
        global lastGeneratedWindSpeed
@@ -357,22 +362,20 @@ def GenerateWindSpeed():
        lastGeneratedWindSpeedMinimal = lastGeneratedWindSpeed - 20
        lastGeneratedWindSpeedMaximum = lastGeneratedWindSpeed + 20
 
-       if lastGeneratedWindSpeed < 155:
+       if lastGeneratedWindSpeed < windSpeedMeanValue:
 
          if windSpeedMinimal < lastGeneratedWindSpeedMinimal:
             lastGeneratedWindSpeed = round(random.uniform(lastGeneratedWindSpeedMinimal, lastGeneratedWindSpeedMaximum))
-            getWindSpeedData = True
 
          elif windSpeedMinimal > lastGeneratedWindSpeedMinimal or windSpeedMinimal == lastGeneratedWindSpeedMinimal: 
             lastGeneratedWindSpeed += 25
             getWindSpeedData = not getWindSpeedData
             GenerateWindSpeed()
        
-       elif lastGeneratedWindSpeed > 155 or lastGeneratedWindSpeed == 155:
+       elif lastGeneratedWindSpeed > windSpeedMeanValue or lastGeneratedWindSpeed == windSpeedMeanValue:
          
          if windSpeedMaximum > lastGeneratedWindSpeedMaximum:
             lastGeneratedWindSpeed = round(random.uniform(lastGeneratedWindSpeedMinimal, lastGeneratedWindSpeedMaximum))
-            getWindSpeedData = True
 
          elif windSpeedMaximum < lastGeneratedWindSpeedMaximum or windSpeedMaximum == lastGeneratedWindSpeedMaximum:
             lastGeneratedWindSpeed -= 25
@@ -384,15 +387,13 @@ def GenerateWindSpeed():
    WindSpeed = lastGeneratedWindSpeed
 
 
-   # print(Back.YELLOW + " generateWindSpeed ")
-
-
 def GenerateAirPressure():
    global airPressureMinimal
    global airPressureMaximum
    global hurricaneMultiplicator
    global generateDataSets
    global getAirPressureData
+   global airPressureMeanValue
 
    if generateDataSets == 0:
        global lastGeneratedAirPressure
@@ -406,22 +407,20 @@ def GenerateAirPressure():
        lastGeneratedAirPressureMinimal = lastGeneratedAirPressure - 20
        lastGeneratedAirPressureMaximum = lastGeneratedAirPressure + 20
       
-       if lastGeneratedAirPressure < 850:
+       if lastGeneratedAirPressure < airPressureMeanValue:
           
           if airPressureMinimal < lastGeneratedAirPressureMinimal:
             lastGeneratedAirPressure = round(random.uniform(lastGeneratedAirPressureMinimal, lastGeneratedAirPressureMaximum))
-            getAirPressureData = True
 
           elif airPressureMinimal > lastGeneratedAirPressureMinimal or airPressureMinimal == lastGeneratedAirPressureMinimal:
             lastGeneratedAirPressure += 25
             getAirPressureData = not getAirPressureData 
             GenerateAirPressure()
 
-       elif lastGeneratedAirPressure > 850 or lastGeneratedAirPressure == 850:
+       elif lastGeneratedAirPressure > airPressureMeanValue or lastGeneratedAirPressure == airPressureMeanValue:
           
           if airPressureMaximum > lastGeneratedAirPressureMaximum:
             lastGeneratedAirPressure = round(random.uniform(lastGeneratedAirPressureMinimal, lastGeneratedAirPressureMaximum))
-            getAirPressureData = True
 
           elif airPressureMaximum < lastGeneratedAirPressureMaximum or airPressureMaximum == lastGeneratedAirPressureMaximum: 
             lastGeneratedAirPressure -= 25
@@ -431,17 +430,16 @@ def GenerateAirPressure():
    global AirPressure
    AirPressure = lastGeneratedAirPressure
 
-   # print(Back.MAGENTA + " generateAirPressure ", "\n")
-
 
 def SaveData():
+    global generateDataSets
+    print(generateDataSets, Back.GREEN + " Datensätze generiert! \n")
+
     JSONData = json.dumps(generatedData,indent=4, separators=(',',': '))
-
-    # Datei anpassen
-
     SavingFile = open("massDataGeneration.json", "w")
     SavingFile.write(JSONData)
     SavingFile.close()
+
     print("", Back.GREEN + " Datengenerierung erfolgreich abgeschlossen! ", "\n")
 
 MainGeneration()
