@@ -8,8 +8,6 @@ init(autoreset=True)
 
 generatedData = []
 
-# Mit Settings.json verbinden
-
 
 def ProofSettings():
    
@@ -54,7 +52,7 @@ def ProofSettings():
 
    try:
       bool(datetime.strptime(date, format))
-      print(Back.GREEN + " Datum erfolgreich geladen! ")
+      print(Fore.GREEN + " Datum erfolgreich geladen! \n")
    except ValueError:
       print(Back.RED + " Datum konnten nicht gelanden werden! Exit Code 1 ")
       exit()
@@ -73,7 +71,7 @@ def ProofSettings():
       print(Back.RED + " Windrichtungsdaten konnten nicht gelanden werden! Exit Code 1 ")
    
    if windDirectionCounter == 16: 
-      print(Back.GREEN + " Windrichtungsdaten erfolgreich geladen! ")
+      print(Fore.GREEN + " Windrichtungsdaten erfolgreich geladen! ")
    else: 
       print(Back.RED + " Windrichtungsdaten konnten nicht gelanden werden! Exit Code 1 ")
       exit()
@@ -119,11 +117,13 @@ def ProofSettings():
    airPressureMinimal = minimal
    airPressureMaximum = maximum
 
+   print("\n", Back.GREEN + " Alle Daten erfolgreich geladen! Beginne mit der Datengenerierung! ", "\n")
+
 
 def ProofSettingsIntSupport(number, name):
    if type(number) == int and (number == 0 or number > 0):
       Outprint = name + " erfolgreich gelanden! "
-      print(Back.GREEN + Outprint)
+      print(Fore.GREEN + Outprint)
    else:
       Outprint = name + " konnten nicht gelanden werden! Exit Code 1 "
       print(Back.RED + Outprint)
@@ -133,12 +133,11 @@ def ProofSettingsIntSupport(number, name):
 def ProofSettingsTypeSupporter(minimal, maximum, name):
    if type(minimal and maximum) == int and maximum > minimal: 
       Outprint = name + " erfolgreich geladen! "
-      print(Back.GREEN + Outprint)
+      print(Fore.GREEN + Outprint)
    else: 
       Outprint = name + " konnten nicht gelanden werden! Exit Code 1 "
       print(Back.RED + Outprint)
       exit() 
-
 
 
 def MainGeneration():
@@ -168,6 +167,7 @@ def MainGeneration():
       generateDataSets += 1
    SaveData()
 
+
 def DataGeneration(hurricaneBoolean):
  
    # Generiere das Datum
@@ -176,6 +176,7 @@ def DataGeneration(hurricaneBoolean):
 
    # Generiere die Windrichtung 
    GenerateWindDirection()
+   global windDirections
 
    # Generiere die Temperatur
    GenerateTemperature()
@@ -192,13 +193,12 @@ def DataGeneration(hurricaneBoolean):
    generatedData.append(
       {
         "Time": Time,
-        "Wind-Direction": "NNO",
+        "Wind-Direction": windDirections,
         "Temperature": Temperature,
         "Wind-Speed": WindSpeed,
         "Air-Pressure": AirPressure
       }
    )
-
 
 
 def GenerateDate():
@@ -219,7 +219,7 @@ def GenerateDate():
    global Time
    Time = str(NewTime)
 
-   print(Back.CYAN + " generateWindDirection ")
+   # print(Back.CYAN + " generateWindDirection ")
 
 
 def GenerateWindDirection():
@@ -227,10 +227,53 @@ def GenerateWindDirection():
    global windDirection
    global hurricaneMultiplicator
    global generateDataSets
+
+   if generateDataSets == 0:
+      generateDirection = str(round(random.uniform(1,4)))
+      generatePreciseDirection = str(round(random.uniform(0,3)))
+
+      generatedWindDirection = generateDirection + "." + generatePreciseDirection
    
-   print(Back.BLUE + " generateWindDirection ")
+      newWindDirection = windDirection[generatedWindDirection]
+
+   else: 
+      keyList = [3,0,1] # List all possible new Keys for x.0 and x.3
+      lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
+      lastGeneratedWindDirection = generatedData[lastGeneratedLen]["Wind-Direction"]
+
+      lastGeneratedWindDirectionKey = list(windDirection.keys())[list(windDirection.values()).index(lastGeneratedWindDirection)]
+      splittedLastGeneratedWindDirectionKey = lastGeneratedWindDirectionKey.split(".")
+
+      if splittedLastGeneratedWindDirectionKey[1] ==  "0":
+         newWindDirectionSecoundKey = random.choice(keyList)
+         
+         if newWindDirectionSecoundKey == 0:
+            splittedLastGeneratedWindDirectionKey[0] = round(random.uniform(1,4))
+
+      if splittedLastGeneratedWindDirectionKey[1] == "1":
+         newWindDirectionSecoundKey = round(random.uniform(0,2))
+         
+      if splittedLastGeneratedWindDirectionKey[1] == "2":
+         newWindDirectionSecoundKey = round(random.uniform(1,3))
+
+      if splittedLastGeneratedWindDirectionKey[1] == "3":   
+         newWindDirectionSecoundKey = random.choice(keyList)
+
+         if newWindDirectionSecoundKey == 0:
+            splittedLastGeneratedWindDirectionKey[0] = round(random.uniform(1,4))
+        
+
+      generatedWindDirection = str(splittedLastGeneratedWindDirectionKey[0]) + "." + str(newWindDirectionSecoundKey)
+      newWindDirection = windDirection[generatedWindDirection]
+
+   global windDirections
+   windDirections = newWindDirection
+
+
+   # print(Back.BLUE + " generateWindDirection ")
 
    # Nur einmal bestimmen, damit die richtung nicht dauerhaft wechselt
+
 
 def GenerateTemperature():
    # Getting Data from settings.json
@@ -256,7 +299,8 @@ def GenerateTemperature():
    Temperature = lastGeneratedTemperature
 
 
-   print(Back.RED + " generateTemperatur ")
+   # print(Back.RED + " generateTemperatur ")
+
 
 def GenerateWindSpeed():
    global windSpeedMinimal
@@ -282,7 +326,8 @@ def GenerateWindSpeed():
    WindSpeed = lastGeneratedWindSpeed
 
 
-   print(Back.YELLOW + " generateWindSpeed ")
+   # print(Back.YELLOW + " generateWindSpeed ")
+
 
 def GenerateAirPressure():
    global airPressureMinimal
@@ -308,13 +353,17 @@ def GenerateAirPressure():
    global AirPressure
    AirPressure = lastGeneratedAirPressure
 
-   print(Back.MAGENTA + " generateAirPressure ")
+   # print(Back.MAGENTA + " generateAirPressure ", "\n")
+
 
 def SaveData():
     JSONData = json.dumps(generatedData,indent=4, separators=(',',': '))
 
+    # Datei anpassen
+
     SavingFile = open("massDataGeneration.json", "w")
     SavingFile.write(JSONData)
     SavingFile.close()
+    print("", Back.GREEN + " Datengenerierung erfolgreich abgeschlossen! ", "\n")
 
 MainGeneration()

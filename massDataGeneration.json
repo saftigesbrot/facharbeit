@@ -1,86 +1,86 @@
 [
     {
         "Time": "2023-04-23 16:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 26,
-        "Wind-Speed": 62,
-        "Air-Pressure": 625
+        "Wind-Direction": "SW",
+        "Temperature": -1,
+        "Wind-Speed": 95,
+        "Air-Pressure": 727
     },
     {
         "Time": "2023-04-23 17:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 28,
-        "Wind-Speed": 51,
-        "Air-Pressure": 617
+        "Wind-Direction": "SW",
+        "Temperature": -1,
+        "Wind-Speed": 98,
+        "Air-Pressure": 729
     },
     {
         "Time": "2023-04-23 18:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 26,
-        "Wind-Speed": 54,
-        "Air-Pressure": 625
+        "Wind-Direction": "SSW",
+        "Temperature": 0,
+        "Wind-Speed": 84,
+        "Air-Pressure": 718
     },
     {
         "Time": "2023-04-23 19:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 24,
-        "Wind-Speed": 40,
-        "Air-Pressure": 645
+        "Wind-Direction": "SSW",
+        "Temperature": 1,
+        "Wind-Speed": 86,
+        "Air-Pressure": 738
     },
     {
         "Time": "2023-04-23 20:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 26,
-        "Wind-Speed": 33,
-        "Air-Pressure": 657
+        "Wind-Direction": "S",
+        "Temperature": 2,
+        "Wind-Speed": 106,
+        "Air-Pressure": 752
     },
     {
         "Time": "2023-04-23 21:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 24,
-        "Wind-Speed": 41,
-        "Air-Pressure": 663
+        "Wind-Direction": "SSW",
+        "Temperature": 3,
+        "Wind-Speed": 121,
+        "Air-Pressure": 733
     },
     {
         "Time": "2023-04-23 22:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 25,
-        "Wind-Speed": 54,
-        "Air-Pressure": 676
+        "Wind-Direction": "SSW",
+        "Temperature": 2,
+        "Wind-Speed": 136,
+        "Air-Pressure": 725
     },
     {
         "Time": "2023-04-23 23:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 24,
-        "Wind-Speed": 51,
-        "Air-Pressure": 689
+        "Wind-Direction": "S",
+        "Temperature": 3,
+        "Wind-Speed": 146,
+        "Air-Pressure": 733
     },
     {
         "Time": "2023-04-24 00:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 25,
-        "Wind-Speed": 47,
-        "Air-Pressure": 692
+        "Wind-Direction": "S",
+        "Temperature": 5,
+        "Wind-Speed": 132,
+        "Air-Pressure": 720
     },
     {
         "Time": "2023-04-24 01:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 24,
-        "Wind-Speed": 31,
-        "Air-Pressure": 698
+        "Wind-Direction": "W",
+        "Temperature": 3,
+        "Wind-Speed": 130,
+        "Air-Pressure": 736
     },
     {
         "Time": "2023-04-24 02:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 22,
-        "Wind-Speed": 29,
-        "Air-Pressure": 706
+        "Wind-Direction": "NNW",
+        "Temperature": 3,
+        "Wind-Speed": 139,
+        "Air-Pressure": 744
     },
     {
         "Time": "2023-04-24 03:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": 22,
-        "Wind-Speed": 36,
-        "Air-Pressure": 711
+        "Wind-Direction": "NNW",
+        "Temperature": 3,
+        "Wind-Speed": 133,
+        "Air-Pressure": 760
     }
 ]
