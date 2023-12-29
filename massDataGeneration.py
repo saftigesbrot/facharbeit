@@ -9,8 +9,6 @@ import numpy as np
 
 generatedData = []
 
-
-
 def ProofSettings():
    
    # Überpüftt alle Einstellungen der settings.json Datei auf ihre Kompatibilität
@@ -59,6 +57,19 @@ def ProofSettings():
       print(Back.RED + " Datum konnten nicht gelanden werden! Exit Code 1 ")
       exit()
    startDate = date
+
+   global savingDataFile
+   file = obj['general-settings']['saving-file']
+   splittedFileName = file.split(".")
+
+   if type(file) == str and splittedFileName.pop() == "json":
+      Outprint = name + " erfolgreich gelanden! "
+      print(Fore.GREEN + Outprint)
+   else:
+      Outprint = name + " konnten nicht gelanden werden! Exit Code 1 "
+      print(Back.RED + Outprint)
+      exit()
+   savingDataFile = file
 
 
    # Proof WindDirection
@@ -433,10 +444,12 @@ def GenerateAirPressure():
 
 def SaveData():
     global generateDataSets
+    global savingDataFile
+
     print(generateDataSets, Back.GREEN + " Datensätze generiert! \n")
 
     JSONData = json.dumps(generatedData,indent=4, separators=(',',': '))
-    SavingFile = open("massDataGeneration.json", "w")
+    SavingFile = open(savingDataFile, "w")
     SavingFile.write(JSONData)
     SavingFile.close()
 
