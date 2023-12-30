@@ -97,6 +97,7 @@ def ProofSettings():
    global temperatureMinimal
    global temperatureMaximum
    global temperatureMeanValue
+   global currentTemperatureMonth
 
    minimal = obj['temperature']['minimal']
    maximum = obj['temperature']['maximum']
@@ -106,11 +107,13 @@ def ProofSettings():
    
    temperatureMinimal = minimal
    temperatureMaximum = maximum
+   currentTemperatureMonth = ""
    temperatureMeanValue = (minimal + maximum) / 2
 
    # Proof WindSpeed
    global windSpeedMinimal 
    global windSpeedMaximum
+   global currentWindSpeedMonth
    global windSpeedMeanValue
 
    minimal= obj['wind-speed']['minimal']
@@ -121,6 +124,7 @@ def ProofSettings():
 
    windSpeedMinimal = minimal
    windSpeedMaximum = maximum
+   currentWindSpeedMonth = ""
    windSpeedMeanValue = (minimal + maximum) / 2
 
    # Proof AirPressure
@@ -240,6 +244,8 @@ def GenerateDate():
    global Time
    global isNightBoolean
    isNightBoolean = False
+   global currentMonthTemperature
+   global currentMonthWindSpeed
 
    if generateDataSets == 0:
        lastGeneratedTime = startDate
@@ -249,19 +255,44 @@ def GenerateDate():
 
         # Beachten, dass durch neue Daten dies nicht mehr funktioniert, da die Time in der Json verrückt wird
     
-   NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(hours=1)
+   NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(hours=24)
    Time = str(NewTime)
       # Abfrage, die bestimmt, ob es Tag oder Nacht ist und entsprechend die Maximaltempetur anpasst. 
 
    splittedTime = Time.split(" ", )
    splittedTimeHour = splittedTime[1].split(":")
+   splittedTimeMonth = splittedTime[0].split("-")
+   intSplittedTimeMonth = int(splittedTimeMonth[1])
    intSplittedTimeHour = int(splittedTimeHour[0])
+
 
    if intSplittedTimeHour < 7 or intSplittedTimeHour > 20:
       isNightBoolean = True
    
    elif intSplittedTimeHour > 7 and intSplittedTimeHour < 21 or intSplittedTimeHour == 7:
       isNightBoolean = False
+
+   # Aus Settings herraus
+   Winter = [12,1,2]
+   Frühling = [3,4,5]
+   Sommer = [6,7,8]
+   Herbst = [9,10,11]
+
+   if intSplittedTimeMonth in Winter:
+      currentMonthTemperature = -15
+      currentMonthWindSpeed = 180
+   
+   elif intSplittedTimeMonth in Frühling:
+      currentMonthTemperature = 0
+      currentMonthWindSpeed = 120
+
+   elif intSplittedTimeMonth in Sommer:
+      currentMonthTemperature = 15
+      currentMonthWindSpeed = 60
+
+   elif intSplittedTimeMonth in Herbst:
+      currentMonthTemperature = 5
+      currentMonthWindSpeed = 260
 
    # print(Back.CYAN + " generateWindDirection ")
 
@@ -327,12 +358,16 @@ def GenerateTemperature():
    global getTemperatureData
    global temperatureMeanValue
    global isNightBoolean
-   global nightTemperatureMaximum 
-   global constTemperatureMaximum 
+   global currentMonthTemperature
+   global currentTemperatureMonth
+   global lastGeneratedTemperature
 
    if generateDataSets == 0:
-         global lastGeneratedTemperature
-         lastGeneratedTemperature = round(random.uniform(temperatureMinimal,temperatureMaximum))
+      lastGeneratedTemperature = currentMonthTemperature
+      currentTemperatureMonth = currentMonthTemperature
+
+      if isNightBoolean == True and (lastGeneratedTemperature/5) *4 >= temperatureMinimal:
+         lastGeneratedTemperature = (lastGeneratedTemperature/5) *4
 
    else:
       if getTemperatureData == True: 
@@ -350,6 +385,10 @@ def GenerateTemperature():
             if isNightBoolean == True and (lastGeneratedTemperature/5) *4 >= temperatureMinimal:
                lastGeneratedTemperature = (lastGeneratedTemperature/5) *4
 
+            if currentTemperatureMonth != currentMonthTemperature:
+               lastGeneratedTemperature = currentMonthTemperature
+               currentTemperatureMonth = currentMonthTemperature
+
          elif temperatureMinimal > lastGeneratedTemperatureMinimal or temperatureMinimal == lastGeneratedTemperatureMinimal:
             lastGeneratedTemperature += 3
             getTemperatureData = not getTemperatureData 
@@ -362,6 +401,10 @@ def GenerateTemperature():
 
             if isNightBoolean == True and (lastGeneratedTemperature/5) *4 <= temperatureMaximum:
                lastGeneratedTemperature = (lastGeneratedTemperature/5) *4
+            
+            if currentTemperatureMonth != currentMonthTemperature:
+               lastGeneratedTemperature = currentMonthTemperature
+               currentTemperatureMonth = currentMonthTemperature
 
          elif temperatureMaximum < lastGeneratedTemperatureMaximum or temperatureMaximum == lastGeneratedTemperatureMaximum:
             lastGeneratedTemperature -= 3
@@ -381,10 +424,17 @@ def GenerateWindSpeed():
    global getWindSpeedData
    global windSpeedMeanValue
    global isNightBoolean
+   global currentMonthWindSpeed
+   global currentWindSpeedMonth
+   global lastGeneratedWindSpeed
+   global blockingElifLoop
 
    if generateDataSets == 0:
-       global lastGeneratedWindSpeed
-       lastGeneratedWindSpeed = round(random.uniform(windSpeedMinimal,windSpeedMaximum))
+      lastGeneratedWindSpeed = currentMonthWindSpeed
+      currentWindSpeedMonth = currentMonthWindSpeed
+
+      if isNightBoolean == True and (lastGeneratedWindSpeed/5) *4 >= windSpeedMinimal:
+         lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5) *4
 
    else:
        if getWindSpeedData == True:
@@ -402,7 +452,11 @@ def GenerateWindSpeed():
             if isNightBoolean == True and (lastGeneratedWindSpeed/5) *4 >= windSpeedMinimal:
                lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5) *4
 
-         elif windSpeedMinimal > lastGeneratedWindSpeedMinimal or windSpeedMinimal == lastGeneratedWindSpeedMinimal: 
+            if currentWindSpeedMonth != currentMonthWindSpeed:
+               lastGeneratedWindSpeed = currentMonthWindSpeed
+               currentWindSpeedMonth = currentMonthWindSpeed
+
+         elif windSpeedMinimal > lastGeneratedWindSpeedMinimal or windSpeedMinimal == lastGeneratedWindSpeedMinimal:
             lastGeneratedWindSpeed += 25
             getWindSpeedData = not getWindSpeedData
             GenerateWindSpeed()
@@ -415,10 +469,15 @@ def GenerateWindSpeed():
             if isNightBoolean == True and (lastGeneratedWindSpeed/5)*4 <= windSpeedMaximum:
                lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5)*4
 
+            if currentWindSpeedMonth != currentMonthWindSpeed:
+              lastGeneratedWindSpeed = currentMonthWindSpeed
+              currentWindSpeedMonth = currentMonthWindSpeed
+
          elif windSpeedMaximum < lastGeneratedWindSpeedMaximum or windSpeedMaximum == lastGeneratedWindSpeedMaximum:
             lastGeneratedWindSpeed -= 25
             getWindSpeedData = not getWindSpeedData
             GenerateWindSpeed()
+
 
 
    global WindSpeed
@@ -480,6 +539,6 @@ def SaveData():
     SavingFile.write(JSONData)
     SavingFile.close()
 
-    print("", Back.GREEN + " Datengenerierung erfolgreich abgeschlossen! ", "\n")
+    print("", Back.GREEN + " Datengenerierung erfolgreich abgeschlossen und gespeichert! ", "\n")
 
 MainGeneration()
