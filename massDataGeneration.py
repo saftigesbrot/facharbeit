@@ -2,7 +2,7 @@ import json
 import random
 import datetime
 import time
-from datetime import date, timedelta, datetime
+from datetime import timedelta, datetime
 from colorama import *
 init(autoreset=True)
 import numpy as np
@@ -23,29 +23,36 @@ def ProofSettings():
    number = obj['general-settings']['hurricane-probability']
    name = " Hurrikanwahrscheinlichkeit"
    
-   ProofSettingsIntSupport(number, name)
+   ProofSettingsIntSupporter(number, name)
    hurricaneProbability = number
 
    global hurricaneMultiplicator
    number = obj['general-settings']['hurricane-multiplicator']
    name = " Hurrikanmultiplikator"
 
-   ProofSettingsIntSupport(number, name)
+   ProofSettingsIntSupporter(number, name)
    hurricaneMultiplicator = number
 
    global generatedDataFactor
    number = obj['general-settings']['generate-data-factor']
    name = " Datengenerierungsfakor"
 
-   ProofSettingsIntSupport(number, name)
+   ProofSettingsIntSupporter(number, name)
    generatedDataFactor = number
 
    global generateDataSets
    number = obj['general-settings']['generated-data-sets']
    name = " Datengenerierungssätze"
 
-   ProofSettingsIntSupport(number, name)
+   ProofSettingsIntSupporter(number, name)
    generateDataSets = number
+
+   global addingHourse
+   number = obj['general-settings']['adding-hourse']
+   name = " Hinzuzufügendestundendaten"
+
+   ProofSettingsIntSupporter(number, name)
+   addingHourse = number
 
    # Proof Date
    global startDate
@@ -54,7 +61,7 @@ def ProofSettings():
 
    try:
       bool(datetime.strptime(date, format))
-      print(Fore.GREEN + " Datum erfolgreich geladen! \n")
+      print(Fore.GREEN + " Datum erfolgreich geladen! ")
    except ValueError:
       print(Back.RED + " Datum konnten nicht gelanden werden! Exit Code 1 ")
       exit()
@@ -73,6 +80,112 @@ def ProofSettings():
       exit()
    savingDataFile = file
 
+   # Proof DayNightCycle
+   global nightBeginn
+   global nightEnd
+
+   number = obj['day-night-cycle']['night-beginn']
+   name = " Nachtbeginndaten"
+  
+   ProofSettingsDayNightSupporter(number, name)
+   nightBeginn = number
+
+   number = obj['day-night-cycle']['night-end']
+   name = " Nachtendedaten"
+
+   ProofSettingsDayNightSupporter(number, name)
+   nightEnd = number
+
+
+   # Proof Seasons
+   global springTemperature
+   global springWindSpeed
+   global sommerTemperature
+   global sommerWindSpeed
+   global autumnTemperature
+   global autumnWindSpeed
+   global winterTemperature
+   global winterWindSpeed
+
+   global springMonths
+   global sommerMonths
+   global autumnMonths
+   global winterMonths
+
+   number = obj['seasons']['spring-temperature']
+   name = " Frühlingstemperaturdaten"
+
+   ProofSettingsSeasonsSupporter(number, name)
+   springTemperature = number
+
+   number = obj['seasons']['sommer-temperature']
+   name = " Sommertemperaturdaten"
+   
+   ProofSettingsSeasonsSupporter(number, name)
+   sommerTemperature = number
+
+   number = obj['seasons']['autumn-temperature']
+   name = " Herbsttemperaturdaten"
+
+   ProofSettingsSeasonsSupporter(number, name)
+   autumnTemperature = number
+
+   name = obj['seasons']['winter-temperature']
+   name = " Wintertemperaturdaten"
+
+   ProofSettingsSeasonsSupporter(number, name)
+   winterTemperature = number 
+
+   
+   number = obj['seasons']['spring-wind-speed']
+   name = " Frühlingswindgeschwindigkeitsdaten"
+
+   ProofSettingsIntSupporter(number, name)
+   springWindSpeed = number
+
+   number = obj['seasons']['sommer-wind-speed']
+   name = " Sommerwindgeschwindigkeitsdaten"
+
+   ProofSettingsIntSupporter(number, name)
+   sommerWindSpeed = number
+
+   number = obj['seasons']['autumn-wind-speed']
+   name = " Herbstwindgeschwindigkeitsdaten"
+
+   ProofSettingsIntSupporter(number, name)
+   autumnWindSpeed = number
+
+   number = obj['seasons']['winter-wind-speed']
+   name = " Winterwindgeschwindigkeitsdaten"
+
+   ProofSettingsIntSupporter(number, name)
+   winterWindSpeed = number
+
+
+   lists = obj['seasons']['spring-months']
+   name = " Frühlingsmonatsdaten"
+
+   ProofSettingsListSupporter(lists, name)
+   springMonths = lists
+
+   lists = obj['seasons']['sommer-months']
+   name = " Sommermonatsdaten"
+
+   ProofSettingsListSupporter(lists, name)
+   sommerMonths = lists
+
+   lists = obj['seasons']['autumn-months']
+   name = " Herbstmonatsdaten"
+
+   ProofSettingsListSupporter(lists, name)
+   autumnMonths = lists
+   
+   lists = obj['seasons']['winter-months']
+   name = " Wintermonatsdaten"
+
+   ProofSettingsListSupporter(lists, name)
+   winterMonths = lists
+   
 
    # Proof WindDirection
    global windDirection
@@ -145,7 +258,7 @@ def ProofSettings():
    print("\n", Back.GREEN + " Alle Daten erfolgreich geladen! Beginne mit der Datengenerierung! ", "\n")
 
 
-def ProofSettingsIntSupport(number, name):
+def ProofSettingsIntSupporter(number, name):
    if type(number) == int and (number == 0 or number > 0):
       Outprint = name + " erfolgreich gelanden! "
       print(Fore.GREEN + Outprint)
@@ -154,6 +267,40 @@ def ProofSettingsIntSupport(number, name):
       print(Back.RED + Outprint)
       exit()
 
+def ProofSettingsDayNightSupporter(number, name):
+   if type(number) == int and (number == 0 or number > 0) and (number == 24 or number < 24):
+      Outprint = name + " erfolgreich gelanden! "
+      print(Fore.GREEN + Outprint)
+   else:
+      Outprint = name + " konnten nicht gelanden werden! Exit Code 1 "
+      print(Back.RED + Outprint)
+      exit()
+
+def ProofSettingsListSupporter(lists, name): 
+   listCounter = 0
+   for x in lists:
+      if type(x) == int and x > 0 and x < 13:
+         listCounter = listCounter + 1
+      else: 
+         Outprint = name + " konnten nicht gelanden werden! Exit Code 1 "
+         print(Back.RED + Outprint)
+         exit() 
+   if listCounter == 3:
+      Outprint = name + " erfolgreich geladen! "
+      print(Fore.GREEN + Outprint)
+   else:
+      Outprint = name + " konnten nicht gelanden werden! Exit Code 1 "
+      print(Back.RED + Outprint)
+      exit() 
+
+def ProofSettingsSeasonsSupporter(number, name):
+   if type(number) == int: 
+      Outprint = name + " erfolgreich geladen! "
+      print(Fore.GREEN + Outprint)
+   else: 
+      Outprint = name + " konnten nicht gelanden werden! Exit Code 1 "
+      print(Back.RED + Outprint)
+      exit() 
 
 def ProofSettingsTypeSupporter(minimal, maximum, name):
    if type(minimal and maximum) == int and maximum > minimal: 
@@ -247,6 +394,24 @@ def GenerateDate():
    global currentMonthTemperature
    global currentMonthWindSpeed
 
+   global springMonths
+   global sommerMonths
+   global autumnMonths
+   global winterMonths
+
+   global springTemperature
+   global springWindSpeed
+   global sommerTemperature
+   global sommerWindSpeed
+   global autumnTemperature
+   global autumnWindSpeed
+   global winterTemperature
+   global winterWindSpeed
+
+   global nightBeginn
+   global nightEnd
+   global addingHourse
+
    if generateDataSets == 0:
        lastGeneratedTime = startDate
    else:
@@ -255,7 +420,7 @@ def GenerateDate():
 
         # Beachten, dass durch neue Daten dies nicht mehr funktioniert, da die Time in der Json verrückt wird
     
-   NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(hours=24)
+   NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(hours=addingHourse)
    Time = str(NewTime)
       # Abfrage, die bestimmt, ob es Tag oder Nacht ist und entsprechend die Maximaltempetur anpasst. 
 
@@ -266,33 +431,29 @@ def GenerateDate():
    intSplittedTimeHour = int(splittedTimeHour[0])
 
 
-   if intSplittedTimeHour < 7 or intSplittedTimeHour > 20:
+   if intSplittedTimeHour < nightEnd or intSplittedTimeHour > nightBeginn:
       isNightBoolean = True
    
-   elif intSplittedTimeHour > 7 and intSplittedTimeHour < 21 or intSplittedTimeHour == 7:
+   elif intSplittedTimeHour > nightEnd and intSplittedTimeHour < nightBeginn or intSplittedTimeHour == nightEnd:
       isNightBoolean = False
 
    # Aus Settings herraus
-   Winter = [12,1,2]
-   Frühling = [3,4,5]
-   Sommer = [6,7,8]
-   Herbst = [9,10,11]
+  
+   if intSplittedTimeMonth in springMonths:
+      currentMonthTemperature = springTemperature
+      currentMonthWindSpeed = springWindSpeed
 
-   if intSplittedTimeMonth in Winter:
-      currentMonthTemperature = -15
-      currentMonthWindSpeed = 180
-   
-   elif intSplittedTimeMonth in Frühling:
-      currentMonthTemperature = 0
-      currentMonthWindSpeed = 120
+   elif intSplittedTimeMonth in sommerMonths:
+      currentMonthTemperature = sommerTemperature
+      currentMonthWindSpeed = sommerWindSpeed
 
-   elif intSplittedTimeMonth in Sommer:
-      currentMonthTemperature = 15
-      currentMonthWindSpeed = 60
+   elif intSplittedTimeMonth in autumnMonths:
+      currentMonthTemperature = autumnTemperature
+      currentMonthWindSpeed = autumnWindSpeed
 
-   elif intSplittedTimeMonth in Herbst:
-      currentMonthTemperature = 5
-      currentMonthWindSpeed = 260
+   elif intSplittedTimeMonth in winterMonths:
+      currentMonthTemperature = winterTemperature
+      currentMonthWindSpeed = winterWindSpeed
 
    # print(Back.CYAN + " generateWindDirection ")
 

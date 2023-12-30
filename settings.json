@@ -4,10 +4,32 @@
         "hurricane-multiplicator": 2,
         "generate-data-factor": 1000,
         "generated-data-sets": 0,
+        "adding-hourse": 3,
         "start-date": "2023-04-23 15:18:28.044869",
         "saving-file": "massDataGeneration.json"
-
     },
+
+    "day-night-cycle": {
+        "night-beginn": 20,
+        "night-end": 7
+    },
+
+    "seasons": {
+        "spring-temperature": 0, 
+        "spring-wind-speed": 120,
+        "sommer-temperature": 15,
+        "sommer-wind-speed": 60,
+        "autumn-temperature": 5,
+        "autumn-wind-speed": 260,
+        "winter-temperature": -15,
+        "winter-wind-speed": 180,
+
+        "spring-months": [3,4,5],
+        "sommer-months": [6,7,8],
+        "autumn-months": [9,10,11],
+        "winter-months": [12,1,2]
+    },
+
     "wind-direction": {
         "wind-directions": {
             "1.0": "N",
@@ -28,14 +50,17 @@
             "4.3": "NNW"    
         }
     },
+
     "temperature": {
         "minimal": -30,
         "maximum": 30
     },
+
     "wind-speed": {
         "minimal": 0,
         "maximum": 310
     },
+
     "air-pressure": {
         "minimal": 500,
         "maximum": 1200
