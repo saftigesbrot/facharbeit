@@ -6,6 +6,8 @@ from datetime import date, timedelta, datetime
 from colorama import *
 init(autoreset=True)
 import numpy as np
+import sys
+sys.setrecursionlimit(2000)
 
 generatedData = []
 
@@ -101,7 +103,7 @@ def ProofSettings():
 
    name = " Temperaturdaten"
    ProofSettingsTypeSupporter(minimal, maximum, name)
-
+   
    temperatureMinimal = minimal
    temperatureMaximum = maximum
    temperatureMeanValue = (minimal + maximum) / 2
@@ -202,6 +204,7 @@ def DataGeneration(hurricaneBoolean):
    # Generiere das Datum
    GenerateDate()
    global Time
+   global isNightBoolean
 
    # Generiere die Windrichtung 
    GenerateWindDirection()
@@ -234,6 +237,9 @@ def GenerateDate():
 
    global startDate
    global generateDataSets
+   global Time
+   global isNightBoolean
+   isNightBoolean = False
 
    if generateDataSets == 0:
        lastGeneratedTime = startDate
@@ -243,10 +249,19 @@ def GenerateDate():
 
         # Beachten, dass durch neue Daten dies nicht mehr funktioniert, da die Time in der Json verrückt wird
     
-   NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(hours=3)
-   
-   global Time
+   NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(hours=1)
    Time = str(NewTime)
+      # Abfrage, die bestimmt, ob es Tag oder Nacht ist und entsprechend die Maximaltempetur anpasst. 
+
+   splittedTime = Time.split(" ", )
+   splittedTimeHour = splittedTime[1].split(":")
+   intSplittedTimeHour = int(splittedTimeHour[0])
+
+   if intSplittedTimeHour < 7 or intSplittedTimeHour > 20:
+      isNightBoolean = True
+   
+   elif intSplittedTimeHour > 7 and intSplittedTimeHour < 21 or intSplittedTimeHour == 7:
+      isNightBoolean = False
 
    # print(Back.CYAN + " generateWindDirection ")
 
@@ -311,42 +326,48 @@ def GenerateTemperature():
    global hurricaneMultiplicator
    global getTemperatureData
    global temperatureMeanValue
+   global isNightBoolean
+   global nightTemperatureMaximum 
+   global constTemperatureMaximum 
 
    if generateDataSets == 0:
-       global lastGeneratedTemperature
-       lastGeneratedTemperature = round(random.uniform(temperatureMinimal,temperatureMaximum))
+         global lastGeneratedTemperature
+         lastGeneratedTemperature = round(random.uniform(temperatureMinimal,temperatureMaximum))
 
    else:
-
-       if getTemperatureData == True: 
+      if getTemperatureData == True: 
          lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
          lastGeneratedTemperature = generatedData[lastGeneratedLen]["Temperature"]
 
-       lastGeneratedTemperatureMinimal = lastGeneratedTemperature - 2 
-       lastGeneratedTemperatureMaximum = lastGeneratedTemperature + 2 
+      lastGeneratedTemperatureMinimal = lastGeneratedTemperature - 2 
+      lastGeneratedTemperatureMaximum = lastGeneratedTemperature + 2 
 
-
-       if lastGeneratedTemperature < temperatureMeanValue:
-          
-          if temperatureMinimal < lastGeneratedTemperatureMinimal: 
+      if lastGeneratedTemperature < temperatureMeanValue:
+               
+         if temperatureMinimal < lastGeneratedTemperatureMinimal: 
             lastGeneratedTemperature = round(random.uniform(lastGeneratedTemperatureMinimal, lastGeneratedTemperatureMaximum))
 
-          elif temperatureMinimal > lastGeneratedTemperatureMinimal or temperatureMinimal == lastGeneratedTemperatureMinimal:
+            if isNightBoolean == True and (lastGeneratedTemperature/5) *4 >= temperatureMinimal:
+               lastGeneratedTemperature = (lastGeneratedTemperature/5) *4
+
+         elif temperatureMinimal > lastGeneratedTemperatureMinimal or temperatureMinimal == lastGeneratedTemperatureMinimal:
             lastGeneratedTemperature += 3
-            getTemperatureData = not getTemperatureData
-            GenerateTemperature() 
+            getTemperatureData = not getTemperatureData 
+            GenerateTemperature()
 
-       elif lastGeneratedTemperature == temperatureMeanValue or lastGeneratedTemperature > temperatureMeanValue: 
-          
-          if temperatureMaximum > lastGeneratedTemperatureMaximum:
+      elif lastGeneratedTemperature == temperatureMeanValue or lastGeneratedTemperature > temperatureMeanValue: 
+               
+         if temperatureMaximum > lastGeneratedTemperatureMaximum:
             lastGeneratedTemperature = round(random.uniform(lastGeneratedTemperatureMinimal, lastGeneratedTemperatureMaximum))
 
-          elif temperatureMaximum < lastGeneratedTemperatureMaximum or temperatureMaximum == lastGeneratedTemperatureMaximum:
+            if isNightBoolean == True and (lastGeneratedTemperature/5) *4 <= temperatureMaximum:
+               lastGeneratedTemperature = (lastGeneratedTemperature/5) *4
+
+         elif temperatureMaximum < lastGeneratedTemperatureMaximum or temperatureMaximum == lastGeneratedTemperatureMaximum:
             lastGeneratedTemperature -= 3
             getTemperatureData = not getTemperatureData
-            GenerateTemperature() 
+            GenerateTemperature()
         
-
    global Temperature
    Temperature = lastGeneratedTemperature
 
@@ -359,13 +380,13 @@ def GenerateWindSpeed():
    global generateDataSets
    global getWindSpeedData
    global windSpeedMeanValue
+   global isNightBoolean
 
    if generateDataSets == 0:
        global lastGeneratedWindSpeed
        lastGeneratedWindSpeed = round(random.uniform(windSpeedMinimal,windSpeedMaximum))
 
    else:
-
        if getWindSpeedData == True:
          lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
          lastGeneratedWindSpeed = generatedData[lastGeneratedLen]["Wind-Speed"]
@@ -378,6 +399,9 @@ def GenerateWindSpeed():
          if windSpeedMinimal < lastGeneratedWindSpeedMinimal:
             lastGeneratedWindSpeed = round(random.uniform(lastGeneratedWindSpeedMinimal, lastGeneratedWindSpeedMaximum))
 
+            if isNightBoolean == True and (lastGeneratedWindSpeed/5) *4 >= windSpeedMinimal:
+               lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5) *4
+
          elif windSpeedMinimal > lastGeneratedWindSpeedMinimal or windSpeedMinimal == lastGeneratedWindSpeedMinimal: 
             lastGeneratedWindSpeed += 25
             getWindSpeedData = not getWindSpeedData
@@ -387,6 +411,9 @@ def GenerateWindSpeed():
          
          if windSpeedMaximum > lastGeneratedWindSpeedMaximum:
             lastGeneratedWindSpeed = round(random.uniform(lastGeneratedWindSpeedMinimal, lastGeneratedWindSpeedMaximum))
+
+            if isNightBoolean == True and (lastGeneratedWindSpeed/5)*4 <= windSpeedMaximum:
+               lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5)*4
 
          elif windSpeedMaximum < lastGeneratedWindSpeedMaximum or windSpeedMaximum == lastGeneratedWindSpeedMaximum:
             lastGeneratedWindSpeed -= 25

@@ -1,702 +1,7002 @@
 [
     {
+        "Time": "2023-04-23 16:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -17,
+        "Wind-Speed": 266,
+        "Air-Pressure": 902
+    },
+    {
+        "Time": "2023-04-23 17:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -15,
+        "Wind-Speed": 263,
+        "Air-Pressure": 892
+    },
+    {
         "Time": "2023-04-23 18:18:28.044869",
-        "Wind-Direction": "SO",
-        "Temperature": -3,
-        "Wind-Speed": 94,
-        "Air-Pressure": 814
+        "Wind-Direction": "NW",
+        "Temperature": -17,
+        "Wind-Speed": 275,
+        "Air-Pressure": 885
+    },
+    {
+        "Time": "2023-04-23 19:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -15,
+        "Wind-Speed": 284,
+        "Air-Pressure": 885
+    },
+    {
+        "Time": "2023-04-23 20:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -14,
+        "Wind-Speed": 300,
+        "Air-Pressure": 896
     },
     {
         "Time": "2023-04-23 21:18:28.044869",
-        "Wind-Direction": "SO",
-        "Temperature": -4,
-        "Wind-Speed": 87,
-        "Air-Pressure": 828
+        "Wind-Direction": "NW",
+        "Temperature": -12.8,
+        "Wind-Speed": 207.2,
+        "Air-Pressure": 913
+    },
+    {
+        "Time": "2023-04-23 22:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -10.4,
+        "Wind-Speed": 164.8,
+        "Air-Pressure": 925
+    },
+    {
+        "Time": "2023-04-23 23:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -8.0,
+        "Wind-Speed": 140.0,
+        "Air-Pressure": 938
     },
     {
         "Time": "2023-04-24 00:18:28.044869",
-        "Wind-Direction": "SO",
-        "Temperature": -3,
-        "Wind-Speed": 87,
-        "Air-Pressure": 822
+        "Wind-Direction": "WNW",
+        "Temperature": -6.4,
+        "Wind-Speed": 113.6,
+        "Air-Pressure": 935
+    },
+    {
+        "Time": "2023-04-24 01:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -5.6,
+        "Wind-Speed": 98.4,
+        "Air-Pressure": 954
+    },
+    {
+        "Time": "2023-04-24 02:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -5.6,
+        "Wind-Speed": 81.6,
+        "Air-Pressure": 944
     },
     {
         "Time": "2023-04-24 03:18:28.044869",
-        "Wind-Direction": "SSO",
-        "Temperature": -3,
-        "Wind-Speed": 74,
-        "Air-Pressure": 828
+        "Wind-Direction": "NW",
+        "Temperature": -3.2,
+        "Wind-Speed": 64.8,
+        "Air-Pressure": 960
+    },
+    {
+        "Time": "2023-04-24 04:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -1.6,
+        "Wind-Speed": 66.4,
+        "Air-Pressure": 946
+    },
+    {
+        "Time": "2023-04-24 05:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 0.0,
+        "Wind-Speed": 68.8,
+        "Air-Pressure": 945
     },
     {
         "Time": "2023-04-24 06:18:28.044869",
-        "Wind-Direction": "N",
-        "Temperature": -4,
-        "Wind-Speed": 67,
-        "Air-Pressure": 822
+        "Wind-Direction": "NNW",
+        "Temperature": 0.8,
+        "Wind-Speed": 44.8,
+        "Air-Pressure": 962
+    },
+    {
+        "Time": "2023-04-24 07:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": 1,
+        "Wind-Speed": 45,
+        "Air-Pressure": 967
+    },
+    {
+        "Time": "2023-04-24 08:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -1,
+        "Wind-Speed": 42,
+        "Air-Pressure": 971
     },
     {
         "Time": "2023-04-24 09:18:28.044869",
-        "Wind-Direction": "ONO",
-        "Temperature": -6,
-        "Wind-Speed": 64,
-        "Air-Pressure": 834
+        "Wind-Direction": "O",
+        "Temperature": 1,
+        "Wind-Speed": 27,
+        "Air-Pressure": 968
+    },
+    {
+        "Time": "2023-04-24 10:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 2,
+        "Wind-Speed": 9,
+        "Air-Pressure": 961
+    },
+    {
+        "Time": "2023-04-24 11:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 1,
+        "Wind-Speed": 54,
+        "Air-Pressure": 943
     },
     {
         "Time": "2023-04-24 12:18:28.044869",
-        "Wind-Direction": "ONO",
-        "Temperature": -5,
-        "Wind-Speed": 69,
-        "Air-Pressure": 821
+        "Wind-Direction": "O",
+        "Temperature": -1,
+        "Wind-Speed": 71,
+        "Air-Pressure": 949
+    },
+    {
+        "Time": "2023-04-24 13:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -1,
+        "Wind-Speed": 82,
+        "Air-Pressure": 934
+    },
+    {
+        "Time": "2023-04-24 14:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0,
+        "Wind-Speed": 62,
+        "Air-Pressure": 932
     },
     {
         "Time": "2023-04-24 15:18:28.044869",
-        "Wind-Direction": "ONO",
-        "Temperature": -3,
-        "Wind-Speed": 74,
-        "Air-Pressure": 804
+        "Wind-Direction": "NNO",
+        "Temperature": -2,
+        "Wind-Speed": 61,
+        "Air-Pressure": 925
+    },
+    {
+        "Time": "2023-04-24 16:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0,
+        "Wind-Speed": 67,
+        "Air-Pressure": 943
+    },
+    {
+        "Time": "2023-04-24 17:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 0,
+        "Wind-Speed": 65,
+        "Air-Pressure": 944
     },
     {
         "Time": "2023-04-24 18:18:28.044869",
-        "Wind-Direction": "ONO",
+        "Wind-Direction": "NNO",
+        "Temperature": -2,
+        "Wind-Speed": 52,
+        "Air-Pressure": 941
+    },
+    {
+        "Time": "2023-04-24 19:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -4,
+        "Wind-Speed": 70,
+        "Air-Pressure": 931
+    },
+    {
+        "Time": "2023-04-24 20:18:28.044869",
+        "Wind-Direction": "NO",
         "Temperature": -3,
-        "Wind-Speed": 62,
-        "Air-Pressure": 823
+        "Wind-Speed": 73,
+        "Air-Pressure": 934
     },
     {
         "Time": "2023-04-24 21:18:28.044869",
-        "Wind-Direction": "ONO",
-        "Temperature": -4,
-        "Wind-Speed": 65,
-        "Air-Pressure": 835
+        "Wind-Direction": "NO",
+        "Temperature": -0.8,
+        "Wind-Speed": 62.4,
+        "Air-Pressure": 950
+    },
+    {
+        "Time": "2023-04-24 22:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0.8,
+        "Wind-Speed": 52.8,
+        "Air-Pressure": 948
+    },
+    {
+        "Time": "2023-04-24 23:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0.0,
+        "Wind-Speed": 26.4,
+        "Air-Pressure": 963
     },
     {
         "Time": "2023-04-25 00:18:28.044869",
-        "Wind-Direction": "ONO",
-        "Temperature": -4,
-        "Wind-Speed": 71,
-        "Air-Pressure": 837
+        "Wind-Direction": "NNO",
+        "Temperature": 0.8,
+        "Wind-Speed": 35.2,
+        "Air-Pressure": 967
+    },
+    {
+        "Time": "2023-04-25 01:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 0.8,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 967
+    },
+    {
+        "Time": "2023-04-25 02:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -0.8,
+        "Wind-Speed": 25.6,
+        "Air-Pressure": 952
     },
     {
         "Time": "2023-04-25 03:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": -2,
-        "Wind-Speed": 72,
-        "Air-Pressure": 854
+        "Wind-Direction": "S",
+        "Temperature": -1.6,
+        "Wind-Speed": 20.8,
+        "Air-Pressure": 938
+    },
+    {
+        "Time": "2023-04-25 04:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -1.6,
+        "Wind-Speed": 16.0,
+        "Air-Pressure": 922
+    },
+    {
+        "Time": "2023-04-25 05:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -2.4,
+        "Wind-Speed": 41.6,
+        "Air-Pressure": 933
     },
     {
         "Time": "2023-04-25 06:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": -1,
-        "Wind-Speed": 56,
-        "Air-Pressure": 862
+        "Wind-Direction": "WSW",
+        "Temperature": -3.2,
+        "Wind-Speed": 35.2,
+        "Air-Pressure": 948
+    },
+    {
+        "Time": "2023-04-25 07:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 21,
+        "Air-Pressure": 968
+    },
+    {
+        "Time": "2023-04-25 08:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 29,
+        "Air-Pressure": 986
     },
     {
         "Time": "2023-04-25 09:18:28.044869",
-        "Wind-Direction": "NO",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 44,
+        "Air-Pressure": 994
+    },
+    {
+        "Time": "2023-04-25 10:18:28.044869",
+        "Wind-Direction": "SW",
         "Temperature": 0,
-        "Wind-Speed": 60,
-        "Air-Pressure": 859
+        "Wind-Speed": 47,
+        "Air-Pressure": 995
+    },
+    {
+        "Time": "2023-04-25 11:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 0,
+        "Wind-Speed": 39,
+        "Air-Pressure": 1001
     },
     {
         "Time": "2023-04-25 12:18:28.044869",
-        "Wind-Direction": "ONO",
-        "Temperature": -1,
-        "Wind-Speed": 43,
-        "Air-Pressure": 862
+        "Wind-Direction": "O",
+        "Temperature": -2,
+        "Wind-Speed": 29,
+        "Air-Pressure": 989
+    },
+    {
+        "Time": "2023-04-25 13:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -3,
+        "Wind-Speed": 25,
+        "Air-Pressure": 984
+    },
+    {
+        "Time": "2023-04-25 14:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -4,
+        "Wind-Speed": 36,
+        "Air-Pressure": 1000
     },
     {
         "Time": "2023-04-25 15:18:28.044869",
-        "Wind-Direction": "ONO",
-        "Temperature": 0,
-        "Wind-Speed": 40,
-        "Air-Pressure": 868
+        "Wind-Direction": "OSO",
+        "Temperature": -3,
+        "Wind-Speed": 39,
+        "Air-Pressure": 999
+    },
+    {
+        "Time": "2023-04-25 16:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -5,
+        "Wind-Speed": 35,
+        "Air-Pressure": 983
+    },
+    {
+        "Time": "2023-04-25 17:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -6,
+        "Wind-Speed": 26,
+        "Air-Pressure": 977
     },
     {
         "Time": "2023-04-25 18:18:28.044869",
-        "Wind-Direction": "ONO",
-        "Temperature": 0,
-        "Wind-Speed": 48,
-        "Air-Pressure": 869
+        "Wind-Direction": "N",
+        "Temperature": -4,
+        "Wind-Speed": 45,
+        "Air-Pressure": 987
+    },
+    {
+        "Time": "2023-04-25 19:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -5,
+        "Wind-Speed": 42,
+        "Air-Pressure": 995
+    },
+    {
+        "Time": "2023-04-25 20:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -6,
+        "Wind-Speed": 41,
+        "Air-Pressure": 1009
     },
     {
         "Time": "2023-04-25 21:18:28.044869",
-        "Wind-Direction": "ONO",
-        "Temperature": -2,
-        "Wind-Speed": 52,
-        "Air-Pressure": 851
+        "Wind-Direction": "NO",
+        "Temperature": -3.2,
+        "Wind-Speed": 47.2,
+        "Air-Pressure": 1025
+    },
+    {
+        "Time": "2023-04-25 22:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -2.4,
+        "Wind-Speed": 46.4,
+        "Air-Pressure": 1019
+    },
+    {
+        "Time": "2023-04-25 23:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1.6,
+        "Wind-Speed": 23.2,
+        "Air-Pressure": 1023
     },
     {
         "Time": "2023-04-26 00:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": -3,
-        "Wind-Speed": 55,
-        "Air-Pressure": 867
+        "Wind-Direction": "NO",
+        "Temperature": -2.4,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 1004
+    },
+    {
+        "Time": "2023-04-26 01:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -2.4,
+        "Wind-Speed": 20.8,
+        "Air-Pressure": 1019
+    },
+    {
+        "Time": "2023-04-26 02:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -0.8,
+        "Wind-Speed": 29.6,
+        "Air-Pressure": 1013
     },
     {
         "Time": "2023-04-26 03:18:28.044869",
-        "Wind-Direction": "NO",
-        "Temperature": -2,
-        "Wind-Speed": 44,
-        "Air-Pressure": 887
+        "Wind-Direction": "ONO",
+        "Temperature": 0.0,
+        "Wind-Speed": 12.8,
+        "Air-Pressure": 1004
+    },
+    {
+        "Time": "2023-04-26 04:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 0.8,
+        "Wind-Speed": 27.2,
+        "Air-Pressure": 989
+    },
+    {
+        "Time": "2023-04-26 05:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -0.8,
+        "Wind-Speed": 7.2,
+        "Air-Pressure": 997
     },
     {
         "Time": "2023-04-26 06:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0.8,
+        "Wind-Speed": 17.6,
+        "Air-Pressure": 1006
+    },
+    {
+        "Time": "2023-04-26 07:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 2,
+        "Wind-Speed": 47,
+        "Air-Pressure": 1011
+    },
+    {
+        "Time": "2023-04-26 08:18:28.044869",
         "Wind-Direction": "NO",
-        "Temperature": -3,
-        "Wind-Speed": 40,
-        "Air-Pressure": 883
+        "Temperature": 3,
+        "Wind-Speed": 56,
+        "Air-Pressure": 1024
     },
     {
         "Time": "2023-04-26 09:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 1,
+        "Wind-Speed": 51,
+        "Air-Pressure": 1022
+    },
+    {
+        "Time": "2023-04-26 10:18:28.044869",
         "Wind-Direction": "ONO",
-        "Temperature": -5,
-        "Wind-Speed": 31,
-        "Air-Pressure": 863
+        "Temperature": 0,
+        "Wind-Speed": 44,
+        "Air-Pressure": 1025
+    },
+    {
+        "Time": "2023-04-26 11:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 0,
+        "Wind-Speed": 64,
+        "Air-Pressure": 1009
     },
     {
         "Time": "2023-04-26 12:18:28.044869",
-        "Wind-Direction": "W",
-        "Temperature": -3,
-        "Wind-Speed": 29,
-        "Air-Pressure": 882
+        "Wind-Direction": "NNW",
+        "Temperature": 0,
+        "Wind-Speed": 47,
+        "Air-Pressure": 992
+    },
+    {
+        "Time": "2023-04-26 13:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": 0,
+        "Wind-Speed": 41,
+        "Air-Pressure": 1009
+    },
+    {
+        "Time": "2023-04-26 14:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 1,
+        "Wind-Speed": 47,
+        "Air-Pressure": 996
     },
     {
         "Time": "2023-04-26 15:18:28.044869",
-        "Wind-Direction": "NNW",
-        "Temperature": -3,
-        "Wind-Speed": 23,
-        "Air-Pressure": 876
+        "Wind-Direction": "SSO",
+        "Temperature": 1,
+        "Wind-Speed": 63,
+        "Air-Pressure": 986
+    },
+    {
+        "Time": "2023-04-26 16:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 2,
+        "Wind-Speed": 62,
+        "Air-Pressure": 985
+    },
+    {
+        "Time": "2023-04-26 17:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 3,
+        "Wind-Speed": 77,
+        "Air-Pressure": 966
     },
     {
         "Time": "2023-04-26 18:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -2,
-        "Wind-Speed": 34,
-        "Air-Pressure": 871
+        "Wind-Direction": "OSO",
+        "Temperature": 2,
+        "Wind-Speed": 93,
+        "Air-Pressure": 977
+    },
+    {
+        "Time": "2023-04-26 19:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0,
+        "Wind-Speed": 97,
+        "Air-Pressure": 970
+    },
+    {
+        "Time": "2023-04-26 20:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1,
+        "Wind-Speed": 84,
+        "Air-Pressure": 951
     },
     {
         "Time": "2023-04-26 21:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -4,
-        "Wind-Speed": 32,
-        "Air-Pressure": 867
+        "Wind-Direction": "SO",
+        "Temperature": -1.6,
+        "Wind-Speed": 62.4,
+        "Air-Pressure": 967
+    },
+    {
+        "Time": "2023-04-26 22:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -0.8,
+        "Wind-Speed": 59.2,
+        "Air-Pressure": 968
+    },
+    {
+        "Time": "2023-04-26 23:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 0.0,
+        "Wind-Speed": 52.8,
+        "Air-Pressure": 980
     },
     {
         "Time": "2023-04-27 00:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -4,
-        "Wind-Speed": 38,
-        "Air-Pressure": 853
+        "Wind-Direction": "SO",
+        "Temperature": 0.8,
+        "Wind-Speed": 36.0,
+        "Air-Pressure": 977
+    },
+    {
+        "Time": "2023-04-27 01:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0.8,
+        "Wind-Speed": 23.2,
+        "Air-Pressure": 975
+    },
+    {
+        "Time": "2023-04-27 02:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 1.6,
+        "Wind-Speed": 32.8,
+        "Air-Pressure": 989
     },
     {
         "Time": "2023-04-27 03:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -6,
-        "Wind-Speed": 52,
-        "Air-Pressure": 849
+        "Wind-Direction": "OSO",
+        "Temperature": 2.4,
+        "Wind-Speed": 42.4,
+        "Air-Pressure": 984
+    },
+    {
+        "Time": "2023-04-27 04:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0.8,
+        "Wind-Speed": 32.0,
+        "Air-Pressure": 983
+    },
+    {
+        "Time": "2023-04-27 05:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0.8,
+        "Wind-Speed": 39.2,
+        "Air-Pressure": 993
     },
     {
         "Time": "2023-04-27 06:18:28.044869",
-        "Wind-Direction": "NW",
-        "Temperature": -7,
-        "Wind-Speed": 44,
-        "Air-Pressure": 839
+        "Wind-Direction": "OSO",
+        "Temperature": 1.6,
+        "Wind-Speed": 28.0,
+        "Air-Pressure": 980
+    },
+    {
+        "Time": "2023-04-27 07:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 1,
+        "Wind-Speed": 23,
+        "Air-Pressure": 965
+    },
+    {
+        "Time": "2023-04-27 08:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 0,
+        "Wind-Speed": 4,
+        "Air-Pressure": 980
     },
     {
         "Time": "2023-04-27 09:18:28.044869",
-        "Wind-Direction": "NNW",
-        "Temperature": -7,
-        "Wind-Speed": 50,
-        "Air-Pressure": 849
+        "Wind-Direction": "SSO",
+        "Temperature": 2,
+        "Wind-Speed": 46,
+        "Air-Pressure": 970
+    },
+    {
+        "Time": "2023-04-27 10:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 4,
+        "Wind-Speed": 59,
+        "Air-Pressure": 951
+    },
+    {
+        "Time": "2023-04-27 11:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 5,
+        "Wind-Speed": 75,
+        "Air-Pressure": 943
     },
     {
         "Time": "2023-04-27 12:18:28.044869",
-        "Wind-Direction": "O",
-        "Temperature": -7,
-        "Wind-Speed": 41,
-        "Air-Pressure": 837
+        "Wind-Direction": "NNO",
+        "Temperature": 3,
+        "Wind-Speed": 91,
+        "Air-Pressure": 928
+    },
+    {
+        "Time": "2023-04-27 13:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 1,
+        "Wind-Speed": 105,
+        "Air-Pressure": 922
+    },
+    {
+        "Time": "2023-04-27 14:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 3,
+        "Wind-Speed": 120,
+        "Air-Pressure": 913
     },
     {
         "Time": "2023-04-27 15:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 4,
+        "Wind-Speed": 123,
+        "Air-Pressure": 910
+    },
+    {
+        "Time": "2023-04-27 16:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 4,
+        "Wind-Speed": 137,
+        "Air-Pressure": 899
+    },
+    {
+        "Time": "2023-04-27 17:18:28.044869",
         "Wind-Direction": "S",
-        "Temperature": -7,
-        "Wind-Speed": 31,
-        "Air-Pressure": 831
+        "Temperature": 2,
+        "Wind-Speed": 153,
+        "Air-Pressure": 891
     },
     {
         "Time": "2023-04-27 18:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 1,
+        "Wind-Speed": 167,
+        "Air-Pressure": 881
+    },
+    {
+        "Time": "2023-04-27 19:18:28.044869",
         "Wind-Direction": "SSW",
-        "Temperature": -6,
-        "Wind-Speed": 43,
-        "Air-Pressure": 832
+        "Temperature": 2,
+        "Wind-Speed": 181,
+        "Air-Pressure": 893
+    },
+    {
+        "Time": "2023-04-27 20:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0,
+        "Wind-Speed": 198,
+        "Air-Pressure": 884
     },
     {
         "Time": "2023-04-27 21:18:28.044869",
         "Wind-Direction": "SSW",
-        "Temperature": -4,
-        "Wind-Speed": 38,
-        "Air-Pressure": 846
+        "Temperature": 0.0,
+        "Wind-Speed": 168.0,
+        "Air-Pressure": 869
+    },
+    {
+        "Time": "2023-04-27 22:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -0.8,
+        "Wind-Speed": 127.2,
+        "Air-Pressure": 872
+    },
+    {
+        "Time": "2023-04-27 23:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 0.0,
+        "Wind-Speed": 96.8,
+        "Air-Pressure": 861
     },
     {
         "Time": "2023-04-28 00:18:28.044869",
-        "Wind-Direction": "SW",
-        "Temperature": -6,
-        "Wind-Speed": 25,
-        "Air-Pressure": 840
+        "Wind-Direction": "N",
+        "Temperature": -0.8,
+        "Wind-Speed": 71.2,
+        "Air-Pressure": 857
+    },
+    {
+        "Time": "2023-04-28 01:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -0.8,
+        "Wind-Speed": 70.4,
+        "Air-Pressure": 838
+    },
+    {
+        "Time": "2023-04-28 02:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 0.8,
+        "Wind-Speed": 70.4,
+        "Air-Pressure": 858
     },
     {
         "Time": "2023-04-28 03:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 1.6,
+        "Wind-Speed": 56.8,
+        "Air-Pressure": 844
+    },
+    {
+        "Time": "2023-04-28 04:18:28.044869",
         "Wind-Direction": "WSW",
-        "Temperature": -5,
-        "Wind-Speed": 33,
-        "Air-Pressure": 852
+        "Temperature": 0.0,
+        "Wind-Speed": 42.4,
+        "Air-Pressure": 858
+    },
+    {
+        "Time": "2023-04-28 05:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -0.8,
+        "Wind-Speed": 38.4,
+        "Air-Pressure": 850
     },
     {
         "Time": "2023-04-28 06:18:28.044869",
-        "Wind-Direction": "WSW",
-        "Temperature": -5,
-        "Wind-Speed": 22,
-        "Air-Pressure": 845
+        "Wind-Direction": "NNW",
+        "Temperature": -1.6,
+        "Wind-Speed": 30.4,
+        "Air-Pressure": 851
+    },
+    {
+        "Time": "2023-04-28 07:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": 0,
+        "Wind-Speed": 44,
+        "Air-Pressure": 862
+    },
+    {
+        "Time": "2023-04-28 08:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -2,
+        "Wind-Speed": 51,
+        "Air-Pressure": 843
     },
     {
         "Time": "2023-04-28 09:18:28.044869",
-        "Wind-Direction": "W",
-        "Temperature": -7,
-        "Wind-Speed": 9,
-        "Air-Pressure": 828
+        "Wind-Direction": "NNW",
+        "Temperature": -2,
+        "Wind-Speed": 41,
+        "Air-Pressure": 830
+    },
+    {
+        "Time": "2023-04-28 10:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -2,
+        "Wind-Speed": 50,
+        "Air-Pressure": 814
+    },
+    {
+        "Time": "2023-04-28 11:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -1,
+        "Wind-Speed": 46,
+        "Air-Pressure": 797
     },
     {
         "Time": "2023-04-28 12:18:28.044869",
-        "Wind-Direction": "NNW",
-        "Temperature": -8,
-        "Wind-Speed": 14,
-        "Air-Pressure": 813
+        "Wind-Direction": "O",
+        "Temperature": 0,
+        "Wind-Speed": 60,
+        "Air-Pressure": 789
+    },
+    {
+        "Time": "2023-04-28 13:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -2,
+        "Wind-Speed": 79,
+        "Air-Pressure": 788
+    },
+    {
+        "Time": "2023-04-28 14:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -2,
+        "Wind-Speed": 96,
+        "Air-Pressure": 772
     },
     {
         "Time": "2023-04-28 15:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -7,
-        "Wind-Speed": 32,
-        "Air-Pressure": 810
+        "Wind-Direction": "SO",
+        "Temperature": -2,
+        "Wind-Speed": 107,
+        "Air-Pressure": 784
+    },
+    {
+        "Time": "2023-04-28 16:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -3,
+        "Wind-Speed": 122,
+        "Air-Pressure": 789
+    },
+    {
+        "Time": "2023-04-28 17:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -2,
+        "Wind-Speed": 133,
+        "Air-Pressure": 773
     },
     {
         "Time": "2023-04-28 18:18:28.044869",
-        "Wind-Direction": "W",
-        "Temperature": -6,
-        "Wind-Speed": 37,
-        "Air-Pressure": 819
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 137,
+        "Air-Pressure": 762
+    },
+    {
+        "Time": "2023-04-28 19:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -1,
+        "Wind-Speed": 133,
+        "Air-Pressure": 744
+    },
+    {
+        "Time": "2023-04-28 20:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -1,
+        "Wind-Speed": 116,
+        "Air-Pressure": 755
     },
     {
         "Time": "2023-04-28 21:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -1.6,
+        "Wind-Speed": 93.6,
+        "Air-Pressure": 772
+    },
+    {
+        "Time": "2023-04-28 22:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -0.8,
+        "Wind-Speed": 71.2,
+        "Air-Pressure": 778
+    },
+    {
+        "Time": "2023-04-28 23:18:28.044869",
         "Wind-Direction": "WNW",
-        "Temperature": -7,
-        "Wind-Speed": 27,
-        "Air-Pressure": 811
+        "Temperature": 0.0,
+        "Wind-Speed": 66.4,
+        "Air-Pressure": 797
     },
     {
         "Time": "2023-04-29 00:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 1.6,
+        "Wind-Speed": 63.2,
+        "Air-Pressure": 804
+    },
+    {
+        "Time": "2023-04-29 01:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 0.8,
+        "Wind-Speed": 43.2,
+        "Air-Pressure": 796
+    },
+    {
+        "Time": "2023-04-29 02:18:28.044869",
         "Wind-Direction": "WNW",
-        "Temperature": -5,
-        "Wind-Speed": 16,
-        "Air-Pressure": 831
+        "Temperature": 0.0,
+        "Wind-Speed": 40.8,
+        "Air-Pressure": 803
     },
     {
         "Time": "2023-04-29 03:18:28.044869",
         "Wind-Direction": "WNW",
-        "Temperature": -5,
-        "Wind-Speed": 54,
-        "Air-Pressure": 840
+        "Temperature": 0.8,
+        "Wind-Speed": 37.6,
+        "Air-Pressure": 793
     },
     {
-        "Time": "2023-04-29 06:18:28.044869",
+        "Time": "2023-04-29 04:18:28.044869",
         "Wind-Direction": "WNW",
-        "Temperature": -5,
-        "Wind-Speed": 55,
-        "Air-Pressure": 825
-    },
-    {
-        "Time": "2023-04-29 09:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -3,
-        "Wind-Speed": 73,
-        "Air-Pressure": 813
-    },
-    {
-        "Time": "2023-04-29 12:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -3,
-        "Wind-Speed": 90,
-        "Air-Pressure": 828
-    },
-    {
-        "Time": "2023-04-29 15:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -4,
-        "Wind-Speed": 85,
-        "Air-Pressure": 823
-    },
-    {
-        "Time": "2023-04-29 18:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -3,
-        "Wind-Speed": 98,
-        "Air-Pressure": 810
-    },
-    {
-        "Time": "2023-04-29 21:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -4,
-        "Wind-Speed": 112,
+        "Temperature": -0.8,
+        "Wind-Speed": 44.8,
         "Air-Pressure": 809
     },
     {
-        "Time": "2023-04-30 00:18:28.044869",
-        "Wind-Direction": "NW",
-        "Temperature": -4,
-        "Wind-Speed": 127,
-        "Air-Pressure": 812
+        "Time": "2023-04-29 05:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.8,
+        "Wind-Speed": 36.8,
+        "Air-Pressure": 813
     },
     {
-        "Time": "2023-04-30 03:18:28.044869",
+        "Time": "2023-04-29 06:18:28.044869",
         "Wind-Direction": "NW",
-        "Temperature": -3,
-        "Wind-Speed": 116,
+        "Temperature": 0.8,
+        "Wind-Speed": 18.4,
         "Air-Pressure": 799
     },
     {
-        "Time": "2023-04-30 06:18:28.044869",
+        "Time": "2023-04-29 07:18:28.044869",
         "Wind-Direction": "NW",
-        "Temperature": -5,
-        "Wind-Speed": 134,
-        "Air-Pressure": 790
+        "Temperature": -1,
+        "Wind-Speed": 62,
+        "Air-Pressure": 794
     },
     {
-        "Time": "2023-04-30 09:18:28.044869",
-        "Wind-Direction": "NW",
-        "Temperature": -5,
-        "Wind-Speed": 130,
-        "Air-Pressure": 771
+        "Time": "2023-04-29 08:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -2,
+        "Wind-Speed": 81,
+        "Air-Pressure": 780
     },
     {
-        "Time": "2023-04-30 12:18:28.044869",
-        "Wind-Direction": "NW",
-        "Temperature": -5,
-        "Wind-Speed": 112,
+        "Time": "2023-04-29 09:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -2,
+        "Wind-Speed": 83,
+        "Air-Pressure": 775
+    },
+    {
+        "Time": "2023-04-29 10:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -1,
+        "Wind-Speed": 76,
+        "Air-Pressure": 760
+    },
+    {
+        "Time": "2023-04-29 11:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 0,
+        "Wind-Speed": 92,
         "Air-Pressure": 777
     },
     {
+        "Time": "2023-04-29 12:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0,
+        "Wind-Speed": 100,
+        "Air-Pressure": 761
+    },
+    {
+        "Time": "2023-04-29 13:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 118,
+        "Air-Pressure": 779
+    },
+    {
+        "Time": "2023-04-29 14:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3,
+        "Wind-Speed": 138,
+        "Air-Pressure": 766
+    },
+    {
+        "Time": "2023-04-29 15:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -4,
+        "Wind-Speed": 139,
+        "Air-Pressure": 769
+    },
+    {
+        "Time": "2023-04-29 16:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -3,
+        "Wind-Speed": 142,
+        "Air-Pressure": 775
+    },
+    {
+        "Time": "2023-04-29 17:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -2,
+        "Wind-Speed": 159,
+        "Air-Pressure": 775
+    },
+    {
+        "Time": "2023-04-29 18:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -2,
+        "Wind-Speed": 139,
+        "Air-Pressure": 764
+    },
+    {
+        "Time": "2023-04-29 19:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -1,
+        "Wind-Speed": 153,
+        "Air-Pressure": 748
+    },
+    {
+        "Time": "2023-04-29 20:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -2,
+        "Wind-Speed": 146,
+        "Air-Pressure": 730
+    },
+    {
+        "Time": "2023-04-29 21:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1.6,
+        "Wind-Speed": 102.4,
+        "Air-Pressure": 737
+    },
+    {
+        "Time": "2023-04-29 22:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0.0,
+        "Wind-Speed": 80.8,
+        "Air-Pressure": 724
+    },
+    {
+        "Time": "2023-04-29 23:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -1.6,
+        "Wind-Speed": 55.2,
+        "Air-Pressure": 741
+    },
+    {
+        "Time": "2023-04-30 00:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2.4,
+        "Wind-Speed": 32.8,
+        "Air-Pressure": 747
+    },
+    {
+        "Time": "2023-04-30 01:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -0.8,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 733
+    },
+    {
+        "Time": "2023-04-30 02:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0.0,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 730
+    },
+    {
+        "Time": "2023-04-30 03:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0.8,
+        "Wind-Speed": 47.2,
+        "Air-Pressure": 712
+    },
+    {
+        "Time": "2023-04-30 04:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 2.4,
+        "Wind-Speed": 47.2,
+        "Air-Pressure": 709
+    },
+    {
+        "Time": "2023-04-30 05:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 2.4,
+        "Wind-Speed": 24.8,
+        "Air-Pressure": 700
+    },
+    {
+        "Time": "2023-04-30 06:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 3.2,
+        "Wind-Speed": 32.0,
+        "Air-Pressure": 684
+    },
+    {
+        "Time": "2023-04-30 07:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 3,
+        "Wind-Speed": 21,
+        "Air-Pressure": 703
+    },
+    {
+        "Time": "2023-04-30 08:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 2,
+        "Wind-Speed": 34,
+        "Air-Pressure": 687
+    },
+    {
+        "Time": "2023-04-30 09:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 2,
+        "Wind-Speed": 27,
+        "Air-Pressure": 707
+    },
+    {
+        "Time": "2023-04-30 10:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 1,
+        "Wind-Speed": 38,
+        "Air-Pressure": 715
+    },
+    {
+        "Time": "2023-04-30 11:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -1,
+        "Wind-Speed": 32,
+        "Air-Pressure": 717
+    },
+    {
+        "Time": "2023-04-30 12:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 1,
+        "Wind-Speed": 28,
+        "Air-Pressure": 715
+    },
+    {
+        "Time": "2023-04-30 13:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 0,
+        "Wind-Speed": 28,
+        "Air-Pressure": 727
+    },
+    {
+        "Time": "2023-04-30 14:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 0,
+        "Wind-Speed": 31,
+        "Air-Pressure": 739
+    },
+    {
         "Time": "2023-04-30 15:18:28.044869",
-        "Wind-Direction": "NNW",
-        "Temperature": -5,
-        "Wind-Speed": 99,
-        "Air-Pressure": 787
+        "Wind-Direction": "SW",
+        "Temperature": 1,
+        "Wind-Speed": 40,
+        "Air-Pressure": 755
+    },
+    {
+        "Time": "2023-04-30 16:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 1,
+        "Wind-Speed": 53,
+        "Air-Pressure": 762
+    },
+    {
+        "Time": "2023-04-30 17:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 1,
+        "Wind-Speed": 46,
+        "Air-Pressure": 766
     },
     {
         "Time": "2023-04-30 18:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -3,
-        "Wind-Speed": 104,
-        "Air-Pressure": 768
+        "Wind-Direction": "N",
+        "Temperature": 0,
+        "Wind-Speed": 55,
+        "Air-Pressure": 765
+    },
+    {
+        "Time": "2023-04-30 19:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 0,
+        "Wind-Speed": 63,
+        "Air-Pressure": 777
+    },
+    {
+        "Time": "2023-04-30 20:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1,
+        "Wind-Speed": 67,
+        "Air-Pressure": 794
     },
     {
         "Time": "2023-04-30 21:18:28.044869",
-        "Wind-Direction": "NW",
-        "Temperature": -1,
-        "Wind-Speed": 115,
-        "Air-Pressure": 749
+        "Wind-Direction": "NNO",
+        "Temperature": 0.0,
+        "Wind-Speed": 64.8,
+        "Air-Pressure": 809
     },
     {
-        "Time": "2023-05-01 00:18:28.044869",
-        "Wind-Direction": "NW",
-        "Temperature": -1,
-        "Wind-Speed": 117,
-        "Air-Pressure": 768
-    },
-    {
-        "Time": "2023-05-01 03:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": 0,
-        "Wind-Speed": 112,
-        "Air-Pressure": 759
-    },
-    {
-        "Time": "2023-05-01 06:18:28.044869",
-        "Wind-Direction": "WNW",
-        "Temperature": -2,
-        "Wind-Speed": 117,
-        "Air-Pressure": 772
-    },
-    {
-        "Time": "2023-05-01 09:18:28.044869",
-        "Wind-Direction": "W",
-        "Temperature": 0,
-        "Wind-Speed": 99,
-        "Air-Pressure": 790
-    },
-    {
-        "Time": "2023-05-01 12:18:28.044869",
-        "Wind-Direction": "S",
-        "Temperature": 1,
-        "Wind-Speed": 80,
-        "Air-Pressure": 789
-    },
-    {
-        "Time": "2023-05-01 15:18:28.044869",
-        "Wind-Direction": "O",
-        "Temperature": 2,
-        "Wind-Speed": 98,
+        "Time": "2023-04-30 22:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0.0,
+        "Wind-Speed": 51.2,
         "Air-Pressure": 803
     },
     {
-        "Time": "2023-05-01 18:18:28.044869",
-        "Wind-Direction": "SSO",
-        "Temperature": 2,
-        "Wind-Speed": 89,
-        "Air-Pressure": 814
+        "Time": "2023-04-30 23:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0.8,
+        "Wind-Speed": 24.8,
+        "Air-Pressure": 807
     },
     {
-        "Time": "2023-05-01 21:18:28.044869",
-        "Wind-Direction": "OSO",
-        "Temperature": 1,
-        "Wind-Speed": 107,
+        "Time": "2023-05-01 00:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 1.6,
+        "Wind-Speed": 35.2,
+        "Air-Pressure": 807
+    },
+    {
+        "Time": "2023-05-01 01:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 1.6,
+        "Wind-Speed": 40.8,
         "Air-Pressure": 826
     },
     {
-        "Time": "2023-05-02 00:18:28.044869",
-        "Wind-Direction": "O",
-        "Temperature": 1,
-        "Wind-Speed": 105,
-        "Air-Pressure": 844
+        "Time": "2023-05-01 02:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 2.4,
+        "Wind-Speed": 33.6,
+        "Air-Pressure": 810
     },
     {
-        "Time": "2023-05-02 03:18:28.044869",
-        "Wind-Direction": "OSO",
-        "Temperature": 1,
-        "Wind-Speed": 112,
-        "Air-Pressure": 852
+        "Time": "2023-05-01 03:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 1.6,
+        "Wind-Speed": 22.4,
+        "Air-Pressure": 814
     },
     {
-        "Time": "2023-05-02 06:18:28.044869",
-        "Wind-Direction": "SO",
-        "Temperature": -1,
-        "Wind-Speed": 117,
+        "Time": "2023-05-01 04:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 2.4,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 833
+    },
+    {
+        "Time": "2023-05-01 05:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 0.8,
+        "Wind-Speed": 23.2,
+        "Air-Pressure": 834
+    },
+    {
+        "Time": "2023-05-01 06:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -0.8,
+        "Wind-Speed": 4.8,
+        "Air-Pressure": 843
+    },
+    {
+        "Time": "2023-05-01 07:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 1,
+        "Wind-Speed": 42,
         "Air-Pressure": 855
     },
     {
-        "Time": "2023-05-02 09:18:28.044869",
+        "Time": "2023-05-01 08:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 1,
+        "Wind-Speed": 30,
+        "Air-Pressure": 856
+    },
+    {
+        "Time": "2023-05-01 09:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 0,
+        "Wind-Speed": 42,
+        "Air-Pressure": 871
+    },
+    {
+        "Time": "2023-05-01 10:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -2,
+        "Wind-Speed": 40,
+        "Air-Pressure": 885
+    },
+    {
+        "Time": "2023-05-01 11:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0,
+        "Wind-Speed": 45,
+        "Air-Pressure": 900
+    },
+    {
+        "Time": "2023-05-01 12:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 1,
+        "Wind-Speed": 59,
+        "Air-Pressure": 881
+    },
+    {
+        "Time": "2023-05-01 13:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 2,
+        "Wind-Speed": 68,
+        "Air-Pressure": 875
+    },
+    {
+        "Time": "2023-05-01 14:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 2,
+        "Wind-Speed": 48,
+        "Air-Pressure": 895
+    },
+    {
+        "Time": "2023-05-01 15:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 3,
+        "Wind-Speed": 66,
+        "Air-Pressure": 875
+    },
+    {
+        "Time": "2023-05-01 16:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 1,
+        "Wind-Speed": 54,
+        "Air-Pressure": 891
+    },
+    {
+        "Time": "2023-05-01 17:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 3,
+        "Wind-Speed": 35,
+        "Air-Pressure": 881
+    },
+    {
+        "Time": "2023-05-01 18:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 3,
+        "Wind-Speed": 17,
+        "Air-Pressure": 868
+    },
+    {
+        "Time": "2023-05-01 19:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 2,
+        "Wind-Speed": 60,
+        "Air-Pressure": 851
+    },
+    {
+        "Time": "2023-05-01 20:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 0,
+        "Wind-Speed": 40,
+        "Air-Pressure": 852
+    },
+    {
+        "Time": "2023-05-01 21:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -0.8,
+        "Wind-Speed": 23.2,
+        "Air-Pressure": 837
+    },
+    {
+        "Time": "2023-05-01 22:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -0.8,
+        "Wind-Speed": 7.2,
+        "Air-Pressure": 853
+    },
+    {
+        "Time": "2023-05-01 23:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -0.8,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 841
+    },
+    {
+        "Time": "2023-05-02 00:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0.0,
+        "Wind-Speed": 47.2,
+        "Air-Pressure": 838
+    },
+    {
+        "Time": "2023-05-02 01:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -0.8,
+        "Wind-Speed": 47.2,
+        "Air-Pressure": 819
+    },
+    {
+        "Time": "2023-05-02 02:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1.6,
+        "Wind-Speed": 39.2,
+        "Air-Pressure": 826
+    },
+    {
+        "Time": "2023-05-02 03:18:28.044869",
         "Wind-Direction": "SO",
+        "Temperature": -2.4,
+        "Wind-Speed": 33.6,
+        "Air-Pressure": 844
+    },
+    {
+        "Time": "2023-05-02 04:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1.6,
+        "Wind-Speed": 25.6,
+        "Air-Pressure": 829
+    },
+    {
+        "Time": "2023-05-02 05:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -2.4,
+        "Wind-Speed": 12.8,
+        "Air-Pressure": 836
+    },
+    {
+        "Time": "2023-05-02 06:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -2.4,
+        "Wind-Speed": 22.4,
+        "Air-Pressure": 844
+    },
+    {
+        "Time": "2023-05-02 07:18:28.044869",
+        "Wind-Direction": "SSO",
         "Temperature": -1,
-        "Wind-Speed": 97,
-        "Air-Pressure": 859
+        "Wind-Speed": 19,
+        "Air-Pressure": 851
+    },
+    {
+        "Time": "2023-05-02 08:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0,
+        "Wind-Speed": 53,
+        "Air-Pressure": 870
+    },
+    {
+        "Time": "2023-05-02 09:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 2,
+        "Wind-Speed": 36,
+        "Air-Pressure": 886
+    },
+    {
+        "Time": "2023-05-02 10:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 1,
+        "Wind-Speed": 28,
+        "Air-Pressure": 890
+    },
+    {
+        "Time": "2023-05-02 11:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 2,
+        "Wind-Speed": 24,
+        "Air-Pressure": 880
     },
     {
         "Time": "2023-05-02 12:18:28.044869",
-        "Wind-Direction": "SO",
+        "Wind-Direction": "SSW",
+        "Temperature": 2,
+        "Wind-Speed": 5,
+        "Air-Pressure": 880
+    },
+    {
+        "Time": "2023-05-02 13:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 1,
+        "Wind-Speed": 25,
+        "Air-Pressure": 861
+    },
+    {
+        "Time": "2023-05-02 14:18:28.044869",
+        "Wind-Direction": "SSW",
         "Temperature": 0,
-        "Wind-Speed": 84,
-        "Air-Pressure": 866
+        "Wind-Speed": 31,
+        "Air-Pressure": 870
     },
     {
         "Time": "2023-05-02 15:18:28.044869",
-        "Wind-Direction": "OSO",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 13,
+        "Air-Pressure": 876
+    },
+    {
+        "Time": "2023-05-02 16:18:28.044869",
+        "Wind-Direction": "SSW",
         "Temperature": -2,
-        "Wind-Speed": 82,
-        "Air-Pressure": 874
+        "Wind-Speed": 45,
+        "Air-Pressure": 875
+    },
+    {
+        "Time": "2023-05-02 17:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 46,
+        "Air-Pressure": 860
     },
     {
         "Time": "2023-05-02 18:18:28.044869",
-        "Wind-Direction": "O",
-        "Temperature": 0,
-        "Wind-Speed": 65,
-        "Air-Pressure": 874
+        "Wind-Direction": "SSW",
+        "Temperature": -4,
+        "Wind-Speed": 59,
+        "Air-Pressure": 870
+    },
+    {
+        "Time": "2023-05-02 19:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -4,
+        "Wind-Speed": 71,
+        "Air-Pressure": 863
+    },
+    {
+        "Time": "2023-05-02 20:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -5,
+        "Wind-Speed": 86,
+        "Air-Pressure": 854
     },
     {
         "Time": "2023-05-02 21:18:28.044869",
-        "Wind-Direction": "OSO",
-        "Temperature": 1,
-        "Wind-Speed": 62,
-        "Air-Pressure": 872
+        "Wind-Direction": "SSW",
+        "Temperature": -3.2,
+        "Wind-Speed": 69.6,
+        "Air-Pressure": 869
     },
     {
-        "Time": "2023-05-03 00:18:28.044869",
-        "Wind-Direction": "OSO",
-        "Temperature": 2,
-        "Wind-Speed": 66,
-        "Air-Pressure": 884
+        "Time": "2023-05-02 22:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -4.0,
+        "Wind-Speed": 43.2,
+        "Air-Pressure": 865
     },
     {
-        "Time": "2023-05-03 03:18:28.044869",
-        "Wind-Direction": "O",
-        "Temperature": 0,
-        "Wind-Speed": 77,
+        "Time": "2023-05-02 23:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -4.0,
+        "Wind-Speed": 36.8,
         "Air-Pressure": 879
     },
     {
+        "Time": "2023-05-03 00:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -4.8,
+        "Wind-Speed": 14.4,
+        "Air-Pressure": 873
+    },
+    {
+        "Time": "2023-05-03 01:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -2.4,
+        "Wind-Speed": 30.4,
+        "Air-Pressure": 866
+    },
+    {
+        "Time": "2023-05-03 02:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -2.4,
+        "Wind-Speed": 39.2,
+        "Air-Pressure": 858
+    },
+    {
+        "Time": "2023-05-03 03:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3.2,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 863
+    },
+    {
+        "Time": "2023-05-03 04:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -4.0,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 882
+    },
+    {
+        "Time": "2023-05-03 05:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -3.2,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 892
+    },
+    {
         "Time": "2023-05-03 06:18:28.044869",
-        "Wind-Direction": "SSO",
-        "Temperature": 0,
-        "Wind-Speed": 96,
-        "Air-Pressure": 889
+        "Wind-Direction": "S",
+        "Temperature": -3.2,
+        "Wind-Speed": 32.8,
+        "Air-Pressure": 905
+    },
+    {
+        "Time": "2023-05-03 07:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -2,
+        "Wind-Speed": 41,
+        "Air-Pressure": 914
+    },
+    {
+        "Time": "2023-05-03 08:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -3,
+        "Wind-Speed": 53,
+        "Air-Pressure": 914
     },
     {
         "Time": "2023-05-03 09:18:28.044869",
-        "Wind-Direction": "S",
-        "Temperature": 2,
-        "Wind-Speed": 112,
-        "Air-Pressure": 893
+        "Wind-Direction": "OSO",
+        "Temperature": -5,
+        "Wind-Speed": 36,
+        "Air-Pressure": 908
+    },
+    {
+        "Time": "2023-05-03 10:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -4,
+        "Wind-Speed": 40,
+        "Air-Pressure": 915
+    },
+    {
+        "Time": "2023-05-03 11:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -2,
+        "Wind-Speed": 24,
+        "Air-Pressure": 926
     },
     {
         "Time": "2023-05-03 12:18:28.044869",
-        "Wind-Direction": "S",
-        "Temperature": 2,
-        "Wind-Speed": 128,
-        "Air-Pressure": 888
+        "Wind-Direction": "SSO",
+        "Temperature": -1,
+        "Wind-Speed": 40,
+        "Air-Pressure": 917
+    },
+    {
+        "Time": "2023-05-03 13:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -3,
+        "Wind-Speed": 36,
+        "Air-Pressure": 918
+    },
+    {
+        "Time": "2023-05-03 14:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -3,
+        "Wind-Speed": 17,
+        "Air-Pressure": 909
     },
     {
         "Time": "2023-05-03 15:18:28.044869",
-        "Wind-Direction": "WSW",
-        "Temperature": 2,
-        "Wind-Speed": 126,
-        "Air-Pressure": 899
+        "Wind-Direction": "SSO",
+        "Temperature": -3,
+        "Wind-Speed": 37,
+        "Air-Pressure": 895
+    },
+    {
+        "Time": "2023-05-03 16:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -2,
+        "Wind-Speed": 47,
+        "Air-Pressure": 885
+    },
+    {
+        "Time": "2023-05-03 17:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -3,
+        "Wind-Speed": 32,
+        "Air-Pressure": 880
     },
     {
         "Time": "2023-05-03 18:18:28.044869",
-        "Wind-Direction": "O",
-        "Temperature": 0,
-        "Wind-Speed": 109,
+        "Wind-Direction": "N",
+        "Temperature": -2,
+        "Wind-Speed": 38,
+        "Air-Pressure": 863
+    },
+    {
+        "Time": "2023-05-03 19:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1,
+        "Wind-Speed": 34,
+        "Air-Pressure": 877
+    },
+    {
+        "Time": "2023-05-03 20:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -2,
+        "Wind-Speed": 49,
         "Air-Pressure": 896
     },
     {
         "Time": "2023-05-03 21:18:28.044869",
-        "Wind-Direction": "S",
-        "Temperature": -2,
-        "Wind-Speed": 127,
-        "Air-Pressure": 889
+        "Wind-Direction": "NNO",
+        "Temperature": -2.4,
+        "Wind-Speed": 35.2,
+        "Air-Pressure": 880
+    },
+    {
+        "Time": "2023-05-03 22:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -3.2,
+        "Wind-Speed": 16.8,
+        "Air-Pressure": 886
+    },
+    {
+        "Time": "2023-05-03 23:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -2.4,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 883
     },
     {
         "Time": "2023-05-04 00:18:28.044869",
-        "Wind-Direction": "N",
-        "Temperature": -2,
-        "Wind-Speed": 116,
-        "Air-Pressure": 887
+        "Wind-Direction": "NNO",
+        "Temperature": -1.6,
+        "Wind-Speed": 17.6,
+        "Air-Pressure": 875
+    },
+    {
+        "Time": "2023-05-04 01:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -2.4,
+        "Wind-Speed": 28.0,
+        "Air-Pressure": 884
+    },
+    {
+        "Time": "2023-05-04 02:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -2.4,
+        "Wind-Speed": 36.0,
+        "Air-Pressure": 879
     },
     {
         "Time": "2023-05-04 03:18:28.044869",
-        "Wind-Direction": "ONO",
-        "Temperature": -3,
-        "Wind-Speed": 117,
-        "Air-Pressure": 887
+        "Wind-Direction": "NNO",
+        "Temperature": -3.2,
+        "Wind-Speed": 44.0,
+        "Air-Pressure": 863
     },
     {
-        "Time": "2023-05-04 06:18:28.044869",
-        "Wind-Direction": "O",
-        "Temperature": -1,
-        "Wind-Speed": 122,
+        "Time": "2023-05-04 04:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -3.2,
+        "Wind-Speed": 49.6,
         "Air-Pressure": 868
     },
     {
+        "Time": "2023-05-04 05:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1.6,
+        "Wind-Speed": 26.4,
+        "Air-Pressure": 851
+    },
+    {
+        "Time": "2023-05-04 06:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 0.0,
+        "Wind-Speed": 24.8,
+        "Air-Pressure": 854
+    },
+    {
+        "Time": "2023-05-04 07:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1,
+        "Wind-Speed": 33,
+        "Air-Pressure": 845
+    },
+    {
+        "Time": "2023-05-04 08:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 1,
+        "Wind-Speed": 15,
+        "Air-Pressure": 858
+    },
+    {
         "Time": "2023-05-04 09:18:28.044869",
-        "Wind-Direction": "SSO",
-        "Temperature": 0,
-        "Wind-Speed": 111,
-        "Air-Pressure": 856
+        "Wind-Direction": "N",
+        "Temperature": 3,
+        "Wind-Speed": 36,
+        "Air-Pressure": 863
+    },
+    {
+        "Time": "2023-05-04 10:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 3,
+        "Wind-Speed": 50,
+        "Air-Pressure": 866
+    },
+    {
+        "Time": "2023-05-04 11:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 2,
+        "Wind-Speed": 69,
+        "Air-Pressure": 848
     },
     {
         "Time": "2023-05-04 12:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 1,
+        "Wind-Speed": 58,
+        "Air-Pressure": 829
+    },
+    {
+        "Time": "2023-05-04 13:18:28.044869",
         "Wind-Direction": "OSO",
-        "Temperature": 2,
-        "Wind-Speed": 113,
-        "Air-Pressure": 837
+        "Temperature": 1,
+        "Wind-Speed": 47,
+        "Air-Pressure": 825
+    },
+    {
+        "Time": "2023-05-04 14:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1,
+        "Wind-Speed": 64,
+        "Air-Pressure": 844
     },
     {
         "Time": "2023-05-04 15:18:28.044869",
         "Wind-Direction": "OSO",
-        "Temperature": 3,
-        "Wind-Speed": 120,
+        "Temperature": 1,
+        "Wind-Speed": 78,
+        "Air-Pressure": 846
+    },
+    {
+        "Time": "2023-05-04 16:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 1,
+        "Wind-Speed": 68,
+        "Air-Pressure": 828
+    },
+    {
+        "Time": "2023-05-04 17:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0,
+        "Wind-Speed": 62,
         "Air-Pressure": 825
     },
     {
         "Time": "2023-05-04 18:18:28.044869",
-        "Wind-Direction": "OSO",
-        "Temperature": 4,
-        "Wind-Speed": 137,
-        "Air-Pressure": 815
+        "Wind-Direction": "O",
+        "Temperature": 1,
+        "Wind-Speed": 81,
+        "Air-Pressure": 832
+    },
+    {
+        "Time": "2023-05-04 19:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 1,
+        "Wind-Speed": 75,
+        "Air-Pressure": 814
+    },
+    {
+        "Time": "2023-05-04 20:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 0,
+        "Wind-Speed": 58,
+        "Air-Pressure": 830
     },
     {
         "Time": "2023-05-04 21:18:28.044869",
-        "Wind-Direction": "SO",
-        "Temperature": 3,
-        "Wind-Speed": 137,
-        "Air-Pressure": 824
+        "Wind-Direction": "W",
+        "Temperature": 0.8,
+        "Wind-Speed": 62.4,
+        "Air-Pressure": 813
     },
     {
-        "Time": "2023-05-05 00:18:28.044869",
-        "Wind-Direction": "SO",
-        "Temperature": 3,
-        "Wind-Speed": 148,
+        "Time": "2023-05-04 22:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.8,
+        "Wind-Speed": 65.6,
+        "Air-Pressure": 796
+    },
+    {
+        "Time": "2023-05-04 23:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.8,
+        "Wind-Speed": 41.6,
         "Air-Pressure": 815
     },
     {
+        "Time": "2023-05-05 00:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 1.6,
+        "Wind-Speed": 32.0,
+        "Air-Pressure": 827
+    },
+    {
+        "Time": "2023-05-05 01:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.0,
+        "Wind-Speed": 23.2,
+        "Air-Pressure": 841
+    },
+    {
+        "Time": "2023-05-05 02:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.0,
+        "Wind-Speed": 15.2,
+        "Air-Pressure": 843
+    },
+    {
         "Time": "2023-05-05 03:18:28.044869",
-        "Wind-Direction": "OSO",
-        "Temperature": 5,
-        "Wind-Speed": 141,
-        "Air-Pressure": 834
+        "Wind-Direction": "NW",
+        "Temperature": -1.6,
+        "Wind-Speed": 28.0,
+        "Air-Pressure": 846
+    },
+    {
+        "Time": "2023-05-05 04:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -2.4,
+        "Wind-Speed": 6.4,
+        "Air-Pressure": 865
+    },
+    {
+        "Time": "2023-05-05 05:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -1.6,
+        "Wind-Speed": 25.6,
+        "Air-Pressure": 879
     },
     {
         "Time": "2023-05-05 06:18:28.044869",
-        "Wind-Direction": "OSO",
-        "Temperature": 7,
-        "Wind-Speed": 141,
-        "Air-Pressure": 834
+        "Wind-Direction": "WNW",
+        "Temperature": -1.6,
+        "Wind-Speed": 32.8,
+        "Air-Pressure": 895
+    },
+    {
+        "Time": "2023-05-05 07:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -1,
+        "Wind-Speed": 14,
+        "Air-Pressure": 891
+    },
+    {
+        "Time": "2023-05-05 08:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0,
+        "Wind-Speed": 47,
+        "Air-Pressure": 889
     },
     {
         "Time": "2023-05-05 09:18:28.044869",
-        "Wind-Direction": "O",
-        "Temperature": 7,
-        "Wind-Speed": 142,
-        "Air-Pressure": 852
+        "Wind-Direction": "WNW",
+        "Temperature": -1,
+        "Wind-Speed": 66,
+        "Air-Pressure": 898
+    },
+    {
+        "Time": "2023-05-05 10:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -3,
+        "Wind-Speed": 65,
+        "Air-Pressure": 896
+    },
+    {
+        "Time": "2023-05-05 11:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -3,
+        "Wind-Speed": 52,
+        "Air-Pressure": 908
     },
     {
         "Time": "2023-05-05 12:18:28.044869",
         "Wind-Direction": "W",
-        "Temperature": 6,
-        "Wind-Speed": 144,
-        "Air-Pressure": 843
+        "Temperature": -5,
+        "Wind-Speed": 32,
+        "Air-Pressure": 923
+    },
+    {
+        "Time": "2023-05-05 13:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -4,
+        "Wind-Speed": 13,
+        "Air-Pressure": 904
+    },
+    {
+        "Time": "2023-05-05 14:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -4,
+        "Wind-Speed": 51,
+        "Air-Pressure": 923
     },
     {
         "Time": "2023-05-05 15:18:28.044869",
-        "Wind-Direction": "S",
-        "Temperature": 4,
-        "Wind-Speed": 148,
-        "Air-Pressure": 844
+        "Wind-Direction": "NW",
+        "Temperature": -4,
+        "Wind-Speed": 36,
+        "Air-Pressure": 904
+    },
+    {
+        "Time": "2023-05-05 16:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -5,
+        "Wind-Speed": 25,
+        "Air-Pressure": 893
+    },
+    {
+        "Time": "2023-05-05 17:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -6,
+        "Wind-Speed": 12,
+        "Air-Pressure": 882
     },
     {
         "Time": "2023-05-05 18:18:28.044869",
-        "Wind-Direction": "S",
-        "Temperature": 6,
-        "Wind-Speed": 129,
-        "Air-Pressure": 838
+        "Wind-Direction": "WNW",
+        "Temperature": -7,
+        "Wind-Speed": 27,
+        "Air-Pressure": 885
+    },
+    {
+        "Time": "2023-05-05 19:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -7,
+        "Wind-Speed": 29,
+        "Air-Pressure": 887
+    },
+    {
+        "Time": "2023-05-05 20:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -5,
+        "Wind-Speed": 47,
+        "Air-Pressure": 869
     },
     {
         "Time": "2023-05-05 21:18:28.044869",
-        "Wind-Direction": "SSW",
-        "Temperature": 6,
-        "Wind-Speed": 139,
-        "Air-Pressure": 827
+        "Wind-Direction": "WNW",
+        "Temperature": -5.6,
+        "Wind-Speed": 39.2,
+        "Air-Pressure": 880
+    },
+    {
+        "Time": "2023-05-05 22:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -5.6,
+        "Wind-Speed": 17.6,
+        "Air-Pressure": 881
+    },
+    {
+        "Time": "2023-05-05 23:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -3.2,
+        "Wind-Speed": 40.0,
+        "Air-Pressure": 877
     },
     {
         "Time": "2023-05-06 00:18:28.044869",
-        "Wind-Direction": "S",
-        "Temperature": 5,
-        "Wind-Speed": 132,
-        "Air-Pressure": 837
+        "Wind-Direction": "W",
+        "Temperature": -2.4,
+        "Wind-Speed": 40.0,
+        "Air-Pressure": 865
+    },
+    {
+        "Time": "2023-05-06 01:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -2.4,
+        "Wind-Speed": 45.6,
+        "Air-Pressure": 881
+    },
+    {
+        "Time": "2023-05-06 02:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -3.2,
+        "Wind-Speed": 52.0,
+        "Air-Pressure": 876
     },
     {
         "Time": "2023-05-06 03:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -4.0,
+        "Wind-Speed": 32.0,
+        "Air-Pressure": 860
+    },
+    {
+        "Time": "2023-05-06 04:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -2.4,
+        "Wind-Speed": 40.0,
+        "Air-Pressure": 874
+    },
+    {
+        "Time": "2023-05-06 05:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -1.6,
+        "Wind-Speed": 20.0,
+        "Air-Pressure": 857
+    },
+    {
+        "Time": "2023-05-06 06:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -0.8,
+        "Wind-Speed": 47.2,
+        "Air-Pressure": 851
+    },
+    {
+        "Time": "2023-05-06 07:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -1,
+        "Wind-Speed": 64,
+        "Air-Pressure": 850
+    },
+    {
+        "Time": "2023-05-06 08:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -3,
+        "Wind-Speed": 56,
+        "Air-Pressure": 856
+    },
+    {
+        "Time": "2023-05-06 09:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -3,
+        "Wind-Speed": 53,
+        "Air-Pressure": 850
+    },
+    {
+        "Time": "2023-05-06 10:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1,
+        "Wind-Speed": 56,
+        "Air-Pressure": 854
+    },
+    {
+        "Time": "2023-05-06 11:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -2,
+        "Wind-Speed": 43,
+        "Air-Pressure": 854
+    },
+    {
+        "Time": "2023-05-06 12:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -2,
+        "Wind-Speed": 49,
+        "Air-Pressure": 866
+    },
+    {
+        "Time": "2023-05-06 13:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0,
+        "Wind-Speed": 35,
+        "Air-Pressure": 868
+    },
+    {
+        "Time": "2023-05-06 14:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 1,
+        "Wind-Speed": 49,
+        "Air-Pressure": 852
+    },
+    {
+        "Time": "2023-05-06 15:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 3,
+        "Wind-Speed": 49,
+        "Air-Pressure": 837
+    },
+    {
+        "Time": "2023-05-06 16:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 4,
+        "Wind-Speed": 68,
+        "Air-Pressure": 826
+    },
+    {
+        "Time": "2023-05-06 17:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 3,
+        "Wind-Speed": 82,
+        "Air-Pressure": 844
+    },
+    {
+        "Time": "2023-05-06 18:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 4,
+        "Wind-Speed": 78,
+        "Air-Pressure": 860
+    },
+    {
+        "Time": "2023-05-06 19:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 4,
+        "Wind-Speed": 81,
+        "Air-Pressure": 846
+    },
+    {
+        "Time": "2023-05-06 20:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 2,
+        "Wind-Speed": 86,
+        "Air-Pressure": 863
+    },
+    {
+        "Time": "2023-05-06 21:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 0.8,
+        "Wind-Speed": 78.4,
+        "Air-Pressure": 859
+    },
+    {
+        "Time": "2023-05-06 22:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 1.6,
+        "Wind-Speed": 69.6,
+        "Air-Pressure": 873
+    },
+    {
+        "Time": "2023-05-06 23:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0.8,
+        "Wind-Speed": 50.4,
+        "Air-Pressure": 860
+    },
+    {
+        "Time": "2023-05-07 00:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 0.8,
+        "Wind-Speed": 24.8,
+        "Air-Pressure": 871
+    },
+    {
+        "Time": "2023-05-07 01:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 0.8,
+        "Wind-Speed": 12.0,
+        "Air-Pressure": 874
+    },
+    {
+        "Time": "2023-05-07 02:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -0.8,
+        "Wind-Speed": 23.2,
+        "Air-Pressure": 863
+    },
+    {
+        "Time": "2023-05-07 03:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -1.6,
+        "Wind-Speed": 4.0,
+        "Air-Pressure": 867
+    },
+    {
+        "Time": "2023-05-07 04:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -0.8,
+        "Wind-Speed": 29.6,
+        "Air-Pressure": 873
+    },
+    {
+        "Time": "2023-05-07 05:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.0,
+        "Wind-Speed": 15.2,
+        "Air-Pressure": 877
+    },
+    {
+        "Time": "2023-05-07 06:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -0.8,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 858
+    },
+    {
+        "Time": "2023-05-07 07:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -2,
+        "Wind-Speed": 49,
+        "Air-Pressure": 839
+    },
+    {
+        "Time": "2023-05-07 08:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -4,
+        "Wind-Speed": 33,
+        "Air-Pressure": 842
+    },
+    {
+        "Time": "2023-05-07 09:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -6,
+        "Wind-Speed": 31,
+        "Air-Pressure": 844
+    },
+    {
+        "Time": "2023-05-07 10:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -8,
+        "Wind-Speed": 12,
+        "Air-Pressure": 837
+    },
+    {
+        "Time": "2023-05-07 11:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -10,
+        "Wind-Speed": 36,
+        "Air-Pressure": 856
+    },
+    {
+        "Time": "2023-05-07 12:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -11,
+        "Wind-Speed": 38,
+        "Air-Pressure": 856
+    },
+    {
+        "Time": "2023-05-07 13:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -13,
+        "Wind-Speed": 52,
+        "Air-Pressure": 869
+    },
+    {
+        "Time": "2023-05-07 14:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -13,
+        "Wind-Speed": 61,
+        "Air-Pressure": 878
+    },
+    {
+        "Time": "2023-05-07 15:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -13,
+        "Wind-Speed": 52,
+        "Air-Pressure": 878
+    },
+    {
+        "Time": "2023-05-07 16:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -12,
+        "Wind-Speed": 36,
+        "Air-Pressure": 896
+    },
+    {
+        "Time": "2023-05-07 17:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -13,
+        "Wind-Speed": 21,
+        "Air-Pressure": 876
+    },
+    {
+        "Time": "2023-05-07 18:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -14,
+        "Wind-Speed": 36,
+        "Air-Pressure": 857
+    },
+    {
+        "Time": "2023-05-07 19:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -13,
+        "Wind-Speed": 36,
+        "Air-Pressure": 839
+    },
+    {
+        "Time": "2023-05-07 20:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -14,
+        "Wind-Speed": 23,
+        "Air-Pressure": 828
+    },
+    {
+        "Time": "2023-05-07 21:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -9.6,
+        "Wind-Speed": 3.2,
+        "Air-Pressure": 824
+    },
+    {
+        "Time": "2023-05-07 22:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -8.8,
+        "Wind-Speed": 25.6,
+        "Air-Pressure": 810
+    },
+    {
+        "Time": "2023-05-07 23:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -8.8,
+        "Wind-Speed": 15.2,
+        "Air-Pressure": 818
+    },
+    {
+        "Time": "2023-05-08 00:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -5.6,
+        "Wind-Speed": 18.4,
+        "Air-Pressure": 822
+    },
+    {
+        "Time": "2023-05-08 01:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -4.0,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 805
+    },
+    {
+        "Time": "2023-05-08 02:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -4.0,
+        "Wind-Speed": 2.4,
+        "Air-Pressure": 797
+    },
+    {
+        "Time": "2023-05-08 03:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1.6,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 784
+    },
+    {
+        "Time": "2023-05-08 04:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -0.8,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 767
+    },
+    {
+        "Time": "2023-05-08 05:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 0.0,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 779
+    },
+    {
+        "Time": "2023-05-08 06:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 1.6,
+        "Wind-Speed": 20.0,
+        "Air-Pressure": 795
+    },
+    {
+        "Time": "2023-05-08 07:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 3,
+        "Wind-Speed": 58,
+        "Air-Pressure": 804
+    },
+    {
+        "Time": "2023-05-08 08:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 1,
+        "Wind-Speed": 55,
+        "Air-Pressure": 794
+    },
+    {
+        "Time": "2023-05-08 09:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0,
+        "Wind-Speed": 46,
+        "Air-Pressure": 811
+    },
+    {
+        "Time": "2023-05-08 10:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 1,
+        "Wind-Speed": 60,
+        "Air-Pressure": 819
+    },
+    {
+        "Time": "2023-05-08 11:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 2,
+        "Wind-Speed": 63,
+        "Air-Pressure": 831
+    },
+    {
+        "Time": "2023-05-08 12:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 2,
+        "Wind-Speed": 80,
+        "Air-Pressure": 818
+    },
+    {
+        "Time": "2023-05-08 13:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 0,
+        "Wind-Speed": 79,
+        "Air-Pressure": 820
+    },
+    {
+        "Time": "2023-05-08 14:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -2,
+        "Wind-Speed": 71,
+        "Air-Pressure": 827
+    },
+    {
+        "Time": "2023-05-08 15:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3,
+        "Wind-Speed": 66,
+        "Air-Pressure": 838
+    },
+    {
+        "Time": "2023-05-08 16:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -2,
+        "Wind-Speed": 81,
+        "Air-Pressure": 831
+    },
+    {
+        "Time": "2023-05-08 17:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -2,
+        "Wind-Speed": 83,
+        "Air-Pressure": 837
+    },
+    {
+        "Time": "2023-05-08 18:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -3,
+        "Wind-Speed": 70,
+        "Air-Pressure": 824
+    },
+    {
+        "Time": "2023-05-08 19:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -4,
+        "Wind-Speed": 88,
+        "Air-Pressure": 837
+    },
+    {
+        "Time": "2023-05-08 20:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -6,
+        "Wind-Speed": 85,
+        "Air-Pressure": 850
+    },
+    {
+        "Time": "2023-05-08 21:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -4.0,
+        "Wind-Speed": 61.6,
+        "Air-Pressure": 852
+    },
+    {
+        "Time": "2023-05-08 22:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -4.0,
+        "Wind-Speed": 40.8,
+        "Air-Pressure": 843
+    },
+    {
+        "Time": "2023-05-08 23:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1.6,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 827
+    },
+    {
+        "Time": "2023-05-09 00:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -0.8,
+        "Wind-Speed": 12.8,
+        "Air-Pressure": 826
+    },
+    {
+        "Time": "2023-05-09 01:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -0.8,
+        "Wind-Speed": 33.6,
+        "Air-Pressure": 830
+    },
+    {
+        "Time": "2023-05-09 02:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1.6,
+        "Wind-Speed": 38.4,
+        "Air-Pressure": 814
+    },
+    {
+        "Time": "2023-05-09 03:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -0.8,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 833
+    },
+    {
+        "Time": "2023-05-09 04:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -0.8,
+        "Wind-Speed": 10.4,
+        "Air-Pressure": 818
+    },
+    {
+        "Time": "2023-05-09 05:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -1.6,
+        "Wind-Speed": 37.6,
+        "Air-Pressure": 830
+    },
+    {
+        "Time": "2023-05-09 06:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -1.6,
+        "Wind-Speed": 18.4,
+        "Air-Pressure": 819
+    },
+    {
+        "Time": "2023-05-09 07:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0,
+        "Wind-Speed": 24,
+        "Air-Pressure": 800
+    },
+    {
+        "Time": "2023-05-09 08:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -1,
+        "Wind-Speed": 6,
+        "Air-Pressure": 812
+    },
+    {
+        "Time": "2023-05-09 09:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 0,
+        "Wind-Speed": 19,
+        "Air-Pressure": 802
+    },
+    {
+        "Time": "2023-05-09 10:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 1,
+        "Wind-Speed": 47,
+        "Air-Pressure": 782
+    },
+    {
+        "Time": "2023-05-09 11:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 1,
+        "Wind-Speed": 51,
+        "Air-Pressure": 800
+    },
+    {
+        "Time": "2023-05-09 12:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 2,
+        "Wind-Speed": 62,
+        "Air-Pressure": 816
+    },
+    {
+        "Time": "2023-05-09 13:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 2,
+        "Wind-Speed": 57,
+        "Air-Pressure": 807
+    },
+    {
+        "Time": "2023-05-09 14:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 2,
+        "Wind-Speed": 50,
+        "Air-Pressure": 817
+    },
+    {
+        "Time": "2023-05-09 15:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 2,
+        "Wind-Speed": 68,
+        "Air-Pressure": 800
+    },
+    {
+        "Time": "2023-05-09 16:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 2,
+        "Wind-Speed": 76,
+        "Air-Pressure": 803
+    },
+    {
+        "Time": "2023-05-09 17:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 1,
+        "Wind-Speed": 75,
+        "Air-Pressure": 797
+    },
+    {
+        "Time": "2023-05-09 18:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 2,
+        "Wind-Speed": 94,
+        "Air-Pressure": 803
+    },
+    {
+        "Time": "2023-05-09 19:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 3,
+        "Wind-Speed": 100,
+        "Air-Pressure": 806
+    },
+    {
+        "Time": "2023-05-09 20:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 2,
+        "Wind-Speed": 106,
+        "Air-Pressure": 794
+    },
+    {
+        "Time": "2023-05-09 21:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 0.8,
+        "Wind-Speed": 86.4,
+        "Air-Pressure": 786
+    },
+    {
+        "Time": "2023-05-09 22:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 0.8,
+        "Wind-Speed": 62.4,
+        "Air-Pressure": 787
+    },
+    {
+        "Time": "2023-05-09 23:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 0.8,
+        "Wind-Speed": 64.0,
+        "Air-Pressure": 777
+    },
+    {
+        "Time": "2023-05-10 00:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 0.8,
+        "Wind-Speed": 50.4,
+        "Air-Pressure": 790
+    },
+    {
+        "Time": "2023-05-10 01:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -0.8,
+        "Wind-Speed": 46.4,
+        "Air-Pressure": 790
+    },
+    {
+        "Time": "2023-05-10 02:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1.6,
+        "Wind-Speed": 26.4,
+        "Air-Pressure": 788
+    },
+    {
+        "Time": "2023-05-10 03:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -2.4,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 782
+    },
+    {
+        "Time": "2023-05-10 04:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -0.8,
+        "Wind-Speed": 30.4,
+        "Air-Pressure": 789
+    },
+    {
+        "Time": "2023-05-10 05:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -1.6,
+        "Wind-Speed": 10.4,
+        "Air-Pressure": 798
+    },
+    {
+        "Time": "2023-05-10 06:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -0.8,
+        "Wind-Speed": 31.2,
+        "Air-Pressure": 800
+    },
+    {
+        "Time": "2023-05-10 07:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -1,
+        "Wind-Speed": 49,
+        "Air-Pressure": 802
+    },
+    {
+        "Time": "2023-05-10 08:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 46,
+        "Air-Pressure": 812
+    },
+    {
+        "Time": "2023-05-10 09:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -1,
+        "Wind-Speed": 33,
+        "Air-Pressure": 805
+    },
+    {
+        "Time": "2023-05-10 10:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 0,
+        "Wind-Speed": 32,
+        "Air-Pressure": 807
+    },
+    {
+        "Time": "2023-05-10 11:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 38,
+        "Air-Pressure": 823
+    },
+    {
+        "Time": "2023-05-10 12:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0,
+        "Wind-Speed": 30,
+        "Air-Pressure": 825
+    },
+    {
+        "Time": "2023-05-10 13:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 37,
+        "Air-Pressure": 814
+    },
+    {
+        "Time": "2023-05-10 14:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0,
+        "Wind-Speed": 52,
+        "Air-Pressure": 797
+    },
+    {
+        "Time": "2023-05-10 15:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 41,
+        "Air-Pressure": 781
+    },
+    {
+        "Time": "2023-05-10 16:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 51,
+        "Air-Pressure": 787
+    },
+    {
+        "Time": "2023-05-10 17:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3,
+        "Wind-Speed": 36,
+        "Air-Pressure": 772
+    },
+    {
+        "Time": "2023-05-10 18:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3,
+        "Wind-Speed": 31,
+        "Air-Pressure": 756
+    },
+    {
+        "Time": "2023-05-10 19:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -3,
+        "Wind-Speed": 37,
+        "Air-Pressure": 773
+    },
+    {
+        "Time": "2023-05-10 20:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -1,
+        "Wind-Speed": 28,
+        "Air-Pressure": 760
+    },
+    {
+        "Time": "2023-05-10 21:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -0.8,
+        "Wind-Speed": 10.4,
+        "Air-Pressure": 770
+    },
+    {
+        "Time": "2023-05-10 22:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 0.0,
+        "Wind-Speed": 38.4,
+        "Air-Pressure": 778
+    },
+    {
+        "Time": "2023-05-10 23:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0.8,
+        "Wind-Speed": 39.2,
+        "Air-Pressure": 778
+    },
+    {
+        "Time": "2023-05-11 00:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0.0,
+        "Wind-Speed": 43.2,
+        "Air-Pressure": 786
+    },
+    {
+        "Time": "2023-05-11 01:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0.0,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 791
+    },
+    {
+        "Time": "2023-05-11 02:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0.8,
+        "Wind-Speed": 13.6,
+        "Air-Pressure": 792
+    },
+    {
+        "Time": "2023-05-11 03:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0.0,
+        "Wind-Speed": 35.2,
+        "Air-Pressure": 788
+    },
+    {
+        "Time": "2023-05-11 04:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 0.8,
+        "Wind-Speed": 24.8,
+        "Air-Pressure": 788
+    },
+    {
+        "Time": "2023-05-11 05:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 2.4,
+        "Wind-Speed": 4.0,
+        "Air-Pressure": 797
+    },
+    {
+        "Time": "2023-05-11 06:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.8,
+        "Wind-Speed": 23.2,
+        "Air-Pressure": 789
+    },
+    {
+        "Time": "2023-05-11 07:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 1,
+        "Wind-Speed": 35,
+        "Air-Pressure": 773
+    },
+    {
+        "Time": "2023-05-11 08:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 2,
+        "Wind-Speed": 53,
+        "Air-Pressure": 780
+    },
+    {
+        "Time": "2023-05-11 09:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 1,
+        "Wind-Speed": 73,
+        "Air-Pressure": 766
+    },
+    {
+        "Time": "2023-05-11 10:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0,
+        "Wind-Speed": 86,
+        "Air-Pressure": 767
+    },
+    {
+        "Time": "2023-05-11 11:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -2,
+        "Wind-Speed": 80,
+        "Air-Pressure": 779
+    },
+    {
+        "Time": "2023-05-11 12:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -3,
+        "Wind-Speed": 86,
+        "Air-Pressure": 764
+    },
+    {
+        "Time": "2023-05-11 13:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -1,
+        "Wind-Speed": 94,
+        "Air-Pressure": 775
+    },
+    {
+        "Time": "2023-05-11 14:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0,
+        "Wind-Speed": 90,
+        "Air-Pressure": 758
+    },
+    {
+        "Time": "2023-05-11 15:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 1,
+        "Wind-Speed": 89,
+        "Air-Pressure": 743
+    },
+    {
+        "Time": "2023-05-11 16:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": 2,
+        "Wind-Speed": 89,
+        "Air-Pressure": 743
+    },
+    {
+        "Time": "2023-05-11 17:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": 3,
+        "Wind-Speed": 81,
+        "Air-Pressure": 740
+    },
+    {
+        "Time": "2023-05-11 18:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 3,
+        "Wind-Speed": 65,
+        "Air-Pressure": 758
+    },
+    {
+        "Time": "2023-05-11 19:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 4,
+        "Wind-Speed": 57,
+        "Air-Pressure": 749
+    },
+    {
+        "Time": "2023-05-11 20:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 3,
+        "Wind-Speed": 44,
+        "Air-Pressure": 737
+    },
+    {
+        "Time": "2023-05-11 21:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 1.6,
+        "Wind-Speed": 23.2,
+        "Air-Pressure": 752
+    },
+    {
+        "Time": "2023-05-11 22:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 0.8,
+        "Wind-Speed": 6.4,
+        "Air-Pressure": 733
+    },
+    {
+        "Time": "2023-05-11 23:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 1.6,
+        "Wind-Speed": 22.4,
+        "Air-Pressure": 725
+    },
+    {
+        "Time": "2023-05-12 00:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 0.0,
+        "Wind-Speed": 12.8,
+        "Air-Pressure": 729
+    },
+    {
+        "Time": "2023-05-12 01:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0.8,
+        "Wind-Speed": 41.6,
+        "Air-Pressure": 709
+    },
+    {
+        "Time": "2023-05-12 02:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 0.0,
+        "Wind-Speed": 32.0,
+        "Air-Pressure": 690
+    },
+    {
+        "Time": "2023-05-12 03:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -0.8,
+        "Wind-Speed": 14.4,
+        "Air-Pressure": 701
+    },
+    {
+        "Time": "2023-05-12 04:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -1.6,
+        "Wind-Speed": 43.2,
+        "Air-Pressure": 688
+    },
+    {
+        "Time": "2023-05-12 05:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 0.0,
+        "Wind-Speed": 31.2,
+        "Air-Pressure": 678
+    },
+    {
+        "Time": "2023-05-12 06:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 1.6,
+        "Wind-Speed": 40.0,
+        "Air-Pressure": 666
+    },
+    {
+        "Time": "2023-05-12 07:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 0,
+        "Wind-Speed": 54,
+        "Air-Pressure": 681
+    },
+    {
+        "Time": "2023-05-12 08:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0,
+        "Wind-Speed": 50,
+        "Air-Pressure": 672
+    },
+    {
+        "Time": "2023-05-12 09:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 1,
+        "Wind-Speed": 64,
+        "Air-Pressure": 667
+    },
+    {
+        "Time": "2023-05-12 10:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 2,
+        "Wind-Speed": 58,
+        "Air-Pressure": 667
+    },
+    {
+        "Time": "2023-05-12 11:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 4,
+        "Wind-Speed": 51,
+        "Air-Pressure": 669
+    },
+    {
+        "Time": "2023-05-12 12:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 2,
+        "Wind-Speed": 52,
+        "Air-Pressure": 669
+    },
+    {
+        "Time": "2023-05-12 13:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 3,
+        "Wind-Speed": 63,
+        "Air-Pressure": 673
+    },
+    {
+        "Time": "2023-05-12 14:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 4,
+        "Wind-Speed": 82,
+        "Air-Pressure": 664
+    },
+    {
+        "Time": "2023-05-12 15:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 4,
+        "Wind-Speed": 96,
+        "Air-Pressure": 664
+    },
+    {
+        "Time": "2023-05-12 16:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 2,
+        "Wind-Speed": 94,
+        "Air-Pressure": 648
+    },
+    {
+        "Time": "2023-05-12 17:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 0,
+        "Wind-Speed": 97,
+        "Air-Pressure": 636
+    },
+    {
+        "Time": "2023-05-12 18:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -1,
+        "Wind-Speed": 88,
+        "Air-Pressure": 639
+    },
+    {
+        "Time": "2023-05-12 19:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 0,
+        "Wind-Speed": 89,
+        "Air-Pressure": 630
+    },
+    {
+        "Time": "2023-05-12 20:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -2,
+        "Wind-Speed": 72,
+        "Air-Pressure": 644
+    },
+    {
+        "Time": "2023-05-12 21:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 0.0,
+        "Wind-Speed": 43.2,
+        "Air-Pressure": 638
+    },
+    {
+        "Time": "2023-05-12 22:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 0.8,
+        "Wind-Speed": 47.2,
+        "Air-Pressure": 632
+    },
+    {
+        "Time": "2023-05-12 23:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -0.8,
+        "Wind-Speed": 27.2,
+        "Air-Pressure": 649
+    },
+    {
+        "Time": "2023-05-13 00:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0.0,
+        "Wind-Speed": 28.0,
+        "Air-Pressure": 639
+    },
+    {
+        "Time": "2023-05-13 01:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -0.8,
+        "Wind-Speed": 8.8,
+        "Air-Pressure": 625
+    },
+    {
+        "Time": "2023-05-13 02:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -1.6,
+        "Wind-Speed": 40.8,
+        "Air-Pressure": 617
+    },
+    {
+        "Time": "2023-05-13 03:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -2.4,
+        "Wind-Speed": 38.4,
+        "Air-Pressure": 625
+    },
+    {
+        "Time": "2023-05-13 04:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -1.6,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 645
+    },
+    {
+        "Time": "2023-05-13 05:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -2.4,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 660
+    },
+    {
+        "Time": "2023-05-13 06:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -0.8,
+        "Wind-Speed": 37.6,
+        "Air-Pressure": 648
+    },
+    {
+        "Time": "2023-05-13 07:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 1,
+        "Wind-Speed": 44,
+        "Air-Pressure": 641
+    },
+    {
+        "Time": "2023-05-13 08:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 0,
+        "Wind-Speed": 52,
+        "Air-Pressure": 645
+    },
+    {
+        "Time": "2023-05-13 09:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -1,
+        "Wind-Speed": 39,
+        "Air-Pressure": 648
+    },
+    {
+        "Time": "2023-05-13 10:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -2,
+        "Wind-Speed": 42,
+        "Air-Pressure": 660
+    },
+    {
+        "Time": "2023-05-13 11:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -1,
+        "Wind-Speed": 60,
+        "Air-Pressure": 652
+    },
+    {
+        "Time": "2023-05-13 12:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -1,
+        "Wind-Speed": 56,
+        "Air-Pressure": 643
+    },
+    {
+        "Time": "2023-05-13 13:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1,
+        "Wind-Speed": 55,
+        "Air-Pressure": 623
+    },
+    {
+        "Time": "2023-05-13 14:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -2,
+        "Wind-Speed": 39,
+        "Air-Pressure": 619
+    },
+    {
+        "Time": "2023-05-13 15:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1,
+        "Wind-Speed": 35,
+        "Air-Pressure": 634
+    },
+    {
+        "Time": "2023-05-13 16:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0,
+        "Wind-Speed": 31,
+        "Air-Pressure": 633
+    },
+    {
+        "Time": "2023-05-13 17:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -1,
+        "Wind-Speed": 42,
+        "Air-Pressure": 626
+    },
+    {
+        "Time": "2023-05-13 18:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1,
+        "Wind-Speed": 46,
+        "Air-Pressure": 614
+    },
+    {
+        "Time": "2023-05-13 19:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1,
+        "Wind-Speed": 50,
+        "Air-Pressure": 610
+    },
+    {
+        "Time": "2023-05-13 20:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1,
+        "Wind-Speed": 66,
+        "Air-Pressure": 624
+    },
+    {
+        "Time": "2023-05-13 21:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 0.0,
+        "Wind-Speed": 44.0,
+        "Air-Pressure": 605
+    },
+    {
+        "Time": "2023-05-13 22:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 0.0,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 589
+    },
+    {
+        "Time": "2023-05-13 23:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 0.0,
+        "Wind-Speed": 40.0,
+        "Air-Pressure": 586
+    },
+    {
+        "Time": "2023-05-14 00:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0.8,
+        "Wind-Speed": 27.2,
+        "Air-Pressure": 601
+    },
+    {
+        "Time": "2023-05-14 01:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 0.0,
+        "Wind-Speed": 36.0,
+        "Air-Pressure": 588
+    },
+    {
+        "Time": "2023-05-14 02:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 0.8,
+        "Wind-Speed": 38.4,
+        "Air-Pressure": 591
+    },
+    {
+        "Time": "2023-05-14 03:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 1.6,
+        "Wind-Speed": 33.6,
+        "Air-Pressure": 601
+    },
+    {
+        "Time": "2023-05-14 04:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0.8,
+        "Wind-Speed": 15.2,
+        "Air-Pressure": 615
+    },
+    {
+        "Time": "2023-05-14 05:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 1.6,
+        "Wind-Speed": 36.0,
+        "Air-Pressure": 630
+    },
+    {
+        "Time": "2023-05-14 06:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 1.6,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 643
+    },
+    {
+        "Time": "2023-05-14 07:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 1,
+        "Wind-Speed": 19,
+        "Air-Pressure": 628
+    },
+    {
+        "Time": "2023-05-14 08:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 2,
+        "Wind-Speed": 58,
+        "Air-Pressure": 622
+    },
+    {
+        "Time": "2023-05-14 09:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 2,
+        "Wind-Speed": 50,
+        "Air-Pressure": 642
+    },
+    {
+        "Time": "2023-05-14 10:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 3,
+        "Wind-Speed": 59,
+        "Air-Pressure": 648
+    },
+    {
+        "Time": "2023-05-14 11:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 5,
+        "Wind-Speed": 48,
+        "Air-Pressure": 664
+    },
+    {
+        "Time": "2023-05-14 12:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 7,
+        "Wind-Speed": 41,
+        "Air-Pressure": 670
+    },
+    {
+        "Time": "2023-05-14 13:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 5,
+        "Wind-Speed": 22,
+        "Air-Pressure": 673
+    },
+    {
+        "Time": "2023-05-14 14:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 6,
+        "Wind-Speed": 2,
+        "Air-Pressure": 654
+    },
+    {
+        "Time": "2023-05-14 15:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 7,
+        "Wind-Speed": 18,
+        "Air-Pressure": 646
+    },
+    {
+        "Time": "2023-05-14 16:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 5,
+        "Wind-Speed": 36,
+        "Air-Pressure": 649
+    },
+    {
+        "Time": "2023-05-14 17:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 3,
+        "Wind-Speed": 51,
+        "Air-Pressure": 669
+    },
+    {
+        "Time": "2023-05-14 18:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 4,
+        "Wind-Speed": 40,
+        "Air-Pressure": 687
+    },
+    {
+        "Time": "2023-05-14 19:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 3,
+        "Wind-Speed": 48,
+        "Air-Pressure": 667
+    },
+    {
+        "Time": "2023-05-14 20:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 3,
+        "Wind-Speed": 41,
+        "Air-Pressure": 680
+    },
+    {
+        "Time": "2023-05-14 21:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 4.0,
+        "Wind-Speed": 17.6,
+        "Air-Pressure": 687
+    },
+    {
+        "Time": "2023-05-14 22:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 4.8,
+        "Wind-Speed": 36.8,
+        "Air-Pressure": 679
+    },
+    {
+        "Time": "2023-05-14 23:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 4.0,
+        "Wind-Speed": 24.8,
+        "Air-Pressure": 697
+    },
+    {
+        "Time": "2023-05-15 00:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 4.0,
+        "Wind-Speed": 35.2,
+        "Air-Pressure": 680
+    },
+    {
+        "Time": "2023-05-15 01:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 4.0,
+        "Wind-Speed": 32.0,
+        "Air-Pressure": 677
+    },
+    {
+        "Time": "2023-05-15 02:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 4.0,
+        "Wind-Speed": 13.6,
+        "Air-Pressure": 685
+    },
+    {
+        "Time": "2023-05-15 03:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 4.8,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 698
+    },
+    {
+        "Time": "2023-05-15 04:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 2.4,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 706
+    },
+    {
+        "Time": "2023-05-15 05:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0.8,
+        "Wind-Speed": 22.4,
+        "Air-Pressure": 717
+    },
+    {
+        "Time": "2023-05-15 06:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -0.8,
+        "Wind-Speed": 27.2,
+        "Air-Pressure": 719
+    },
+    {
+        "Time": "2023-05-15 07:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -1,
+        "Wind-Speed": 21,
+        "Air-Pressure": 727
+    },
+    {
+        "Time": "2023-05-15 08:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 0,
+        "Wind-Speed": 39,
+        "Air-Pressure": 719
+    },
+    {
+        "Time": "2023-05-15 09:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 1,
+        "Wind-Speed": 48,
+        "Air-Pressure": 726
+    },
+    {
+        "Time": "2023-05-15 10:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 2,
+        "Wind-Speed": 31,
+        "Air-Pressure": 718
+    },
+    {
+        "Time": "2023-05-15 11:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 4,
+        "Wind-Speed": 29,
+        "Air-Pressure": 717
+    },
+    {
+        "Time": "2023-05-15 12:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 2,
+        "Wind-Speed": 21,
+        "Air-Pressure": 723
+    },
+    {
+        "Time": "2023-05-15 13:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 1,
+        "Wind-Speed": 10,
+        "Air-Pressure": 721
+    },
+    {
+        "Time": "2023-05-15 14:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1,
+        "Wind-Speed": 32,
+        "Air-Pressure": 722
+    },
+    {
+        "Time": "2023-05-15 15:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -2,
+        "Wind-Speed": 32,
+        "Air-Pressure": 711
+    },
+    {
+        "Time": "2023-05-15 16:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -2,
+        "Wind-Speed": 36,
+        "Air-Pressure": 720
+    },
+    {
+        "Time": "2023-05-15 17:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -2,
+        "Wind-Speed": 48,
+        "Air-Pressure": 706
+    },
+    {
+        "Time": "2023-05-15 18:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 0,
+        "Wind-Speed": 61,
+        "Air-Pressure": 697
+    },
+    {
+        "Time": "2023-05-15 19:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 2,
+        "Wind-Speed": 65,
+        "Air-Pressure": 678
+    },
+    {
+        "Time": "2023-05-15 20:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 3,
+        "Wind-Speed": 65,
+        "Air-Pressure": 683
+    },
+    {
+        "Time": "2023-05-15 21:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 2.4,
+        "Wind-Speed": 43.2,
+        "Air-Pressure": 670
+    },
+    {
+        "Time": "2023-05-15 22:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 2.4,
+        "Wind-Speed": 32.8,
+        "Air-Pressure": 676
+    },
+    {
+        "Time": "2023-05-15 23:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0.8,
+        "Wind-Speed": 30.4,
+        "Air-Pressure": 679
+    },
+    {
+        "Time": "2023-05-16 00:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -0.8,
+        "Wind-Speed": 30.4,
+        "Air-Pressure": 679
+    },
+    {
+        "Time": "2023-05-16 01:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -0.8,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 698
+    },
+    {
+        "Time": "2023-05-16 02:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1.6,
+        "Wind-Speed": 30.4,
+        "Air-Pressure": 701
+    },
+    {
+        "Time": "2023-05-16 03:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -2.4,
+        "Wind-Speed": 36.8,
+        "Air-Pressure": 686
+    },
+    {
+        "Time": "2023-05-16 04:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -3.2,
+        "Wind-Speed": 44.0,
+        "Air-Pressure": 675
+    },
+    {
+        "Time": "2023-05-16 05:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -1.6,
+        "Wind-Speed": 28.0,
+        "Air-Pressure": 662
+    },
+    {
+        "Time": "2023-05-16 06:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -0.8,
+        "Wind-Speed": 31.2,
+        "Air-Pressure": 658
+    },
+    {
+        "Time": "2023-05-16 07:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -2,
+        "Wind-Speed": 16,
+        "Air-Pressure": 675
+    },
+    {
+        "Time": "2023-05-16 08:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 0,
+        "Wind-Speed": 44,
+        "Air-Pressure": 658
+    },
+    {
+        "Time": "2023-05-16 09:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 0,
+        "Wind-Speed": 52,
+        "Air-Pressure": 640
+    },
+    {
+        "Time": "2023-05-16 10:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 1,
+        "Wind-Speed": 36,
+        "Air-Pressure": 636
+    },
+    {
+        "Time": "2023-05-16 11:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -1,
+        "Wind-Speed": 18,
+        "Air-Pressure": 628
+    },
+    {
+        "Time": "2023-05-16 12:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -3,
+        "Wind-Speed": 45,
+        "Air-Pressure": 634
+    },
+    {
+        "Time": "2023-05-16 13:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -3,
+        "Wind-Speed": 35,
+        "Air-Pressure": 626
+    },
+    {
+        "Time": "2023-05-16 14:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -3,
+        "Wind-Speed": 54,
+        "Air-Pressure": 609
+    },
+    {
+        "Time": "2023-05-16 15:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -4,
+        "Wind-Speed": 47,
+        "Air-Pressure": 625
+    },
+    {
+        "Time": "2023-05-16 16:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -4,
+        "Wind-Speed": 32,
+        "Air-Pressure": 638
+    },
+    {
+        "Time": "2023-05-16 17:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -3,
+        "Wind-Speed": 34,
+        "Air-Pressure": 624
+    },
+    {
+        "Time": "2023-05-16 18:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -5,
+        "Wind-Speed": 25,
+        "Air-Pressure": 613
+    },
+    {
+        "Time": "2023-05-16 19:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -3,
+        "Wind-Speed": 41,
+        "Air-Pressure": 604
+    },
+    {
+        "Time": "2023-05-16 20:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -2,
+        "Wind-Speed": 60,
+        "Air-Pressure": 610
+    },
+    {
+        "Time": "2023-05-16 21:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -1.6,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 608
+    },
+    {
+        "Time": "2023-05-16 22:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -2.4,
+        "Wind-Speed": 22.4,
+        "Air-Pressure": 618
+    },
+    {
+        "Time": "2023-05-16 23:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -3.2,
+        "Wind-Speed": 12.0,
+        "Air-Pressure": 620
+    },
+    {
+        "Time": "2023-05-17 00:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -3.2,
+        "Wind-Speed": 30.4,
+        "Air-Pressure": 603
+    },
+    {
+        "Time": "2023-05-17 01:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -4.0,
+        "Wind-Speed": 10.4,
+        "Air-Pressure": 593
+    },
+    {
+        "Time": "2023-05-17 02:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -2.4,
+        "Wind-Speed": 41.6,
+        "Air-Pressure": 592
+    },
+    {
+        "Time": "2023-05-17 03:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -2.4,
+        "Wind-Speed": 30.4,
+        "Air-Pressure": 581
+    },
+    {
+        "Time": "2023-05-17 04:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -2.4,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 596
+    },
+    {
+        "Time": "2023-05-17 05:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -2.4,
+        "Wind-Speed": 40.0,
+        "Air-Pressure": 609
+    },
+    {
+        "Time": "2023-05-17 06:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -3.2,
+        "Wind-Speed": 26.4,
+        "Air-Pressure": 596
+    },
+    {
+        "Time": "2023-05-17 07:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -2,
+        "Wind-Speed": 9,
+        "Air-Pressure": 582
+    },
+    {
+        "Time": "2023-05-17 08:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 31,
+        "Air-Pressure": 568
+    },
+    {
+        "Time": "2023-05-17 09:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -1,
+        "Wind-Speed": 43,
+        "Air-Pressure": 580
+    },
+    {
+        "Time": "2023-05-17 10:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 0,
+        "Wind-Speed": 42,
+        "Air-Pressure": 592
+    },
+    {
+        "Time": "2023-05-17 11:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 1,
+        "Wind-Speed": 27,
+        "Air-Pressure": 607
+    },
+    {
+        "Time": "2023-05-17 12:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 2,
+        "Wind-Speed": 23,
+        "Air-Pressure": 607
+    },
+    {
+        "Time": "2023-05-17 13:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 2,
+        "Wind-Speed": 25,
+        "Air-Pressure": 625
+    },
+    {
+        "Time": "2023-05-17 14:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 1,
+        "Wind-Speed": 27,
+        "Air-Pressure": 609
+    },
+    {
+        "Time": "2023-05-17 15:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 3,
+        "Wind-Speed": 12,
+        "Air-Pressure": 625
+    },
+    {
+        "Time": "2023-05-17 16:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 4,
+        "Wind-Speed": 32,
+        "Air-Pressure": 619
+    },
+    {
+        "Time": "2023-05-17 17:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 6,
+        "Wind-Speed": 21,
+        "Air-Pressure": 610
+    },
+    {
+        "Time": "2023-05-17 18:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 5,
+        "Wind-Speed": 27,
+        "Air-Pressure": 595
+    },
+    {
+        "Time": "2023-05-17 19:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 4,
+        "Wind-Speed": 35,
+        "Air-Pressure": 581
+    },
+    {
+        "Time": "2023-05-17 20:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 2,
+        "Wind-Speed": 44,
+        "Air-Pressure": 576
+    },
+    {
+        "Time": "2023-05-17 21:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 3.2,
+        "Wind-Speed": 27.2,
+        "Air-Pressure": 578
+    },
+    {
+        "Time": "2023-05-17 22:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 0.8,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 558
+    },
+    {
+        "Time": "2023-05-17 23:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 0.8,
+        "Wind-Speed": 35.2,
+        "Air-Pressure": 558
+    },
+    {
+        "Time": "2023-05-18 00:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0.8,
+        "Wind-Speed": 36.8,
+        "Air-Pressure": 569
+    },
+    {
+        "Time": "2023-05-18 01:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0.0,
+        "Wind-Speed": 44.8,
+        "Air-Pressure": 566
+    },
+    {
+        "Time": "2023-05-18 02:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0.8,
+        "Wind-Speed": 44.0,
+        "Air-Pressure": 584
+    },
+    {
+        "Time": "2023-05-18 03:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0.0,
+        "Wind-Speed": 44.0,
+        "Air-Pressure": 566
+    },
+    {
+        "Time": "2023-05-18 04:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0.8,
+        "Wind-Speed": 44.0,
+        "Air-Pressure": 572
+    },
+    {
+        "Time": "2023-05-18 05:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 1.6,
+        "Wind-Speed": 32.0,
+        "Air-Pressure": 562
+    },
+    {
+        "Time": "2023-05-18 06:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 2.4,
+        "Wind-Speed": 16.0,
+        "Air-Pressure": 551
+    },
+    {
+        "Time": "2023-05-18 07:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 4,
+        "Wind-Speed": 25,
+        "Air-Pressure": 551
+    },
+    {
+        "Time": "2023-05-18 08:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 5,
+        "Wind-Speed": 12,
+        "Air-Pressure": 560
+    },
+    {
+        "Time": "2023-05-18 09:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 6,
+        "Wind-Speed": 43,
+        "Air-Pressure": 543
+    },
+    {
+        "Time": "2023-05-18 10:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 5,
+        "Wind-Speed": 58,
+        "Air-Pressure": 538
+    },
+    {
+        "Time": "2023-05-18 11:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 6,
+        "Wind-Speed": 48,
+        "Air-Pressure": 530
+    },
+    {
+        "Time": "2023-05-18 12:18:28.044869",
         "Wind-Direction": "S",
         "Temperature": 5,
-        "Wind-Speed": 139,
-        "Air-Pressure": 856
+        "Wind-Speed": 50,
+        "Air-Pressure": 517
+    },
+    {
+        "Time": "2023-05-18 13:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 6,
+        "Wind-Speed": 37,
+        "Air-Pressure": 552
+    },
+    {
+        "Time": "2023-05-18 14:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 4,
+        "Wind-Speed": 32,
+        "Air-Pressure": 572
+    },
+    {
+        "Time": "2023-05-18 15:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 6,
+        "Wind-Speed": 50,
+        "Air-Pressure": 572
+    },
+    {
+        "Time": "2023-05-18 16:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 6,
+        "Wind-Speed": 39,
+        "Air-Pressure": 591
+    },
+    {
+        "Time": "2023-05-18 17:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 6,
+        "Wind-Speed": 55,
+        "Air-Pressure": 594
+    },
+    {
+        "Time": "2023-05-18 18:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 8,
+        "Wind-Speed": 39,
+        "Air-Pressure": 574
+    },
+    {
+        "Time": "2023-05-18 19:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 7,
+        "Wind-Speed": 42,
+        "Air-Pressure": 562
+    },
+    {
+        "Time": "2023-05-18 20:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 6,
+        "Wind-Speed": 39,
+        "Air-Pressure": 581
+    },
+    {
+        "Time": "2023-05-18 21:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 5.6,
+        "Wind-Speed": 41.6,
+        "Air-Pressure": 571
+    },
+    {
+        "Time": "2023-05-18 22:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 4.8,
+        "Wind-Speed": 47.2,
+        "Air-Pressure": 573
+    },
+    {
+        "Time": "2023-05-18 23:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 4.8,
+        "Wind-Speed": 36.8,
+        "Air-Pressure": 592
+    },
+    {
+        "Time": "2023-05-19 00:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 4.8,
+        "Wind-Speed": 41.6,
+        "Air-Pressure": 606
+    },
+    {
+        "Time": "2023-05-19 01:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 2.4,
+        "Wind-Speed": 20.0,
+        "Air-Pressure": 605
+    },
+    {
+        "Time": "2023-05-19 02:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 3.2,
+        "Wind-Speed": 20.0,
+        "Air-Pressure": 618
+    },
+    {
+        "Time": "2023-05-19 03:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 1.6,
+        "Wind-Speed": 40.8,
+        "Air-Pressure": 600
+    },
+    {
+        "Time": "2023-05-19 04:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 1.6,
+        "Wind-Speed": 22.4,
+        "Air-Pressure": 619
+    },
+    {
+        "Time": "2023-05-19 05:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 1.6,
+        "Wind-Speed": 23.2,
+        "Air-Pressure": 610
+    },
+    {
+        "Time": "2023-05-19 06:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 1.6,
+        "Wind-Speed": 6.4,
+        "Air-Pressure": 593
+    },
+    {
+        "Time": "2023-05-19 07:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 3,
+        "Wind-Speed": 14,
+        "Air-Pressure": 607
+    },
+    {
+        "Time": "2023-05-19 08:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 5,
+        "Wind-Speed": 27,
+        "Air-Pressure": 599
+    },
+    {
+        "Time": "2023-05-19 09:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 5,
+        "Wind-Speed": 19,
+        "Air-Pressure": 600
+    },
+    {
+        "Time": "2023-05-19 10:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 4,
+        "Wind-Speed": 32,
+        "Air-Pressure": 601
+    },
+    {
+        "Time": "2023-05-19 11:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 4,
+        "Wind-Speed": 47,
+        "Air-Pressure": 583
+    },
+    {
+        "Time": "2023-05-19 12:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 2,
+        "Wind-Speed": 55,
+        "Air-Pressure": 570
+    },
+    {
+        "Time": "2023-05-19 13:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 1,
+        "Wind-Speed": 51,
+        "Air-Pressure": 556
+    },
+    {
+        "Time": "2023-05-19 14:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 0,
+        "Wind-Speed": 60,
+        "Air-Pressure": 576
+    },
+    {
+        "Time": "2023-05-19 15:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0,
+        "Wind-Speed": 56,
+        "Air-Pressure": 569
+    },
+    {
+        "Time": "2023-05-19 16:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -2,
+        "Wind-Speed": 37,
+        "Air-Pressure": 570
+    },
+    {
+        "Time": "2023-05-19 17:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -2,
+        "Wind-Speed": 26,
+        "Air-Pressure": 587
+    },
+    {
+        "Time": "2023-05-19 18:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -3,
+        "Wind-Speed": 8,
+        "Air-Pressure": 594
+    },
+    {
+        "Time": "2023-05-19 19:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -5,
+        "Wind-Speed": 44,
+        "Air-Pressure": 595
+    },
+    {
+        "Time": "2023-05-19 20:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -4,
+        "Wind-Speed": 53,
+        "Air-Pressure": 589
+    },
+    {
+        "Time": "2023-05-19 21:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -2.4,
+        "Wind-Speed": 41.6,
+        "Air-Pressure": 575
+    },
+    {
+        "Time": "2023-05-19 22:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -3.2,
+        "Wind-Speed": 36.8,
+        "Air-Pressure": 558
+    },
+    {
+        "Time": "2023-05-19 23:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -1.6,
+        "Wind-Speed": 20.0,
+        "Air-Pressure": 548
+    },
+    {
+        "Time": "2023-05-20 00:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -2.4,
+        "Wind-Speed": 24.8,
+        "Air-Pressure": 533
+    },
+    {
+        "Time": "2023-05-20 01:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -1.6,
+        "Wind-Speed": 9.6,
+        "Air-Pressure": 529
+    },
+    {
+        "Time": "2023-05-20 02:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -2.4,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 543
+    },
+    {
+        "Time": "2023-05-20 03:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -0.8,
+        "Wind-Speed": 32.8,
+        "Air-Pressure": 528
+    },
+    {
+        "Time": "2023-05-20 04:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0.0,
+        "Wind-Speed": 11.2,
+        "Air-Pressure": 535
+    },
+    {
+        "Time": "2023-05-20 05:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0.0,
+        "Wind-Speed": 39.2,
+        "Air-Pressure": 551
+    },
+    {
+        "Time": "2023-05-20 06:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 0.0,
+        "Wind-Speed": 38.4,
+        "Air-Pressure": 570
+    },
+    {
+        "Time": "2023-05-20 07:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -2,
+        "Wind-Speed": 28,
+        "Air-Pressure": 559
+    },
+    {
+        "Time": "2023-05-20 08:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -3,
+        "Wind-Speed": 17,
+        "Air-Pressure": 559
+    },
+    {
+        "Time": "2023-05-20 09:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -2,
+        "Wind-Speed": 35,
+        "Air-Pressure": 550
+    },
+    {
+        "Time": "2023-05-20 10:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0,
+        "Wind-Speed": 20,
+        "Air-Pressure": 539
+    },
+    {
+        "Time": "2023-05-20 11:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1,
+        "Wind-Speed": 48,
+        "Air-Pressure": 557
+    },
+    {
+        "Time": "2023-05-20 12:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 0,
+        "Wind-Speed": 41,
+        "Air-Pressure": 556
+    },
+    {
+        "Time": "2023-05-20 13:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 2,
+        "Wind-Speed": 29,
+        "Air-Pressure": 543
+    },
+    {
+        "Time": "2023-05-20 14:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 2,
+        "Wind-Speed": 43,
+        "Air-Pressure": 552
+    },
+    {
+        "Time": "2023-05-20 15:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0,
+        "Wind-Speed": 43,
+        "Air-Pressure": 564
+    },
+    {
+        "Time": "2023-05-20 16:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0,
+        "Wind-Speed": 50,
+        "Air-Pressure": 555
+    },
+    {
+        "Time": "2023-05-20 17:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 46,
+        "Air-Pressure": 557
+    },
+    {
+        "Time": "2023-05-20 18:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 0,
+        "Wind-Speed": 42,
+        "Air-Pressure": 557
+    },
+    {
+        "Time": "2023-05-20 19:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 0,
+        "Wind-Speed": 56,
+        "Air-Pressure": 555
+    },
+    {
+        "Time": "2023-05-20 20:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 1,
+        "Wind-Speed": 58,
+        "Air-Pressure": 547
+    },
+    {
+        "Time": "2023-05-20 21:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 0.0,
+        "Wind-Speed": 53.6,
+        "Air-Pressure": 549
+    },
+    {
+        "Time": "2023-05-20 22:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0.8,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 565
+    },
+    {
+        "Time": "2023-05-20 23:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 0.8,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 567
+    },
+    {
+        "Time": "2023-05-21 00:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 0.8,
+        "Wind-Speed": 11.2,
+        "Air-Pressure": 583
+    },
+    {
+        "Time": "2023-05-21 01:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0.0,
+        "Wind-Speed": 13.6,
+        "Air-Pressure": 569
+    },
+    {
+        "Time": "2023-05-21 02:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 0.8,
+        "Wind-Speed": 46.4,
+        "Air-Pressure": 580
+    },
+    {
+        "Time": "2023-05-21 03:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 0.0,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 563
+    },
+    {
+        "Time": "2023-05-21 04:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -0.8,
+        "Wind-Speed": 8.8,
+        "Air-Pressure": 571
+    },
+    {
+        "Time": "2023-05-21 05:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -1.6,
+        "Wind-Speed": 38.4,
+        "Air-Pressure": 577
+    },
+    {
+        "Time": "2023-05-21 06:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1.6,
+        "Wind-Speed": 43.2,
+        "Air-Pressure": 579
+    },
+    {
+        "Time": "2023-05-21 07:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -3,
+        "Wind-Speed": 63,
+        "Air-Pressure": 581
+    },
+    {
+        "Time": "2023-05-21 08:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -3,
+        "Wind-Speed": 80,
+        "Air-Pressure": 581
+    },
+    {
+        "Time": "2023-05-21 09:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -2,
+        "Wind-Speed": 84,
+        "Air-Pressure": 585
+    },
+    {
+        "Time": "2023-05-21 10:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -2,
+        "Wind-Speed": 73,
+        "Air-Pressure": 602
+    },
+    {
+        "Time": "2023-05-21 11:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -3,
+        "Wind-Speed": 61,
+        "Air-Pressure": 607
+    },
+    {
+        "Time": "2023-05-21 12:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -4,
+        "Wind-Speed": 52,
+        "Air-Pressure": 612
+    },
+    {
+        "Time": "2023-05-21 13:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -3,
+        "Wind-Speed": 55,
+        "Air-Pressure": 602
+    },
+    {
+        "Time": "2023-05-21 14:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -4,
+        "Wind-Speed": 62,
+        "Air-Pressure": 610
+    },
+    {
+        "Time": "2023-05-21 15:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -6,
+        "Wind-Speed": 52,
+        "Air-Pressure": 596
+    },
+    {
+        "Time": "2023-05-21 16:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -6,
+        "Wind-Speed": 33,
+        "Air-Pressure": 593
+    },
+    {
+        "Time": "2023-05-21 17:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -6,
+        "Wind-Speed": 45,
+        "Air-Pressure": 599
+    },
+    {
+        "Time": "2023-05-21 18:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -7,
+        "Wind-Speed": 44,
+        "Air-Pressure": 602
+    },
+    {
+        "Time": "2023-05-21 19:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -5,
+        "Wind-Speed": 45,
+        "Air-Pressure": 597
+    },
+    {
+        "Time": "2023-05-21 20:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -5,
+        "Wind-Speed": 33,
+        "Air-Pressure": 597
+    },
+    {
+        "Time": "2023-05-21 21:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -4.0,
+        "Wind-Speed": 31.2,
+        "Air-Pressure": 591
+    },
+    {
+        "Time": "2023-05-21 22:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3.2,
+        "Wind-Speed": 24.8,
+        "Air-Pressure": 603
+    },
+    {
+        "Time": "2023-05-21 23:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -2.4,
+        "Wind-Speed": 5.6,
+        "Air-Pressure": 616
+    },
+    {
+        "Time": "2023-05-22 00:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -0.8,
+        "Wind-Speed": 20.8,
+        "Air-Pressure": 606
+    },
+    {
+        "Time": "2023-05-22 01:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -1.6,
+        "Wind-Speed": 24.8,
+        "Air-Pressure": 593
+    },
+    {
+        "Time": "2023-05-22 02:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -0.8,
+        "Wind-Speed": 5.6,
+        "Air-Pressure": 610
+    },
+    {
+        "Time": "2023-05-22 03:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -0.8,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 609
+    },
+    {
+        "Time": "2023-05-22 04:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -1.6,
+        "Wind-Speed": 22.4,
+        "Air-Pressure": 595
+    },
+    {
+        "Time": "2023-05-22 05:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1.6,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 586
+    },
+    {
+        "Time": "2023-05-22 06:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -2.4,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 586
+    },
+    {
+        "Time": "2023-05-22 07:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3,
+        "Wind-Speed": 14,
+        "Air-Pressure": 591
+    },
+    {
+        "Time": "2023-05-22 08:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -2,
+        "Wind-Speed": 34,
+        "Air-Pressure": 585
+    },
+    {
+        "Time": "2023-05-22 09:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -1,
+        "Wind-Speed": 32,
+        "Air-Pressure": 590
+    },
+    {
+        "Time": "2023-05-22 10:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3,
+        "Wind-Speed": 31,
+        "Air-Pressure": 575
+    },
+    {
+        "Time": "2023-05-22 11:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 39,
+        "Air-Pressure": 594
+    },
+    {
+        "Time": "2023-05-22 12:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 52,
+        "Air-Pressure": 611
+    },
+    {
+        "Time": "2023-05-22 13:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -1,
+        "Wind-Speed": 57,
+        "Air-Pressure": 620
+    },
+    {
+        "Time": "2023-05-22 14:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -2,
+        "Wind-Speed": 47,
+        "Air-Pressure": 618
+    },
+    {
+        "Time": "2023-05-22 15:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -3,
+        "Wind-Speed": 41,
+        "Air-Pressure": 631
+    },
+    {
+        "Time": "2023-05-22 16:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -1,
+        "Wind-Speed": 32,
+        "Air-Pressure": 642
+    },
+    {
+        "Time": "2023-05-22 17:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 1,
+        "Wind-Speed": 30,
+        "Air-Pressure": 643
+    },
+    {
+        "Time": "2023-05-22 18:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 1,
+        "Wind-Speed": 23,
+        "Air-Pressure": 649
+    },
+    {
+        "Time": "2023-05-22 19:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 0,
+        "Wind-Speed": 13,
+        "Air-Pressure": 659
+    },
+    {
+        "Time": "2023-05-22 20:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0,
+        "Wind-Speed": 46,
+        "Air-Pressure": 652
+    },
+    {
+        "Time": "2023-05-22 21:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 0.0,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 671
+    },
+    {
+        "Time": "2023-05-22 22:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 0.0,
+        "Wind-Speed": 17.6,
+        "Air-Pressure": 683
+    },
+    {
+        "Time": "2023-05-22 23:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 0.0,
+        "Wind-Speed": 22.4,
+        "Air-Pressure": 683
+    },
+    {
+        "Time": "2023-05-23 00:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 0.8,
+        "Wind-Speed": 8.0,
+        "Air-Pressure": 677
+    },
+    {
+        "Time": "2023-05-23 01:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 2.4,
+        "Wind-Speed": 11.2,
+        "Air-Pressure": 688
+    },
+    {
+        "Time": "2023-05-23 02:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 0.8,
+        "Wind-Speed": 31.2,
+        "Air-Pressure": 705
+    },
+    {
+        "Time": "2023-05-23 03:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 1.6,
+        "Wind-Speed": 12.0,
+        "Air-Pressure": 716
+    },
+    {
+        "Time": "2023-05-23 04:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0.8,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 730
+    },
+    {
+        "Time": "2023-05-23 05:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 2.4,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 727
+    },
+    {
+        "Time": "2023-05-23 06:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 3.2,
+        "Wind-Speed": 39.2,
+        "Air-Pressure": 707
+    },
+    {
+        "Time": "2023-05-23 07:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 2,
+        "Wind-Speed": 26,
+        "Air-Pressure": 718
+    },
+    {
+        "Time": "2023-05-23 08:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 4,
+        "Wind-Speed": 18,
+        "Air-Pressure": 732
+    },
+    {
+        "Time": "2023-05-23 09:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 5,
+        "Wind-Speed": 41,
+        "Air-Pressure": 726
+    },
+    {
+        "Time": "2023-05-23 10:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 6,
+        "Wind-Speed": 28,
+        "Air-Pressure": 715
+    },
+    {
+        "Time": "2023-05-23 11:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 7,
+        "Wind-Speed": 9,
+        "Air-Pressure": 728
+    },
+    {
+        "Time": "2023-05-23 12:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 6,
+        "Wind-Speed": 34,
+        "Air-Pressure": 733
+    },
+    {
+        "Time": "2023-05-23 13:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 6,
+        "Wind-Speed": 39,
+        "Air-Pressure": 724
+    },
+    {
+        "Time": "2023-05-23 14:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 4,
+        "Wind-Speed": 29,
+        "Air-Pressure": 726
+    },
+    {
+        "Time": "2023-05-23 15:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 3,
+        "Wind-Speed": 19,
+        "Air-Pressure": 716
+    },
+    {
+        "Time": "2023-05-23 16:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 3,
+        "Wind-Speed": 60,
+        "Air-Pressure": 708
+    },
+    {
+        "Time": "2023-05-23 17:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 3,
+        "Wind-Speed": 47,
+        "Air-Pressure": 692
+    },
+    {
+        "Time": "2023-05-23 18:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 1,
+        "Wind-Speed": 42,
+        "Air-Pressure": 684
+    },
+    {
+        "Time": "2023-05-23 19:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 3,
+        "Wind-Speed": 42,
+        "Air-Pressure": 683
+    },
+    {
+        "Time": "2023-05-23 20:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 2,
+        "Wind-Speed": 52,
+        "Air-Pressure": 680
+    },
+    {
+        "Time": "2023-05-23 21:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0.0,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 666
+    },
+    {
+        "Time": "2023-05-23 22:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -1.6,
+        "Wind-Speed": 27.2,
+        "Air-Pressure": 652
+    },
+    {
+        "Time": "2023-05-23 23:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -2.4,
+        "Wind-Speed": 9.6,
+        "Air-Pressure": 636
+    },
+    {
+        "Time": "2023-05-24 00:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -0.8,
+        "Wind-Speed": 27.2,
+        "Air-Pressure": 616
+    },
+    {
+        "Time": "2023-05-24 01:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": -1.6,
+        "Wind-Speed": 36.0,
+        "Air-Pressure": 633
+    },
+    {
+        "Time": "2023-05-24 02:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.0,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 621
+    },
+    {
+        "Time": "2023-05-24 03:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.8,
+        "Wind-Speed": 20.0,
+        "Air-Pressure": 641
+    },
+    {
+        "Time": "2023-05-24 04:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 1.6,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 637
+    },
+    {
+        "Time": "2023-05-24 05:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.0,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 655
+    },
+    {
+        "Time": "2023-05-24 06:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.8,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 671
+    },
+    {
+        "Time": "2023-05-24 07:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0,
+        "Wind-Speed": 18,
+        "Air-Pressure": 667
+    },
+    {
+        "Time": "2023-05-24 08:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0,
+        "Wind-Speed": 46,
+        "Air-Pressure": 676
+    },
+    {
+        "Time": "2023-05-24 09:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 1,
+        "Wind-Speed": 39,
+        "Air-Pressure": 671
+    },
+    {
+        "Time": "2023-05-24 10:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 3,
+        "Wind-Speed": 45,
+        "Air-Pressure": 653
+    },
+    {
+        "Time": "2023-05-24 11:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 3,
+        "Wind-Speed": 42,
+        "Air-Pressure": 656
+    },
+    {
+        "Time": "2023-05-24 12:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 2,
+        "Wind-Speed": 40,
+        "Air-Pressure": 669
+    },
+    {
+        "Time": "2023-05-24 13:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 0,
+        "Wind-Speed": 44,
+        "Air-Pressure": 652
+    },
+    {
+        "Time": "2023-05-24 14:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -1,
+        "Wind-Speed": 56,
+        "Air-Pressure": 665
+    },
+    {
+        "Time": "2023-05-24 15:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 1,
+        "Wind-Speed": 38,
+        "Air-Pressure": 646
+    },
+    {
+        "Time": "2023-05-24 16:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 22,
+        "Air-Pressure": 630
+    },
+    {
+        "Time": "2023-05-24 17:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 28,
+        "Air-Pressure": 637
+    },
+    {
+        "Time": "2023-05-24 18:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -2,
+        "Wind-Speed": 45,
+        "Air-Pressure": 631
+    },
+    {
+        "Time": "2023-05-24 19:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 34,
+        "Air-Pressure": 633
+    },
+    {
+        "Time": "2023-05-24 20:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 54,
+        "Air-Pressure": 617
+    },
+    {
+        "Time": "2023-05-24 21:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1.6,
+        "Wind-Speed": 55.2,
+        "Air-Pressure": 597
+    },
+    {
+        "Time": "2023-05-24 22:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -0.8,
+        "Wind-Speed": 44.8,
+        "Air-Pressure": 583
+    },
+    {
+        "Time": "2023-05-24 23:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -0.8,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 565
+    },
+    {
+        "Time": "2023-05-25 00:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -0.8,
+        "Wind-Speed": 32.0,
+        "Air-Pressure": 561
+    },
+    {
+        "Time": "2023-05-25 01:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 0.0,
+        "Wind-Speed": 35.2,
+        "Air-Pressure": 565
+    },
+    {
+        "Time": "2023-05-25 02:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1.6,
+        "Wind-Speed": 12.0,
+        "Air-Pressure": 577
+    },
+    {
+        "Time": "2023-05-25 03:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -2.4,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 595
+    },
+    {
+        "Time": "2023-05-25 04:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -2.4,
+        "Wind-Speed": 43.2,
+        "Air-Pressure": 615
+    },
+    {
+        "Time": "2023-05-25 05:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -0.8,
+        "Wind-Speed": 36.0,
+        "Air-Pressure": 618
+    },
+    {
+        "Time": "2023-05-25 06:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -2.4,
+        "Wind-Speed": 14.4,
+        "Air-Pressure": 601
+    },
+    {
+        "Time": "2023-05-25 07:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -4,
+        "Wind-Speed": 28,
+        "Air-Pressure": 590
+    },
+    {
+        "Time": "2023-05-25 08:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -4,
+        "Wind-Speed": 46,
+        "Air-Pressure": 608
+    },
+    {
+        "Time": "2023-05-25 09:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -5,
+        "Wind-Speed": 35,
+        "Air-Pressure": 610
+    },
+    {
+        "Time": "2023-05-25 10:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -5,
+        "Wind-Speed": 50,
+        "Air-Pressure": 622
+    },
+    {
+        "Time": "2023-05-25 11:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -5,
+        "Wind-Speed": 67,
+        "Air-Pressure": 641
+    },
+    {
+        "Time": "2023-05-25 12:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -7,
+        "Wind-Speed": 48,
+        "Air-Pressure": 642
+    },
+    {
+        "Time": "2023-05-25 13:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -7,
+        "Wind-Speed": 38,
+        "Air-Pressure": 637
+    },
+    {
+        "Time": "2023-05-25 14:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -8,
+        "Wind-Speed": 55,
+        "Air-Pressure": 643
+    },
+    {
+        "Time": "2023-05-25 15:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -9,
+        "Wind-Speed": 43,
+        "Air-Pressure": 661
+    },
+    {
+        "Time": "2023-05-25 16:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -9,
+        "Wind-Speed": 44,
+        "Air-Pressure": 652
+    },
+    {
+        "Time": "2023-05-25 17:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -10,
+        "Wind-Speed": 31,
+        "Air-Pressure": 669
+    },
+    {
+        "Time": "2023-05-25 18:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -10,
+        "Wind-Speed": 17,
+        "Air-Pressure": 650
+    },
+    {
+        "Time": "2023-05-25 19:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -8,
+        "Wind-Speed": 36,
+        "Air-Pressure": 665
+    },
+    {
+        "Time": "2023-05-25 20:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -8,
+        "Wind-Speed": 24,
+        "Air-Pressure": 675
+    },
+    {
+        "Time": "2023-05-25 21:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -5.6,
+        "Wind-Speed": 28.0,
+        "Air-Pressure": 677
+    },
+    {
+        "Time": "2023-05-25 22:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -4.8,
+        "Wind-Speed": 16.0,
+        "Air-Pressure": 682
+    },
+    {
+        "Time": "2023-05-25 23:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -2.4,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 668
+    },
+    {
+        "Time": "2023-05-26 00:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -0.8,
+        "Wind-Speed": 11.2,
+        "Air-Pressure": 679
+    },
+    {
+        "Time": "2023-05-26 01:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1.6,
+        "Wind-Speed": 15.2,
+        "Air-Pressure": 679
+    },
+    {
+        "Time": "2023-05-26 02:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -1.6,
+        "Wind-Speed": 24.8,
+        "Air-Pressure": 665
+    },
+    {
+        "Time": "2023-05-26 03:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -2.4,
+        "Wind-Speed": 31.2,
+        "Air-Pressure": 660
+    },
+    {
+        "Time": "2023-05-26 04:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -2.4,
+        "Wind-Speed": 15.2,
+        "Air-Pressure": 648
+    },
+    {
+        "Time": "2023-05-26 05:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -1.6,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 636
+    },
+    {
+        "Time": "2023-05-26 06:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -2.4,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 628
+    },
+    {
+        "Time": "2023-05-26 07:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -3,
+        "Wind-Speed": 28,
+        "Air-Pressure": 646
+    },
+    {
+        "Time": "2023-05-26 08:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -2,
+        "Wind-Speed": 31,
+        "Air-Pressure": 664
+    },
+    {
+        "Time": "2023-05-26 09:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1,
+        "Wind-Speed": 51,
+        "Air-Pressure": 654
+    },
+    {
+        "Time": "2023-05-26 10:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 1,
+        "Wind-Speed": 46,
+        "Air-Pressure": 649
+    },
+    {
+        "Time": "2023-05-26 11:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 1,
+        "Wind-Speed": 55,
+        "Air-Pressure": 633
+    },
+    {
+        "Time": "2023-05-26 12:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 2,
+        "Wind-Speed": 67,
+        "Air-Pressure": 649
+    },
+    {
+        "Time": "2023-05-26 13:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 3,
+        "Wind-Speed": 55,
+        "Air-Pressure": 657
+    },
+    {
+        "Time": "2023-05-26 14:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 4,
+        "Wind-Speed": 44,
+        "Air-Pressure": 676
+    },
+    {
+        "Time": "2023-05-26 15:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 3,
+        "Wind-Speed": 40,
+        "Air-Pressure": 688
+    },
+    {
+        "Time": "2023-05-26 16:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 5,
+        "Wind-Speed": 53,
+        "Air-Pressure": 673
+    },
+    {
+        "Time": "2023-05-26 17:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 7,
+        "Wind-Speed": 35,
+        "Air-Pressure": 679
+    },
+    {
+        "Time": "2023-05-26 18:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 8,
+        "Wind-Speed": 21,
+        "Air-Pressure": 674
+    },
+    {
+        "Time": "2023-05-26 19:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 8,
+        "Wind-Speed": 2,
+        "Air-Pressure": 662
+    },
+    {
+        "Time": "2023-05-26 20:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 8,
+        "Wind-Speed": 28,
+        "Air-Pressure": 667
+    },
+    {
+        "Time": "2023-05-26 21:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 8.0,
+        "Wind-Speed": 35.2,
+        "Air-Pressure": 668
+    },
+    {
+        "Time": "2023-05-26 22:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 6.4,
+        "Wind-Speed": 28.0,
+        "Air-Pressure": 673
+    },
+    {
+        "Time": "2023-05-26 23:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 4.0,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 677
+    },
+    {
+        "Time": "2023-05-27 00:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 2.4,
+        "Wind-Speed": 25.6,
+        "Air-Pressure": 675
+    },
+    {
+        "Time": "2023-05-27 01:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 3.2,
+        "Wind-Speed": 14.4,
+        "Air-Pressure": 674
+    },
+    {
+        "Time": "2023-05-27 02:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 3.2,
+        "Wind-Speed": 45.6,
+        "Air-Pressure": 684
+    },
+    {
+        "Time": "2023-05-27 03:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 3.2,
+        "Wind-Speed": 51.2,
+        "Air-Pressure": 701
+    },
+    {
+        "Time": "2023-05-27 04:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 0.8,
+        "Wind-Speed": 40.8,
+        "Air-Pressure": 706
+    },
+    {
+        "Time": "2023-05-27 05:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -0.8,
+        "Wind-Speed": 40.0,
+        "Air-Pressure": 721
+    },
+    {
+        "Time": "2023-05-27 06:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -0.8,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 731
+    },
+    {
+        "Time": "2023-05-27 07:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 0,
+        "Wind-Speed": 62,
+        "Air-Pressure": 738
+    },
+    {
+        "Time": "2023-05-27 08:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0,
+        "Wind-Speed": 56,
+        "Air-Pressure": 738
+    },
+    {
+        "Time": "2023-05-27 09:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -1,
+        "Wind-Speed": 60,
+        "Air-Pressure": 722
+    },
+    {
+        "Time": "2023-05-27 10:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1,
+        "Wind-Speed": 52,
+        "Air-Pressure": 730
+    },
+    {
+        "Time": "2023-05-27 11:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -1,
+        "Wind-Speed": 49,
+        "Air-Pressure": 740
+    },
+    {
+        "Time": "2023-05-27 12:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 1,
+        "Wind-Speed": 35,
+        "Air-Pressure": 720
+    },
+    {
+        "Time": "2023-05-27 13:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 1,
+        "Wind-Speed": 47,
+        "Air-Pressure": 723
+    },
+    {
+        "Time": "2023-05-27 14:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 2,
+        "Wind-Speed": 29,
+        "Air-Pressure": 708
+    },
+    {
+        "Time": "2023-05-27 15:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 3,
+        "Wind-Speed": 48,
+        "Air-Pressure": 715
+    },
+    {
+        "Time": "2023-05-27 16:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 2,
+        "Wind-Speed": 36,
+        "Air-Pressure": 734
+    },
+    {
+        "Time": "2023-05-27 17:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": 4,
+        "Wind-Speed": 34,
+        "Air-Pressure": 720
+    },
+    {
+        "Time": "2023-05-27 18:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 2,
+        "Wind-Speed": 41,
+        "Air-Pressure": 737
+    },
+    {
+        "Time": "2023-05-27 19:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 4,
+        "Wind-Speed": 34,
+        "Air-Pressure": 746
+    },
+    {
+        "Time": "2023-05-27 20:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 4,
+        "Wind-Speed": 42,
+        "Air-Pressure": 729
+    },
+    {
+        "Time": "2023-05-27 21:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 3.2,
+        "Wind-Speed": 47.2,
+        "Air-Pressure": 731
+    },
+    {
+        "Time": "2023-05-27 22:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 1.6,
+        "Wind-Speed": 45.6,
+        "Air-Pressure": 713
+    },
+    {
+        "Time": "2023-05-27 23:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 0.8,
+        "Wind-Speed": 27.2,
+        "Air-Pressure": 693
+    },
+    {
+        "Time": "2023-05-28 00:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 1.6,
+        "Wind-Speed": 24.8,
+        "Air-Pressure": 695
+    },
+    {
+        "Time": "2023-05-28 01:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 2.4,
+        "Wind-Speed": 14.4,
+        "Air-Pressure": 710
+    },
+    {
+        "Time": "2023-05-28 02:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 1.6,
+        "Wind-Speed": 45.6,
+        "Air-Pressure": 716
+    },
+    {
+        "Time": "2023-05-28 03:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 2.4,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 735
+    },
+    {
+        "Time": "2023-05-28 04:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 1.6,
+        "Wind-Speed": 38.4,
+        "Air-Pressure": 743
+    },
+    {
+        "Time": "2023-05-28 05:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.8,
+        "Wind-Speed": 25.6,
+        "Air-Pressure": 758
+    },
+    {
+        "Time": "2023-05-28 06:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.8,
+        "Wind-Speed": 26.4,
+        "Air-Pressure": 742
+    },
+    {
+        "Time": "2023-05-28 07:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0,
+        "Wind-Speed": 14,
+        "Air-Pressure": 746
+    },
+    {
+        "Time": "2023-05-28 08:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0,
+        "Wind-Speed": 28,
+        "Air-Pressure": 732
+    },
+    {
+        "Time": "2023-05-28 09:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -2,
+        "Wind-Speed": 45,
+        "Air-Pressure": 734
+    },
+    {
+        "Time": "2023-05-28 10:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -1,
+        "Wind-Speed": 63,
+        "Air-Pressure": 719
+    },
+    {
+        "Time": "2023-05-28 11:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -3,
+        "Wind-Speed": 63,
+        "Air-Pressure": 714
+    },
+    {
+        "Time": "2023-05-28 12:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -3,
+        "Wind-Speed": 80,
+        "Air-Pressure": 717
+    },
+    {
+        "Time": "2023-05-28 13:18:28.044869",
+        "Wind-Direction": "NW",
+        "Temperature": -3,
+        "Wind-Speed": 78,
+        "Air-Pressure": 701
+    },
+    {
+        "Time": "2023-05-28 14:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": -5,
+        "Wind-Speed": 78,
+        "Air-Pressure": 720
+    },
+    {
+        "Time": "2023-05-28 15:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -5,
+        "Wind-Speed": 95,
+        "Air-Pressure": 736
+    },
+    {
+        "Time": "2023-05-28 16:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -5,
+        "Wind-Speed": 77,
+        "Air-Pressure": 746
+    },
+    {
+        "Time": "2023-05-28 17:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -6,
+        "Wind-Speed": 92,
+        "Air-Pressure": 741
+    },
+    {
+        "Time": "2023-05-28 18:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -6,
+        "Wind-Speed": 97,
+        "Air-Pressure": 731
+    },
+    {
+        "Time": "2023-05-28 19:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -5,
+        "Wind-Speed": 80,
+        "Air-Pressure": 723
+    },
+    {
+        "Time": "2023-05-28 20:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -4,
+        "Wind-Speed": 72,
+        "Air-Pressure": 717
+    },
+    {
+        "Time": "2023-05-28 21:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -2.4,
+        "Wind-Speed": 52.8,
+        "Air-Pressure": 727
+    },
+    {
+        "Time": "2023-05-28 22:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -2.4,
+        "Wind-Speed": 29.6,
+        "Air-Pressure": 732
+    },
+    {
+        "Time": "2023-05-28 23:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -3.2,
+        "Wind-Speed": 15.2,
+        "Air-Pressure": 714
+    },
+    {
+        "Time": "2023-05-29 00:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -3.2,
+        "Wind-Speed": 32.8,
+        "Air-Pressure": 727
+    },
+    {
+        "Time": "2023-05-29 01:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -4.0,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 708
+    },
+    {
+        "Time": "2023-05-29 02:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -4.8,
+        "Wind-Speed": 17.6,
+        "Air-Pressure": 693
+    },
+    {
+        "Time": "2023-05-29 03:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -5.6,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 683
+    },
+    {
+        "Time": "2023-05-29 04:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -3.2,
+        "Wind-Speed": 12.8,
+        "Air-Pressure": 673
+    },
+    {
+        "Time": "2023-05-29 05:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -0.8,
+        "Wind-Speed": 23.2,
+        "Air-Pressure": 683
+    },
+    {
+        "Time": "2023-05-29 06:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -1.6,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 695
+    },
+    {
+        "Time": "2023-05-29 07:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 0,
+        "Wind-Speed": 55,
+        "Air-Pressure": 678
+    },
+    {
+        "Time": "2023-05-29 08:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 0,
+        "Wind-Speed": 50,
+        "Air-Pressure": 673
+    },
+    {
+        "Time": "2023-05-29 09:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 1,
+        "Wind-Speed": 58,
+        "Air-Pressure": 685
+    },
+    {
+        "Time": "2023-05-29 10:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 3,
+        "Wind-Speed": 62,
+        "Air-Pressure": 694
+    },
+    {
+        "Time": "2023-05-29 11:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 4,
+        "Wind-Speed": 53,
+        "Air-Pressure": 677
+    },
+    {
+        "Time": "2023-05-29 12:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 3,
+        "Wind-Speed": 42,
+        "Air-Pressure": 662
+    },
+    {
+        "Time": "2023-05-29 13:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 5,
+        "Wind-Speed": 46,
+        "Air-Pressure": 645
+    },
+    {
+        "Time": "2023-05-29 14:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 5,
+        "Wind-Speed": 37,
+        "Air-Pressure": 644
+    },
+    {
+        "Time": "2023-05-29 15:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 6,
+        "Wind-Speed": 55,
+        "Air-Pressure": 659
+    },
+    {
+        "Time": "2023-05-29 16:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 5,
+        "Wind-Speed": 44,
+        "Air-Pressure": 650
+    },
+    {
+        "Time": "2023-05-29 17:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 4,
+        "Wind-Speed": 63,
+        "Air-Pressure": 663
+    },
+    {
+        "Time": "2023-05-29 18:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 4,
+        "Wind-Speed": 59,
+        "Air-Pressure": 677
+    },
+    {
+        "Time": "2023-05-29 19:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 3,
+        "Wind-Speed": 59,
+        "Air-Pressure": 682
+    },
+    {
+        "Time": "2023-05-29 20:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 4,
+        "Wind-Speed": 58,
+        "Air-Pressure": 669
+    },
+    {
+        "Time": "2023-05-29 21:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 1.6,
+        "Wind-Speed": 44.0,
+        "Air-Pressure": 687
+    },
+    {
+        "Time": "2023-05-29 22:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 1.6,
+        "Wind-Speed": 44.8,
+        "Air-Pressure": 670
+    },
+    {
+        "Time": "2023-05-29 23:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 2.4,
+        "Wind-Speed": 28.0,
+        "Air-Pressure": 674
+    },
+    {
+        "Time": "2023-05-30 00:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 1.6,
+        "Wind-Speed": 33.6,
+        "Air-Pressure": 669
+    },
+    {
+        "Time": "2023-05-30 01:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0.8,
+        "Wind-Speed": 26.4,
+        "Air-Pressure": 653
+    },
+    {
+        "Time": "2023-05-30 02:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -0.8,
+        "Wind-Speed": 5.6,
+        "Air-Pressure": 660
+    },
+    {
+        "Time": "2023-05-30 03:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -1.6,
+        "Wind-Speed": 39.2,
+        "Air-Pressure": 659
+    },
+    {
+        "Time": "2023-05-30 04:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -1.6,
+        "Wind-Speed": 28.0,
+        "Air-Pressure": 665
+    },
+    {
+        "Time": "2023-05-30 05:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -2.4,
+        "Wind-Speed": 16.8,
+        "Air-Pressure": 683
+    },
+    {
+        "Time": "2023-05-30 06:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -2.4,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 674
+    },
+    {
+        "Time": "2023-05-30 07:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -2,
+        "Wind-Speed": 36,
+        "Air-Pressure": 677
+    },
+    {
+        "Time": "2023-05-30 08:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -4,
+        "Wind-Speed": 51,
+        "Air-Pressure": 690
+    },
+    {
+        "Time": "2023-05-30 09:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -4,
+        "Wind-Speed": 36,
+        "Air-Pressure": 690
+    },
+    {
+        "Time": "2023-05-30 10:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -5,
+        "Wind-Speed": 55,
+        "Air-Pressure": 678
+    },
+    {
+        "Time": "2023-05-30 11:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -5,
+        "Wind-Speed": 54,
+        "Air-Pressure": 696
+    },
+    {
+        "Time": "2023-05-30 12:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -7,
+        "Wind-Speed": 44,
+        "Air-Pressure": 708
+    },
+    {
+        "Time": "2023-05-30 13:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -8,
+        "Wind-Speed": 38,
+        "Air-Pressure": 694
+    },
+    {
+        "Time": "2023-05-30 14:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -7,
+        "Wind-Speed": 29,
+        "Air-Pressure": 677
+    },
+    {
+        "Time": "2023-05-30 15:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -8,
+        "Wind-Speed": 40,
+        "Air-Pressure": 696
+    },
+    {
+        "Time": "2023-05-30 16:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -7,
+        "Wind-Speed": 25,
+        "Air-Pressure": 695
+    },
+    {
+        "Time": "2023-05-30 17:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -6,
+        "Wind-Speed": 13,
+        "Air-Pressure": 686
+    },
+    {
+        "Time": "2023-05-30 18:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -8,
+        "Wind-Speed": 35,
+        "Air-Pressure": 667
+    },
+    {
+        "Time": "2023-05-30 19:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -9,
+        "Wind-Speed": 28,
+        "Air-Pressure": 680
+    },
+    {
+        "Time": "2023-05-30 20:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -11,
+        "Wind-Speed": 10,
+        "Air-Pressure": 697
+    },
+    {
+        "Time": "2023-05-30 21:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -8.0,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 681
+    },
+    {
+        "Time": "2023-05-30 22:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -8.0,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 671
+    },
+    {
+        "Time": "2023-05-30 23:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": -7.2,
+        "Wind-Speed": 12.0,
+        "Air-Pressure": 666
+    },
+    {
+        "Time": "2023-05-31 00:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": -6.4,
+        "Wind-Speed": 32.8,
+        "Air-Pressure": 680
+    },
+    {
+        "Time": "2023-05-31 01:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -4.0,
+        "Wind-Speed": 26.4,
+        "Air-Pressure": 680
+    },
+    {
+        "Time": "2023-05-31 02:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -2.4,
+        "Wind-Speed": 15.2,
+        "Air-Pressure": 694
+    },
+    {
+        "Time": "2023-05-31 03:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -2.4,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 685
+    },
+    {
+        "Time": "2023-05-31 04:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -0.8,
+        "Wind-Speed": 27.2,
+        "Air-Pressure": 679
+    },
+    {
+        "Time": "2023-05-31 05:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -1.6,
+        "Wind-Speed": 12.0,
+        "Air-Pressure": 665
+    },
+    {
+        "Time": "2023-05-31 06:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": -1.6,
+        "Wind-Speed": 41.6,
+        "Air-Pressure": 684
+    },
+    {
+        "Time": "2023-05-31 07:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": -3,
+        "Wind-Speed": 24,
+        "Air-Pressure": 673
+    },
+    {
+        "Time": "2023-05-31 08:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -3,
+        "Wind-Speed": 23,
+        "Air-Pressure": 691
+    },
+    {
+        "Time": "2023-05-31 09:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -3,
+        "Wind-Speed": 14,
+        "Air-Pressure": 711
+    },
+    {
+        "Time": "2023-05-31 10:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -5,
+        "Wind-Speed": 59,
+        "Air-Pressure": 725
+    },
+    {
+        "Time": "2023-05-31 11:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -4,
+        "Wind-Speed": 76,
+        "Air-Pressure": 720
+    },
+    {
+        "Time": "2023-05-31 12:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3,
+        "Wind-Speed": 68,
+        "Air-Pressure": 719
+    },
+    {
+        "Time": "2023-05-31 13:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 53,
+        "Air-Pressure": 731
+    },
+    {
+        "Time": "2023-05-31 14:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3,
+        "Wind-Speed": 39,
+        "Air-Pressure": 718
+    },
+    {
+        "Time": "2023-05-31 15:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 52,
+        "Air-Pressure": 709
+    },
+    {
+        "Time": "2023-05-31 16:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -4,
+        "Wind-Speed": 34,
+        "Air-Pressure": 699
+    },
+    {
+        "Time": "2023-05-31 17:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3,
+        "Wind-Speed": 35,
+        "Air-Pressure": 684
+    },
+    {
+        "Time": "2023-05-31 18:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -4,
+        "Wind-Speed": 23,
+        "Air-Pressure": 690
+    },
+    {
+        "Time": "2023-05-31 19:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -6,
+        "Wind-Speed": 43,
+        "Air-Pressure": 696
+    },
+    {
+        "Time": "2023-05-31 20:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -6,
+        "Wind-Speed": 29,
+        "Air-Pressure": 702
+    },
+    {
+        "Time": "2023-05-31 21:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -3.2,
+        "Wind-Speed": 7.2,
+        "Air-Pressure": 706
+    },
+    {
+        "Time": "2023-05-31 22:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3.2,
+        "Wind-Speed": 37.6,
+        "Air-Pressure": 712
+    },
+    {
+        "Time": "2023-05-31 23:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2.4,
+        "Wind-Speed": 34.4,
+        "Air-Pressure": 724
+    },
+    {
+        "Time": "2023-06-01 00:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -3.2,
+        "Wind-Speed": 26.4,
+        "Air-Pressure": 733
+    },
+    {
+        "Time": "2023-06-01 01:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -2.4,
+        "Wind-Speed": 12.0,
+        "Air-Pressure": 738
+    },
+    {
+        "Time": "2023-06-01 02:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -2.4,
+        "Wind-Speed": 36.8,
+        "Air-Pressure": 747
+    },
+    {
+        "Time": "2023-06-01 03:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -3.2,
+        "Wind-Speed": 38.4,
+        "Air-Pressure": 755
+    },
+    {
+        "Time": "2023-06-01 04:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -2.4,
+        "Wind-Speed": 33.6,
+        "Air-Pressure": 743
+    },
+    {
+        "Time": "2023-06-01 05:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2.4,
+        "Wind-Speed": 21.6,
+        "Air-Pressure": 758
+    },
+    {
+        "Time": "2023-06-01 06:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -0.8,
+        "Wind-Speed": 9.6,
+        "Air-Pressure": 746
+    },
+    {
+        "Time": "2023-06-01 07:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 16,
+        "Air-Pressure": 740
+    },
+    {
+        "Time": "2023-06-01 08:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -3,
+        "Wind-Speed": 31,
+        "Air-Pressure": 744
+    },
+    {
+        "Time": "2023-06-01 09:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 37,
+        "Air-Pressure": 742
+    },
+    {
+        "Time": "2023-06-01 10:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 26,
+        "Air-Pressure": 757
+    },
+    {
+        "Time": "2023-06-01 11:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 35,
+        "Air-Pressure": 758
+    },
+    {
+        "Time": "2023-06-01 12:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -3,
+        "Wind-Speed": 37,
+        "Air-Pressure": 751
+    },
+    {
+        "Time": "2023-06-01 13:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -2,
+        "Wind-Speed": 32,
+        "Air-Pressure": 763
+    },
+    {
+        "Time": "2023-06-01 14:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": -3,
+        "Wind-Speed": 26,
+        "Air-Pressure": 769
+    },
+    {
+        "Time": "2023-06-01 15:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 40,
+        "Air-Pressure": 780
+    },
+    {
+        "Time": "2023-06-01 16:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -2,
+        "Wind-Speed": 29,
+        "Air-Pressure": 799
+    },
+    {
+        "Time": "2023-06-01 17:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": -3,
+        "Wind-Speed": 29,
+        "Air-Pressure": 793
+    },
+    {
+        "Time": "2023-06-01 18:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -5,
+        "Wind-Speed": 12,
+        "Air-Pressure": 793
+    },
+    {
+        "Time": "2023-06-01 19:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -6,
+        "Wind-Speed": 25,
+        "Air-Pressure": 797
+    },
+    {
+        "Time": "2023-06-01 20:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -8,
+        "Wind-Speed": 41,
+        "Air-Pressure": 804
+    },
+    {
+        "Time": "2023-06-01 21:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -5.6,
+        "Wind-Speed": 25.6,
+        "Air-Pressure": 785
+    },
+    {
+        "Time": "2023-06-01 22:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": -5.6,
+        "Wind-Speed": 33.6,
+        "Air-Pressure": 799
+    },
+    {
+        "Time": "2023-06-01 23:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -5.6,
+        "Wind-Speed": 39.2,
+        "Air-Pressure": 791
+    },
+    {
+        "Time": "2023-06-02 00:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": -4.0,
+        "Wind-Speed": 26.4,
+        "Air-Pressure": 775
+    },
+    {
+        "Time": "2023-06-02 01:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": -4.0,
+        "Wind-Speed": 16.8,
+        "Air-Pressure": 792
+    },
+    {
+        "Time": "2023-06-02 02:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": -1.6,
+        "Wind-Speed": 25.6,
+        "Air-Pressure": 777
+    },
+    {
+        "Time": "2023-06-02 03:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 0.0,
+        "Wind-Speed": 12.0,
+        "Air-Pressure": 769
+    },
+    {
+        "Time": "2023-06-02 04:18:28.044869",
+        "Wind-Direction": "S",
+        "Temperature": 1.6,
+        "Wind-Speed": 13.6,
+        "Air-Pressure": 763
+    },
+    {
+        "Time": "2023-06-02 05:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 2.4,
+        "Wind-Speed": 18.4,
+        "Air-Pressure": 744
+    },
+    {
+        "Time": "2023-06-02 06:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": 0.0,
+        "Wind-Speed": 44.0,
+        "Air-Pressure": 749
+    },
+    {
+        "Time": "2023-06-02 07:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": 0,
+        "Wind-Speed": 39,
+        "Air-Pressure": 738
+    },
+    {
+        "Time": "2023-06-02 08:18:28.044869",
+        "Wind-Direction": "SSW",
+        "Temperature": -1,
+        "Wind-Speed": 23,
+        "Air-Pressure": 752
+    },
+    {
+        "Time": "2023-06-02 09:18:28.044869",
+        "Wind-Direction": "SW",
+        "Temperature": -1,
+        "Wind-Speed": 11,
+        "Air-Pressure": 760
+    },
+    {
+        "Time": "2023-06-02 10:18:28.044869",
+        "Wind-Direction": "WSW",
+        "Temperature": 1,
+        "Wind-Speed": 23,
+        "Air-Pressure": 774
+    },
+    {
+        "Time": "2023-06-02 11:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 3,
+        "Wind-Speed": 27,
+        "Air-Pressure": 759
+    },
+    {
+        "Time": "2023-06-02 12:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 2,
+        "Wind-Speed": 16,
+        "Air-Pressure": 769
+    },
+    {
+        "Time": "2023-06-02 13:18:28.044869",
+        "Wind-Direction": "N",
+        "Temperature": 4,
+        "Wind-Speed": 60,
+        "Air-Pressure": 762
+    },
+    {
+        "Time": "2023-06-02 14:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 3,
+        "Wind-Speed": 60,
+        "Air-Pressure": 744
+    },
+    {
+        "Time": "2023-06-02 15:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 3,
+        "Wind-Speed": 57,
+        "Air-Pressure": 743
+    },
+    {
+        "Time": "2023-06-02 16:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 1,
+        "Wind-Speed": 77,
+        "Air-Pressure": 747
+    },
+    {
+        "Time": "2023-06-02 17:18:28.044869",
+        "Wind-Direction": "NNO",
+        "Temperature": 3,
+        "Wind-Speed": 93,
+        "Air-Pressure": 730
+    },
+    {
+        "Time": "2023-06-02 18:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 4,
+        "Wind-Speed": 78,
+        "Air-Pressure": 731
+    },
+    {
+        "Time": "2023-06-02 19:18:28.044869",
+        "Wind-Direction": "NO",
+        "Temperature": 6,
+        "Wind-Speed": 72,
+        "Air-Pressure": 730
+    },
+    {
+        "Time": "2023-06-02 20:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 6,
+        "Wind-Speed": 81,
+        "Air-Pressure": 715
+    },
+    {
+        "Time": "2023-06-02 21:18:28.044869",
+        "Wind-Direction": "ONO",
+        "Temperature": 4.8,
+        "Wind-Speed": 70.4,
+        "Air-Pressure": 732
+    },
+    {
+        "Time": "2023-06-02 22:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 4.0,
+        "Wind-Speed": 58.4,
+        "Air-Pressure": 743
+    },
+    {
+        "Time": "2023-06-02 23:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 4.0,
+        "Wind-Speed": 32.0,
+        "Air-Pressure": 728
+    },
+    {
+        "Time": "2023-06-03 00:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": 3.2,
+        "Wind-Speed": 40.0,
+        "Air-Pressure": 745
+    },
+    {
+        "Time": "2023-06-03 01:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 1.6,
+        "Wind-Speed": 32.0,
+        "Air-Pressure": 743
+    },
+    {
+        "Time": "2023-06-03 02:18:28.044869",
+        "Wind-Direction": "WNW",
+        "Temperature": 0.8,
+        "Wind-Speed": 11.2,
+        "Air-Pressure": 759
+    },
+    {
+        "Time": "2023-06-03 03:18:28.044869",
+        "Wind-Direction": "W",
+        "Temperature": -0.8,
+        "Wind-Speed": 13.6,
+        "Air-Pressure": 741
+    },
+    {
+        "Time": "2023-06-03 04:18:28.044869",
+        "Wind-Direction": "NNW",
+        "Temperature": 0.0,
+        "Wind-Speed": 33.6,
+        "Air-Pressure": 733
+    },
+    {
+        "Time": "2023-06-03 05:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 0.0,
+        "Wind-Speed": 12.8,
+        "Air-Pressure": 730
+    },
+    {
+        "Time": "2023-06-03 06:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0.8,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 727
+    },
+    {
+        "Time": "2023-06-03 07:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0,
+        "Wind-Speed": 44,
+        "Air-Pressure": 734
+    },
+    {
+        "Time": "2023-06-03 08:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 1,
+        "Wind-Speed": 28,
+        "Air-Pressure": 728
+    },
+    {
+        "Time": "2023-06-03 09:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 0,
+        "Wind-Speed": 14,
+        "Air-Pressure": 719
+    },
+    {
+        "Time": "2023-06-03 10:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 2,
+        "Wind-Speed": 56,
+        "Air-Pressure": 702
+    },
+    {
+        "Time": "2023-06-03 11:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 4,
+        "Wind-Speed": 41,
+        "Air-Pressure": 701
+    },
+    {
+        "Time": "2023-06-03 12:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 3,
+        "Wind-Speed": 48,
+        "Air-Pressure": 697
+    },
+    {
+        "Time": "2023-06-03 13:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 3,
+        "Wind-Speed": 59,
+        "Air-Pressure": 703
+    },
+    {
+        "Time": "2023-06-03 14:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 3,
+        "Wind-Speed": 59,
+        "Air-Pressure": 695
+    },
+    {
+        "Time": "2023-06-03 15:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 5,
+        "Wind-Speed": 39,
+        "Air-Pressure": 705
+    },
+    {
+        "Time": "2023-06-03 16:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 7,
+        "Wind-Speed": 19,
+        "Air-Pressure": 693
+    },
+    {
+        "Time": "2023-06-03 17:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 5,
+        "Wind-Speed": 35,
+        "Air-Pressure": 699
+    },
+    {
+        "Time": "2023-06-03 18:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 5,
+        "Wind-Speed": 31,
+        "Air-Pressure": 717
+    },
+    {
+        "Time": "2023-06-03 19:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 4,
+        "Wind-Speed": 23,
+        "Air-Pressure": 701
+    },
+    {
+        "Time": "2023-06-03 20:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 5,
+        "Wind-Speed": 26,
+        "Air-Pressure": 692
+    },
+    {
+        "Time": "2023-06-03 21:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 4.8,
+        "Wind-Speed": 30.4,
+        "Air-Pressure": 705
+    },
+    {
+        "Time": "2023-06-03 22:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 4.8,
+        "Wind-Speed": 24.0,
+        "Air-Pressure": 687
+    },
+    {
+        "Time": "2023-06-03 23:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 4.0,
+        "Wind-Speed": 32.8,
+        "Air-Pressure": 692
+    },
+    {
+        "Time": "2023-06-04 00:18:28.044869",
+        "Wind-Direction": "O",
+        "Temperature": 1.6,
+        "Wind-Speed": 11.2,
+        "Air-Pressure": 680
+    },
+    {
+        "Time": "2023-06-04 01:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 2.4,
+        "Wind-Speed": 25.6,
+        "Air-Pressure": 682
+    },
+    {
+        "Time": "2023-06-04 02:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 3.2,
+        "Wind-Speed": 29.6,
+        "Air-Pressure": 672
+    },
+    {
+        "Time": "2023-06-04 03:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 1.6,
+        "Wind-Speed": 29.6,
+        "Air-Pressure": 681
+    },
+    {
+        "Time": "2023-06-04 04:18:28.044869",
+        "Wind-Direction": "OSO",
+        "Temperature": 2.4,
+        "Wind-Speed": 20.8,
+        "Air-Pressure": 673
+    },
+    {
+        "Time": "2023-06-04 05:18:28.044869",
+        "Wind-Direction": "SO",
+        "Temperature": 2.4,
+        "Wind-Speed": 19.2,
+        "Air-Pressure": 668
+    },
+    {
+        "Time": "2023-06-04 06:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 1.6,
+        "Wind-Speed": 28.8,
+        "Air-Pressure": 662
+    },
+    {
+        "Time": "2023-06-04 07:18:28.044869",
+        "Wind-Direction": "SSO",
+        "Temperature": 3,
+        "Wind-Speed": 44,
+        "Air-Pressure": 658
     }
 ]
