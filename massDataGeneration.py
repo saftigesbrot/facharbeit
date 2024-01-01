@@ -5,10 +5,6 @@ import time
 from datetime import timedelta, datetime
 from colorama import *
 init(autoreset=True)
-import numpy as np
-import sys
-sys.setrecursionlimit(2000)
-
 generatedData = []
 
 def ProofSettings():
@@ -21,6 +17,8 @@ def ProofSettings():
    # Proof GeneralSettings
    global hurricaneProbability 
    number = obj['general-settings']['hurricane-probability']
+
+   # Schöner machen
    name = " Hurrikanwahrscheinlichkeit"
    
    ProofSettingsIntSupporter(number, name)
@@ -322,6 +320,10 @@ def MainGeneration():
    global hurricaneProbability
    global hurricaneMultiplicator
    global generatedDataFactor
+   global hurricaneBoolean
+   hurricaneBoolean = False
+   global hurricaneInAction
+   hurricaneInAction = False
 
 
    while generateDataSets != generatedDataFactor:
@@ -329,24 +331,32 @@ def MainGeneration():
          print(generateDataSets, Back.GREEN + " Datensätze generiert! \n")
          time.sleep(1)
 
-      hurricaneChance = round(random.uniform(0,100))
+      hurricaneChance = random.uniform(0,100)
 
-      if hurricaneChance > hurricaneProbability:
+      if hurricaneChance > hurricaneProbability and hurricaneInAction == False:
+         # And Abfrage um keine neuen Daten zu generieren wenn noch ein Hurrikan läuft
          hurricaneBoolean = False
-         DataGeneration(hurricaneBoolean)
+         DataGeneration()
 
-      elif hurricaneChance == hurricaneProbability or hurricaneChance < hurricaneProbability:
+      elif hurricaneChance == hurricaneProbability or hurricaneChance < hurricaneProbability or hurricaneInAction == True:
+         # or abfrage, ob bereits ein Hurrikan läuft
          hurricaneBoolean = True
-         DataGeneration(hurricaneBoolean)
+         DataGeneration()
 
       generateDataSets += 1
+
+      # Für jeden Datensatz, der erstellt wird, gibt es eine neue Hurrikan Wahrscheinlichkeit -> Wenn bereits ein Hurrikan vorhanden ist, 
+      # sollte dies nicht passieren, da sich sonst zwei Hurrikans überschneiden können
    SaveData()
 
 
-def DataGeneration(hurricaneBoolean):
+def DataGeneration():
    global getTemperatureData
    global getWindSpeedData
    global getAirPressureData
+   global hurricaneInAction
+   global hurricaneBoolean
+   global generateDataSets
 
    getTemperatureData = True 
    getWindSpeedData = True
@@ -361,25 +371,37 @@ def DataGeneration(hurricaneBoolean):
    GenerateWindDirection()
    global windDirections
 
-   # Generiere die Temperatur
-   GenerateTemperature()
-   global Temperature
+   if hurricaneBoolean == True and hurricaneInAction == True:
+      actionHurricane()
 
-   # Generiere die Windgeschwindgikeit 
-   GenerateWindSpeed()
-   global WindSpeed
+   elif hurricaneBoolean == True and hurricaneInAction == False:
+      startHurricane()
 
-   # Generiere den Luftdruck
-   GenerateAirPressure()
-   global AirPressure
+   elif hurricaneBoolean == False and hurricaneInAction == False:
+      hurricaneInAction = False
+      # hurricaneInAction muss bereits voher "False" sein
 
+      # Generiere die Temperatur
+      GenerateTemperature()
+      global Temperature
+
+      # Generiere die Windgeschwindgikeit 
+      GenerateWindSpeed()
+      global WindSpeed
+
+      # Generiere den Luftdruck
+      GenerateAirPressure()
+      global AirPressure
+
+   
    generatedData.append(
       {
         "Time": Time,
         "Wind-Direction": windDirections,
         "Temperature": Temperature,
         "Wind-Speed": WindSpeed,
-        "Air-Pressure": AirPressure
+        "Air-Pressure": AirPressure,
+        "Datasets": generateDataSets
       }
    )
 
@@ -522,6 +544,7 @@ def GenerateTemperature():
    global currentMonthTemperature
    global currentTemperatureMonth
    global lastGeneratedTemperature
+   global hurricaneInAction
 
    if generateDataSets == 0:
       lastGeneratedTemperature = currentMonthTemperature
@@ -529,7 +552,7 @@ def GenerateTemperature():
 
       if isNightBoolean == True and (lastGeneratedTemperature/5) *4 >= temperatureMinimal:
          lastGeneratedTemperature = (lastGeneratedTemperature/5) *4
-
+   
    else:
       if getTemperatureData == True: 
          lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
@@ -542,13 +565,20 @@ def GenerateTemperature():
                
          if temperatureMinimal < lastGeneratedTemperatureMinimal: 
             lastGeneratedTemperature = round(random.uniform(lastGeneratedTemperatureMinimal, lastGeneratedTemperatureMaximum))
-
+              
             if isNightBoolean == True and (lastGeneratedTemperature/5) *4 >= temperatureMinimal:
                lastGeneratedTemperature = (lastGeneratedTemperature/5) *4
 
+            # if hurricaneInAction == True and lastGeneratedTemperature * hurricaneMultiplicator >= temperatureMinimal:
+            #    lastGeneratedTemperature = lastGeneratedTemperature * hurricaneMultiplicator
+            #    # Der Multiplikator muss so eingesetzt werden, dass auch wirklich ein Hurrikan entsteht 
+
+            # if hurricaneInAction == True and lastGeneratedTemperature * hurricaneMultiplicator < temperatureMinimal:
+            #    lastGeneratedTemperature = lastGeneratedTemperature    
+
             if currentTemperatureMonth != currentMonthTemperature:
                lastGeneratedTemperature = currentMonthTemperature
-               currentTemperatureMonth = currentMonthTemperature
+               currentTemperatureMonth = currentMonthTemperature   
 
          elif temperatureMinimal > lastGeneratedTemperatureMinimal or temperatureMinimal == lastGeneratedTemperatureMinimal:
             lastGeneratedTemperature += 3
@@ -562,7 +592,13 @@ def GenerateTemperature():
 
             if isNightBoolean == True and (lastGeneratedTemperature/5) *4 <= temperatureMaximum:
                lastGeneratedTemperature = (lastGeneratedTemperature/5) *4
-            
+
+            if hurricaneInAction == True and lastGeneratedTemperature * hurricaneMultiplicator <= temperatureMaximum:
+               lastGeneratedTemperature = lastGeneratedTemperature * hurricaneMultiplicator
+
+            if hurricaneInAction == True and lastGeneratedTemperature * hurricaneMultiplicator > temperatureMaximum:
+               lastGeneratedTemperature = lastGeneratedTemperature
+
             if currentTemperatureMonth != currentMonthTemperature:
                lastGeneratedTemperature = currentMonthTemperature
                currentTemperatureMonth = currentMonthTemperature
@@ -581,6 +617,7 @@ def GenerateWindSpeed():
    global windSpeedMinimal
    global windSpeedMaximum
    global hurricaneMultiplicator
+   hurricaneMultiplicatorForWindSpeed = hurricaneMultiplicator
    global generateDataSets
    global getWindSpeedData
    global windSpeedMeanValue
@@ -589,6 +626,7 @@ def GenerateWindSpeed():
    global currentWindSpeedMonth
    global lastGeneratedWindSpeed
    global blockingElifLoop
+   global hurricaneInAction
 
    if generateDataSets == 0:
       lastGeneratedWindSpeed = currentMonthWindSpeed
@@ -610,12 +648,19 @@ def GenerateWindSpeed():
          if windSpeedMinimal < lastGeneratedWindSpeedMinimal:
             lastGeneratedWindSpeed = round(random.uniform(lastGeneratedWindSpeedMinimal, lastGeneratedWindSpeedMaximum))
 
-            if isNightBoolean == True and (lastGeneratedWindSpeed/5) *4 >= windSpeedMinimal:
-               lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5) *4
-
             if currentWindSpeedMonth != currentMonthWindSpeed:
                lastGeneratedWindSpeed = currentMonthWindSpeed
                currentWindSpeedMonth = currentMonthWindSpeed
+
+            if isNightBoolean == True and (lastGeneratedWindSpeed/5) *4 >= windSpeedMinimal:
+               lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5) *4
+            
+            # if hurricaneInAction == True and lastGeneratedWindSpeed * hurricaneMultiplicator >= windSpeedMinimal:
+            #    lastGeneratedWindSpeed = lastGeneratedWindSpeed * hurricaneMultiplicator
+
+            # if hurricaneInAction == True and lastGeneratedWindSpeed * hurricaneMultiplicator < windSpeedMinimal:
+            #    lastGeneratedWindSpeed = lastGeneratedWindSpeed  
+
 
          elif windSpeedMinimal > lastGeneratedWindSpeedMinimal or windSpeedMinimal == lastGeneratedWindSpeedMinimal:
             lastGeneratedWindSpeed += 25
@@ -626,20 +671,24 @@ def GenerateWindSpeed():
          
          if windSpeedMaximum > lastGeneratedWindSpeedMaximum:
             lastGeneratedWindSpeed = round(random.uniform(lastGeneratedWindSpeedMinimal, lastGeneratedWindSpeedMaximum))
-
-            if isNightBoolean == True and (lastGeneratedWindSpeed/5)*4 <= windSpeedMaximum:
-               lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5)*4
-
+            
             if currentWindSpeedMonth != currentMonthWindSpeed:
               lastGeneratedWindSpeed = currentMonthWindSpeed
               currentWindSpeedMonth = currentMonthWindSpeed
+            
+            if isNightBoolean == True and (lastGeneratedWindSpeed/5)*4 <= windSpeedMaximum:
+               lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5)*4
+
+            if hurricaneInAction == True and lastGeneratedWindSpeed * hurricaneMultiplicatorForWindSpeed <= windSpeedMaximum:
+               lastGeneratedWindSpeed = lastGeneratedWindSpeed * hurricaneMultiplicatorForWindSpeed
+
+            if hurricaneInAction == True and lastGeneratedWindSpeed * hurricaneMultiplicatorForWindSpeed > windSpeedMaximum:
+               lastGeneratedWindSpeed = lastGeneratedWindSpeed 
 
          elif windSpeedMaximum < lastGeneratedWindSpeedMaximum or windSpeedMaximum == lastGeneratedWindSpeedMaximum:
             lastGeneratedWindSpeed -= 25
             getWindSpeedData = not getWindSpeedData
             GenerateWindSpeed()
-
-
 
    global WindSpeed
    WindSpeed = lastGeneratedWindSpeed
@@ -652,6 +701,7 @@ def GenerateAirPressure():
    global generateDataSets
    global getAirPressureData
    global airPressureMeanValue
+   global hurricaneInAction
 
    if generateDataSets == 0:
        global lastGeneratedAirPressure
@@ -687,6 +737,50 @@ def GenerateAirPressure():
 
    global AirPressure
    AirPressure = lastGeneratedAirPressure
+
+def startHurricane():
+   # Hier beginnt ein neuer Hurrikane
+   global Temperature
+   global WindSpeed
+   global AirPressure
+   global hurricaneInAction
+   global hurricaneLength
+   global hurricaneBoolean
+   global hurricaneInAction
+   global generateDataSets
+
+   # print(generateDataSets)
+   hurricaneLength = round(random.uniform(1,10))
+   hurricaneInAction = True
+
+   GenerateTemperature()
+   GenerateWindSpeed()
+   GenerateAirPressure()
+
+   # Abfangen, dass der hurricane nicht endet, wenn die Werte zu groß werden
+   
+   hurricaneLength -= 1 
+
+def actionHurricane():
+   global hurricaneLength
+   global Temperature
+   global WindSpeed
+   global AirPressure
+   global hurricaneInAction
+   global hurricaneBoolean
+   global generateDataSets
+
+   if hurricaneLength != 0:
+      GenerateTemperature()
+      GenerateWindSpeed()
+      GenerateAirPressure()
+      hurricaneLength -= 1
+
+   elif hurricaneLength == 0:
+      hurricaneInAction = False
+      hurricaneBoolean = False
+
+   # Hier wird der hurricane fortgeführt
 
 
 def SaveData():
