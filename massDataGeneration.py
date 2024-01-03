@@ -1,29 +1,39 @@
-import json
-import random
-import datetime
-import time
-from datetime import timedelta, datetime
-from colorama import *
-init(autoreset=True)
-generatedData = []
+# Importiert das "JSON" Modul -> Speichern/Lesen von Daten mit einer JSON Datei
+import json 
+# Importiert das "Random" Modul -> Erstellen von zufälligen Zahlen
+import random 
+# Importiert das "datetime" Modul -> Erstellen Zeitangaben
+import datetime 
+# Importiert das "time" Modul -> Unterbrechen des Algorithmus
+import time  
+# Importiert die Module "timedelta, datetime" -> Addieren und Formatieren von Zeitangaben
+from datetime import timedelta, datetime 
+# Importiert das "colorama" Modul -> Farbiger Text in der Ausgabe / Konsole
+from colorama import * 
+init(autoreset=True) 
+# Variable zum zwischenspeichern der generierten Daten 
+generatedData = [] 
 
-def ProofSettings():
-   
-   # Überpüftt alle Einstellungen der settings.json Datei auf ihre Kompatibilität
+# Überpüftt alle Einstellungen der settings.json Datei auf ihre Kompatibilität
+def ProofSettings(): 
 
-   with open('settings.json','r') as file:
+   # Lädt die Einstellungen aus der "settings.json" und speichert sie in der Variable "obj"
+   with open('settings.json','r') as file: 
       obj = json.load(file)
 
-   # Proof GeneralSettings
+   # Lädt die Hurrikan Wahrscheinlichkeit aus der "obj" Variable, und prüft mithilfe der 
+   # "ProofSettingsIntSupporter" Funktion die Richtig- und Vollständigkeit. Anschließend 
+   # wird die Wahrscheinlichkeit in die Globale Variable "hurricaneProbability" gespeichert.
    global hurricaneProbability 
    number = obj['general-settings']['hurricane-probability']
-
-   # Schöner machen
    name = " Hurrikanwahrscheinlichkeit"
    
    ProofSettingsIntSupporter(number, name)
    hurricaneProbability = number
 
+   # Lädt den Hurrikan Multiplikator aus der "obj" Variable, und prüft mithilfe der 
+   # "ProofSettingsIntSupporter" Funktion die Richtig- und Vollständigkeit. Anschließend 
+   # wird der Multiplikator in die Globale Variable "hurricaneMultiplicator" gespeichert.
    global hurricaneMultiplicator
    number = obj['general-settings']['hurricane-multiplicator']
    name = " Hurrikanmultiplikator"
@@ -31,6 +41,9 @@ def ProofSettings():
    ProofSettingsIntSupporter(number, name)
    hurricaneMultiplicator = number
 
+   # Lädt den Faktor, wieviele Daten generiert werden sollen, aus der "obj" Variable, und 
+   # prüft mithilfe der "ProofSettingsIntSupporter" Funktion die Richtig- und Vollständigkeit. 
+   # Anschließend wird der Faktor in die Globale Variable "generatedDataFactor" gespeichert.
    global generatedDataFactor
    number = obj['general-settings']['generate-data-factor']
    name = " Datengenerierungsfakor"
@@ -38,6 +51,9 @@ def ProofSettings():
    ProofSettingsIntSupporter(number, name)
    generatedDataFactor = number
 
+   # Lädt den Faktor, wieviele Daten bereits generiert wurden, aus der "obj" Variable, und 
+   # prüft mithilfe der "ProofSettingsIntSupporter" Funktion die Richtig- und Vollständigkeit. 
+   # Anschließend wird der Faktor in die Globale Variable "generateDataSets" gespeichert.
    global generateDataSets
    number = obj['general-settings']['generated-data-sets']
    name = " Datengenerierungssätze"
@@ -45,6 +61,10 @@ def ProofSettings():
    ProofSettingsIntSupporter(number, name)
    generateDataSets = number
 
+   # Lädt die Anzahl der Stunden, die pro Datensatz hinzugefügt werden sollen, aus der 
+   # "obj" Variable, und prüft mithilfe der "ProofSettingsIntSupporter" Funktion die Richtig- 
+   # und Vollständigkeit. Anschließend wird die Anzahl der Stunden in die Globale Variable 
+   # "addingHourse" gespeichert.
    global addingHourse
    number = obj['general-settings']['adding-hourse']
    name = " Hinzuzufügendestundendaten"
@@ -52,7 +72,10 @@ def ProofSettings():
    ProofSettingsIntSupporter(number, name)
    addingHourse = number
 
-   # Proof Date
+   # Lädt das Start Datum und überprüft ob dieses mit dem Format übereinstimmt. Wenn 
+   # dies nicht der Fall ist, wird ein Error ausgegeben mit dem Exit Code "1" und das 
+   # Programm wird beendet. Wenn das Datum erfolgreich geladen wurde wird es in der 
+   # Globalen Variable "startDate" gespeichert.
    global startDate
    date = obj['general-settings']['start-date']
    format = "%Y-%m-%d %H:%M:%S.%f"
@@ -65,6 +88,11 @@ def ProofSettings():
       exit()
    startDate = date
 
+   # Lädt die Datei, in der die Daten gespeichert werden sollen und überprüft, ob es
+   # sich um einen string handelt und ob die Endung ".json" entspricht. Wenn dies 
+   # nicht der Fall ist, wird ein Error ausgegeben mit dem Exit Code "1" und das 
+   # Programm wird beendet. Wenn die Datei erfolgreich geladen wurde, wird sie in die
+   # Globale Variable "savingDataFile" gespeichert.
    global savingDataFile
    file = obj['general-settings']['saving-file']
    splittedFileName = file.split(".")
@@ -78,7 +106,10 @@ def ProofSettings():
       exit()
    savingDataFile = file
 
-   # Proof DayNightCycle
+   # Lädt den Tages und Nacht beginn und überprüft diese mithilfe der 
+   # "ProofSettingsDayNightSupporter" Funktion auf ihre Richtig- und Vollständigkeit.
+   # Anschlißend wird der Beginn der Nacht in die Globale Variable "nightBeginn" und
+   # das Ende der Nacht in die Globale Variable "nightEnd" geladen. 
    global nightBeginn
    global nightEnd
 
@@ -95,89 +126,95 @@ def ProofSettings():
    nightEnd = number
 
 
-   # Proof Seasons
+   # Lädt die Temperaturen der jeweiligen Jahreszeiten und überprüft diese mit der 
+   # "ProofSettingsSeasonsSupporter" Funktion auf ihre Richtig- und Vollständigkeit. 
+   # Anschließend wird die Temperatur der Monate in die jeweiligen Globalen Variablen 
+   # gespeichert. 
    global springTemperature
-   global springWindSpeed
-   global sommerTemperature
-   global sommerWindSpeed
-   global autumnTemperature
-   global autumnWindSpeed
-   global winterTemperature
-   global winterWindSpeed
-
-   global springMonths
-   global sommerMonths
-   global autumnMonths
-   global winterMonths
-
    number = obj['seasons']['spring-temperature']
    name = " Frühlingstemperaturdaten"
 
    ProofSettingsSeasonsSupporter(number, name)
    springTemperature = number
 
+   global sommerTemperature
    number = obj['seasons']['sommer-temperature']
    name = " Sommertemperaturdaten"
    
    ProofSettingsSeasonsSupporter(number, name)
    sommerTemperature = number
 
+   global autumnTemperature
    number = obj['seasons']['autumn-temperature']
    name = " Herbsttemperaturdaten"
 
    ProofSettingsSeasonsSupporter(number, name)
    autumnTemperature = number
 
+   global winterTemperature
    name = obj['seasons']['winter-temperature']
    name = " Wintertemperaturdaten"
 
    ProofSettingsSeasonsSupporter(number, name)
    winterTemperature = number 
 
-   
+   # Lädt die Windgeschwindigkeit der jeweiligen Jahreszeiten und überprüft diese 
+   # mit der "ProofSettingsIntSupporter" Funktion auf ihre Richtig- und Vollständigkeit. 
+   # Anschließend wird die Windgeschwindigkeit der Monate in die jeweiligen Globalen 
+   # Variablen gespeichert. 
+   global springWindSpeed
    number = obj['seasons']['spring-wind-speed']
    name = " Frühlingswindgeschwindigkeitsdaten"
 
    ProofSettingsIntSupporter(number, name)
    springWindSpeed = number
 
+   global sommerWindSpeed
    number = obj['seasons']['sommer-wind-speed']
    name = " Sommerwindgeschwindigkeitsdaten"
 
    ProofSettingsIntSupporter(number, name)
    sommerWindSpeed = number
 
+   global autumnWindSpeed
    number = obj['seasons']['autumn-wind-speed']
    name = " Herbstwindgeschwindigkeitsdaten"
 
    ProofSettingsIntSupporter(number, name)
    autumnWindSpeed = number
 
+   global winterWindSpeed
    number = obj['seasons']['winter-wind-speed']
    name = " Winterwindgeschwindigkeitsdaten"
 
    ProofSettingsIntSupporter(number, name)
    winterWindSpeed = number
 
-
+   # Lädt die Monate der jeweiligen Jahreszeiten und überprüft diese mithilfe 
+   # der "ProofSettingsListSupporter" Funktion auf ihre Richtig- und Vollständigkeit. 
+   # Anschließend werden die Monate in die jeweiligen Globalen Variablen gespeichert. 
+   global springMonths
    lists = obj['seasons']['spring-months']
    name = " Frühlingsmonatsdaten"
 
    ProofSettingsListSupporter(lists, name)
    springMonths = lists
 
+   global sommerMonths
    lists = obj['seasons']['sommer-months']
    name = " Sommermonatsdaten"
 
    ProofSettingsListSupporter(lists, name)
    sommerMonths = lists
 
+   global autumnMonths
    lists = obj['seasons']['autumn-months']
    name = " Herbstmonatsdaten"
 
    ProofSettingsListSupporter(lists, name)
    autumnMonths = lists
-   
+
+   global winterMonths
    lists = obj['seasons']['winter-months']
    name = " Wintermonatsdaten"
 
@@ -185,17 +222,20 @@ def ProofSettings():
    winterMonths = lists
    
 
-   # Proof WindDirection
+   # Lädt die Windrichtungen und überprüft alle, ob es sich dabei um strings 
+   # handelt und ob 16 Windrichtungen vorhanden sind. Anschließend werden die
+   # Windrichtungen in die Globale Variable "windDirection" gespeichert. 
    global windDirection
    windDirections = obj['wind-direction']['wind-directions']
    windDirectionCounter = 0
 
-   for Direction in windDirections:
-      windDirectionCounter += 1
-   
-   if all(isinstance(Direction, str) for Direction in windDirections) == False:
-      print(Back.RED + " Windrichtungsdaten konnten nicht gelanden werden! Exit Code 1 ")
-   
+   for item in windDirections:
+      if isinstance(windDirections[item], str) == True:
+         windDirectionCounter += 1
+      elif isinstance(windDirections[item], str) == False:
+         print(Back.RED + " Windrichtungsdaten konnten nicht gelanden werden! Exit Code 1 ")
+         exit()
+
    if windDirectionCounter == 16: 
       print(Fore.GREEN + " Windrichtungsdaten erfolgreich geladen! ")
    else: 
@@ -204,7 +244,12 @@ def ProofSettings():
    
    windDirection = windDirections
 
-   # Proof Temperature
+   # Lädt die minimale und maximale Temperatur und überprüft diese mithilfe der 
+   # "ProofSettingsTypeSupporter" Funktion auf ihre Richtig- und Vollständigkeit. 
+   # Anschließend werden das Temperatur Minimum und Maximum, sowie der Mittelwert
+   # jeweils in einer Globalen Variable gespeichert. Außerdem wird ein Globale 
+   # Variable "currentTemperatureMonth" erstellt, welche die Tempereatur des 
+   # aktuellen Monats speichert. 
    global temperatureMinimal
    global temperatureMaximum
    global temperatureMeanValue
@@ -221,7 +266,12 @@ def ProofSettings():
    currentTemperatureMonth = ""
    temperatureMeanValue = (minimal + maximum) / 2
 
-   # Proof WindSpeed
+   # Lädt die minimale und maximale Windgeschwindigkeit und überprüft diese mithilfe  
+   # der "ProofSettingsTypeSupporter" Funktion auf ihre Richtig- und Vollständigkeit. 
+   # Anschließend werden das Windgeschwindgkeits Minimum und Maximum, sowie der 
+   # Mittelwert jeweils in einer Globalen Variable gespeichert. Außerdem wird ein 
+   # Globale Variable "currentWindSpeedMonth" erstellt, welche die Windgeschwindigkeit
+   # des aktuellen Monats speichert. 
    global windSpeedMinimal 
    global windSpeedMaximum
    global currentWindSpeedMonth
@@ -238,7 +288,10 @@ def ProofSettings():
    currentWindSpeedMonth = ""
    windSpeedMeanValue = (minimal + maximum) / 2
 
-   # Proof AirPressure
+   # Lädt den minimalen und maximalen Luftdurck und überprüft diese mithilfe  
+   # der "ProofSettingsTypeSupporter" Funktion auf ihre Richtig- und Vollständigkeit. 
+   # Anschließend wird das Minimum und Maximum des Luftdrucks, sowie der 
+   # Mittelwert jeweils in einer Globalen Variable gespeichert. 
    global airPressureMinimal
    global airPressureMaximum
    global airPressureMeanValue
@@ -255,7 +308,10 @@ def ProofSettings():
 
    print("\n", Back.GREEN + " Alle Daten erfolgreich geladen! Beginne mit der Datengenerierung! ", "\n")
 
-
+# Diese Funktion überprüft ob die Zahl, welche übergeben wird, auch wirklich ein 
+# Intager ist und ob die Zahl 0 oder größer ist. Wenn dies der Fall ist, wird 
+# eine Ausgabe getätigt, die dem Nutzer das erfolgreiche Laden bestätigen, wenn 
+# nicht wird dem Nutzer dies mitgeteilt und das Programm beendet. 
 def ProofSettingsIntSupporter(number, name):
    if type(number) == int and (number == 0 or number > 0):
       Outprint = name + " erfolgreich gelanden! "
@@ -265,6 +321,12 @@ def ProofSettingsIntSupporter(number, name):
       print(Back.RED + Outprint)
       exit()
 
+# Diese Funktion überprüft ob die Zahl, welche übergeben wird, auch wirklich ein 
+# Intager ist, ob die Zahl 0 oder größer ist und ob das sie nicht größer als 24 ist. 
+# Wenn dies der Fall ist, wird eine Ausgabe getätigt, die dem Nutzer das erfolgreiche 
+# Laden bestätigen, wenn nicht wird dem Nutzer dies mitgeteilt und das Programm beendet. 
+# Da die Zahl auf einen Wert zwischen 0 und 24 überprüft wird, wird an dieser Stelle
+# der Tag/Nacht Zyklus überprüft.
 def ProofSettingsDayNightSupporter(number, name):
    if type(number) == int and (number == 0 or number > 0) and (number == 24 or number < 24):
       Outprint = name + " erfolgreich gelanden! "
@@ -274,6 +336,11 @@ def ProofSettingsDayNightSupporter(number, name):
       print(Back.RED + Outprint)
       exit()
 
+# Diese Funktion überprüft ob die einzelnen Zahlen der Liste, welche übergeben wird, 
+# auch wirklich Intager sind und ob die Zahl größer als 0 und kleiner als 13 sind. 
+# Zudem wird überprüft, ob pro Liste 3 Zahlen vorhanden sind. Wenn dies der Fall ist, 
+# wird eine Ausgabe getätigt, die dem Nutzer das erfolgreiche Laden bestätigen, wenn 
+# nicht wird dem Nutzer dies mitgeteilt und das Programm beendet. 
 def ProofSettingsListSupporter(lists, name): 
    listCounter = 0
    for x in lists:
@@ -291,6 +358,10 @@ def ProofSettingsListSupporter(lists, name):
       print(Back.RED + Outprint)
       exit() 
 
+# Diese Funktion überprüft ob die Zahl, welche übergeben wird, auch wirklich ein 
+# Intager ist. Wenn dies der Fall ist, wird eine Ausgabe getätigt, die dem Nutzer 
+# das erfolgreiche Laden bestätigen, wenn nicht wird dem Nutzer dies mitgeteilt 
+# und das Programm beendet. 
 def ProofSettingsSeasonsSupporter(number, name):
    if type(number) == int: 
       Outprint = name + " erfolgreich geladen! "
@@ -300,6 +371,10 @@ def ProofSettingsSeasonsSupporter(number, name):
       print(Back.RED + Outprint)
       exit() 
 
+# Diese Funktion überprüft ob die Zahlen, welche übergeben werde, auch wirklich
+# Intager sind und ob das Maximum größer ist als das Minimum. Wenn dies der Fall 
+# ist, wird eine Ausgabe getätigt, die dem Nutzer das erfolgreiche Laden bestätigen, 
+# wenn nicht wird dem Nutzer dies mitgeteilt und das Programm beendet. 
 def ProofSettingsTypeSupporter(minimal, maximum, name):
    if type(minimal and maximum) == int and maximum > minimal: 
       Outprint = name + " erfolgreich geladen! "
@@ -309,60 +384,70 @@ def ProofSettingsTypeSupporter(minimal, maximum, name):
       print(Back.RED + Outprint)
       exit() 
 
-
+# Diese Funktion startet die Datengenerierung
 def MainGeneration():
 
-   # Überprüft die Einstellungen und bestimmt die Variablen
+   # Startet die "ProofSettings" Funktion zum überprüfen aller Einstellungen
    ProofSettings()
 
-   # Übernimmt die Variablen
-   global generateDataSets
-   global hurricaneProbability
-   global hurricaneMultiplicator
-   global generatedDataFactor
-   global hurricaneBoolean
+   # Übernimmt die Variablen und setzt sie auf ihre Standardwerte
+   global generateDataSets # Zählt, wie viele Datensätze bereits generiert wurden
+   global hurricaneProbability # Gibt an, wie hoch die Hurrikan Wahrscheinlichkeit ist
+   global generatedDataFactor # Bestimmt, wie viele Datensätze generiert werden sollen
+   global hurricaneBoolean # Gibt an, ob ein Hurrikan startet
    hurricaneBoolean = False
-   global hurricaneInAction
+   global hurricaneInAction # Gibt an, ob aktuell ein Hurrikan generiert wird
    hurricaneInAction = False
 
-
-   while generateDataSets != generatedDataFactor:
+   # Generiert solange Daten, bis der "generatedDataFactor" erreicht ist, wird pro Datensatz
+   # neu ausgeführt 
+   while generateDataSets != generatedDataFactor: 
+      # Alle 500 Datensätze wird dieser Erfolg dem Nutzer ausgegeben und zur Schonung 
+      # der Kapazitäten eine Sekunde Pause eingelegt
       if int(generateDataSets) % 500 == 0 and generateDataSets != 0: 
          print(generateDataSets, Back.GREEN + " Datensätze generiert! \n")
          time.sleep(1)
 
+      # Bestimmt ob ein Hurrikan stattfindet, oder nicht
       hurricaneChance = random.uniform(0,100)
 
+      # Überprüft ob ein Hurrikan stattfindet oder ein neuer gestartet werden soll. Wenn 
+      # dies nicht der Fall ist, wird die Abfrage ausgeführt.  
       if hurricaneChance > hurricaneProbability and hurricaneInAction == False:
-         # And Abfrage um keine neuen Daten zu generieren wenn noch ein Hurrikan läuft
          hurricaneBoolean = False
+         # Die Datengenerierung wird mit der Information im "hurricaneBoolean" gestartet
          DataGeneration()
 
+      # Überprüft ob ein Hurrikan stattfindet oder ein neuer gestartet werden soll. Wenn 
+      # dies der Fall ist, wird die Abfrage ausgeführt.  
       elif hurricaneChance == hurricaneProbability or hurricaneChance < hurricaneProbability or hurricaneInAction == True:
-         # or abfrage, ob bereits ein Hurrikan läuft
          hurricaneBoolean = True
+         # Die Datengenerierung wird mit der Information im "hurricaneBoolean" gestartet
          DataGeneration()
-
+      
+      # Bestätigt, dass ein Datensatz generiert wurde und addiert daraufhin einen weiteren
+      # hinzu
       generateDataSets += 1
-
-      # Für jeden Datensatz, der erstellt wird, gibt es eine neue Hurrikan Wahrscheinlichkeit -> Wenn bereits ein Hurrikan vorhanden ist, 
-      # sollte dies nicht passieren, da sich sonst zwei Hurrikans überschneiden können
+   
+   # Führt die SaveData Funktion aus, die die Daten abschließend Speichert
    SaveData()
 
-
+# Diese Funktion ist dafür Zuständig für die Datengenerierung die richtigen Funktionen 
+# abzurufen
 def DataGeneration():
-   global getTemperatureData
-   global getWindSpeedData
-   global getAirPressureData
-   global hurricaneInAction
-   global hurricaneBoolean
-   global generateDataSets
+   global getTemperatureData # Variable zum Verhindern von Endlosschleifen
+   global getWindSpeedData # Variable zum Verhindern von Endlosschleifen
+   global getAirPressureData # Variable zum Verhindern von Endlosschleifen
+   global hurricaneInAction # Gibt an, ob aktuell ein Hurrikan generiert wird
+   global hurricaneBoolean # Gibt an, ob ein Hurrikan startet
+   global generateDataSets # Zählt, wie viele Datensätze bereits generiert wurden
 
-   getTemperatureData = True 
+   # Setzt die Varaibalen auf ihren Standardwert 
+   getTemperatureData = True  
    getWindSpeedData = True
    getAirPressureData = True
 
-   # Generiere das Datum
+   # F
    GenerateDate()
    global Time
    global isNightBoolean
@@ -401,7 +486,7 @@ def DataGeneration():
         "Temperature": Temperature,
         "Wind-Speed": WindSpeed,
         "Air-Pressure": AirPressure,
-        "Datasets": generateDataSets
+        "Dataset": generateDataSets
       }
    )
 
