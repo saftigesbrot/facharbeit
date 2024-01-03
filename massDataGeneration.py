@@ -538,6 +538,7 @@ def GenerateTemperature():
    global temperatureMinimal
    global temperatureMaximum
    global hurricaneMultiplicator
+   hurricaneMultiplicatorForTemperature = hurricaneMultiplicator / 2
    global getTemperatureData
    global temperatureMeanValue
    global isNightBoolean
@@ -593,10 +594,10 @@ def GenerateTemperature():
             if isNightBoolean == True and (lastGeneratedTemperature/5) *4 <= temperatureMaximum:
                lastGeneratedTemperature = (lastGeneratedTemperature/5) *4
 
-            if hurricaneInAction == True and lastGeneratedTemperature * hurricaneMultiplicator <= temperatureMaximum:
-               lastGeneratedTemperature = lastGeneratedTemperature * hurricaneMultiplicator
+            if hurricaneInAction == True and lastGeneratedTemperature * hurricaneMultiplicatorForTemperature <= temperatureMaximum:
+               lastGeneratedTemperature = lastGeneratedTemperature * hurricaneMultiplicatorForTemperature
 
-            if hurricaneInAction == True and lastGeneratedTemperature * hurricaneMultiplicator > temperatureMaximum:
+            if hurricaneInAction == True and lastGeneratedTemperature * hurricaneMultiplicatorForTemperature > temperatureMaximum:
                lastGeneratedTemperature = lastGeneratedTemperature
 
             if currentTemperatureMonth != currentMonthTemperature:
@@ -617,7 +618,7 @@ def GenerateWindSpeed():
    global windSpeedMinimal
    global windSpeedMaximum
    global hurricaneMultiplicator
-   hurricaneMultiplicatorForWindSpeed = hurricaneMultiplicator
+   hurricaneMultiplicatorForWindSpeed = hurricaneMultiplicator / 2
    global generateDataSets
    global getWindSpeedData
    global windSpeedMeanValue
@@ -632,8 +633,8 @@ def GenerateWindSpeed():
       lastGeneratedWindSpeed = currentMonthWindSpeed
       currentWindSpeedMonth = currentMonthWindSpeed
 
-      if isNightBoolean == True and (lastGeneratedWindSpeed/5) *4 >= windSpeedMinimal:
-         lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5) *4
+      if isNightBoolean == True and (lastGeneratedWindSpeed/5) *6 >= windSpeedMinimal:
+         lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5) *6
 
    else:
        if getWindSpeedData == True:
@@ -652,8 +653,8 @@ def GenerateWindSpeed():
                lastGeneratedWindSpeed = currentMonthWindSpeed
                currentWindSpeedMonth = currentMonthWindSpeed
 
-            if isNightBoolean == True and (lastGeneratedWindSpeed/5) *4 >= windSpeedMinimal:
-               lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5) *4
+            if isNightBoolean == True and (lastGeneratedWindSpeed/5) *6 >= windSpeedMinimal:
+               lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5) *6
             
             # if hurricaneInAction == True and lastGeneratedWindSpeed * hurricaneMultiplicator >= windSpeedMinimal:
             #    lastGeneratedWindSpeed = lastGeneratedWindSpeed * hurricaneMultiplicator
@@ -676,8 +677,8 @@ def GenerateWindSpeed():
               lastGeneratedWindSpeed = currentMonthWindSpeed
               currentWindSpeedMonth = currentMonthWindSpeed
             
-            if isNightBoolean == True and (lastGeneratedWindSpeed/5)*4 <= windSpeedMaximum:
-               lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5)*4
+            if isNightBoolean == True and (lastGeneratedWindSpeed/5)*6 <= windSpeedMaximum:
+               lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5)*6
 
             if hurricaneInAction == True and lastGeneratedWindSpeed * hurricaneMultiplicatorForWindSpeed <= windSpeedMaximum:
                lastGeneratedWindSpeed = lastGeneratedWindSpeed * hurricaneMultiplicatorForWindSpeed
@@ -717,6 +718,10 @@ def GenerateAirPressure():
       
        if lastGeneratedAirPressure < airPressureMeanValue:
           
+          if hurricaneInAction == True and lastGeneratedAirPressure > 720:
+            lastGeneratedAirPressure = round(random.uniform(675,720))
+             
+
           if airPressureMinimal < lastGeneratedAirPressureMinimal:
             lastGeneratedAirPressure = round(random.uniform(lastGeneratedAirPressureMinimal, lastGeneratedAirPressureMaximum))
 
@@ -726,6 +731,9 @@ def GenerateAirPressure():
             GenerateAirPressure()
 
        elif lastGeneratedAirPressure > airPressureMeanValue or lastGeneratedAirPressure == airPressureMeanValue:
+          
+          if hurricaneInAction == True and lastGeneratedAirPressure > 720:
+            lastGeneratedAirPressure = round(random.uniform(675,720))
           
           if airPressureMaximum > lastGeneratedAirPressureMaximum:
             lastGeneratedAirPressure = round(random.uniform(lastGeneratedAirPressureMinimal, lastGeneratedAirPressureMaximum))

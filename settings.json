@@ -1,8 +1,8 @@
 {
     "general-settings": {
-        "hurricane-probability": 10,
-        "hurricane-multiplicator": 2,
-        "generate-data-factor": 1000,
+        "hurricane-probability": 1,
+        "hurricane-multiplicator": 3,
+        "generate-data-factor": 10000,
         "generated-data-sets": 0,
         "adding-hourse": 1,
         "start-date": "2023-04-23 15:18:28.044869",
@@ -16,13 +16,13 @@
 
     "seasons": {
         "spring-temperature": 10, 
-        "spring-wind-speed": 50,
+        "spring-wind-speed": 40,
         "sommer-temperature": 25,
-        "sommer-wind-speed": 40,
+        "sommer-wind-speed": 35,
         "autumn-temperature": 15,
         "autumn-wind-speed": 60,
         "winter-temperature": 0,
-        "winter-wind-speed": 45,
+        "winter-wind-speed": 40,
 
         "spring-months": [3,4,5],
         "sommer-months": [6,7,8],
@@ -58,11 +58,11 @@
 
     "wind-speed": {
         "minimal": 0,
-        "maximum": 310
+        "maximum": 170
     },
 
     "air-pressure": {
-        "minimal": 500,
+        "minimal": 550,
         "maximum": 1200
     }
 }
