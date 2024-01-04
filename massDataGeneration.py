@@ -442,43 +442,53 @@ def DataGeneration():
    global hurricaneBoolean # Gibt an, ob ein Hurrikan startet
    global generateDataSets # Zählt, wie viele Datensätze bereits generiert wurden
 
-   # Setzt die Varaibalen auf ihren Standardwert 
+   # Setzt die Varaibalen auf ihren Standardwert
    getTemperatureData = True  
    getWindSpeedData = True
    getAirPressureData = True
 
-   # F
+   # Führt die Funktion "GenerateDate" und lädt dann die Zeit
    GenerateDate()
    global Time
-   global isNightBoolean
 
-   # Generiere die Windrichtung 
+   # Führt die Funktion "GenerateWindDirection" und lädt dann die Windrichtung
    GenerateWindDirection()
    global windDirections
 
+   # Die Abfrage wird ausgeführt, wenn ein Hurrikan bereits ein Hurrikan generiert 
+   # wird und führt dann die Funktion "actionHurricane" aus um den Hurrikan
+   # fortzusetzen
    if hurricaneBoolean == True and hurricaneInAction == True:
       actionHurricane()
 
+   # Die Abfrage wird ausgeführt, wenn ein neuer Hurrikan gestartet werden soll
+   # und führt dann die Funktion "startHurricane" aus um einen Hurrikan zu
+   # starten.
    elif hurricaneBoolean == True and hurricaneInAction == False:
       startHurricane()
 
+   # Die Abfrage wird ausgeführt, wenn kein Hurrikan aktuell generiert wird und
+   # auch kein neuer Hurrikan gestartet werden soll. 
    elif hurricaneBoolean == False and hurricaneInAction == False:
-      hurricaneInAction = False
-      # hurricaneInAction muss bereits voher "False" sein
 
-      # Generiere die Temperatur
+      # Führt die Funktion "GenerateTemperature" aus und lädt dann die Globale 
+      # Variable "Temperature"
       GenerateTemperature()
       global Temperature
 
-      # Generiere die Windgeschwindgikeit 
+      # Führt die Funktion "GenerateWindSpeed" aus und lädt dann die Globale 
+      # Variable "WindSpeed" 
       GenerateWindSpeed()
       global WindSpeed
 
-      # Generiere den Luftdruck
+      # Führt die Funktion "GenerateAirPressure" aus und lädt dann die Globale 
+      # Variable "AirPressure"
       GenerateAirPressure()
       global AirPressure
 
-   
+   # Setz die generierten Daten in den jeweiligen Datensatz ein und speichert
+   # dies in der Variable "generatedData" welche die zwischenspeicherung der
+   # Datensätze übernimmt 
    generatedData.append(
       {
         "Time": Time,
@@ -490,132 +500,177 @@ def DataGeneration():
       }
    )
 
-
+# Diese Funktion ist zuständig zum generieren des Datums, sowie zum bestimmen der
+# Jahreszeit und ob es Tag oder Nacht ist.
 def GenerateDate():
 
-   global startDate
-   global generateDataSets
-   global Time
-   global isNightBoolean
-   isNightBoolean = False
-   global currentMonthTemperature
-   global currentMonthWindSpeed
+   global startDate # Setzt das erste Startdatum fest
+   global generateDataSets # Zählt, wie viele Datensätze bereits generiert wurden
+   global Time # Abschließend generierte Zeit
+   global isNightBoolean # Gibt an, ob es Nacht ist
+   isNightBoolean = False # Variable wird auf ihren Standardwert zurück gesetzt
+   global currentMonthTemperature # Temperatur des aktuellen Monats
+   global currentMonthWindSpeed # Windgeschwindigkeit des aktuellen Monats
 
-   global springMonths
-   global sommerMonths
-   global autumnMonths
-   global winterMonths
+   global springMonths # Monatsangaben des Frühlings in einer Liste
+   global sommerMonths # Monatsangaben des Sommers in einer Liste
+   global autumnMonths # Monatsangaben des Herbst in einer Liste
+   global winterMonths # Monatsangaben des Winters in einer Liste
 
-   global springTemperature
-   global springWindSpeed
-   global sommerTemperature
-   global sommerWindSpeed
-   global autumnTemperature
-   global autumnWindSpeed
-   global winterTemperature
-   global winterWindSpeed
+   global springTemperature # Standardtemperatur des Frühlings 
+   global springWindSpeed # Standardwindgeschwindigkeit des Frühlings
+   global sommerTemperature # Standardtemperatur des Sommers
+   global sommerWindSpeed # Standardwindgeschwindigkeit des Sommers
+   global autumnTemperature # Standardtemperatur des Herbstes
+   global autumnWindSpeed # Standardwindgeschwindigkeit des Herbstes
+   global winterTemperature # Standardtemperatur des Winters
+   global winterWindSpeed # Standardwindgeschwindigkeit des Winters
 
-   global nightBeginn
-   global nightEnd
-   global addingHourse
+   global nightBeginn # Beginn der Nacht als Zeitangabe
+   global nightEnd # Ende der Nacht als Zeitangabe
+   global addingHourse # Hinzuzufügende Stunden
 
+   # Abfrage, ob bereits ein Datensatz generiert wurde
    if generateDataSets == 0:
+       # Wenn noch kein Datensatz generiert wurde, wird das Datum aus "startDate" verwendet,
+       # und in der "lastGeneratedTime" Varibale abgespeichert
        lastGeneratedTime = startDate
    else:
-       lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
+       # Wenn bereits ein Datensatz generiert wurde, wird das letzte Datum abgerufen und in
+       # der "lastGeneratedTime" Variable abgespeichert 
+       lastGeneratedLen = len(generatedData) - 1
        lastGeneratedTime = generatedData[lastGeneratedLen]["Time"]
-
-        # Beachten, dass durch neue Daten dies nicht mehr funktioniert, da die Time in der Json verrückt wird
-    
+   
+   # Die Varibale "lastGeneratedTime" wird abgerufen und mit der Stundenanzahl, welche in 
+   # "addingHourse" gespeichert ist addiert. Die neue Zeit wird in der Globalen Variable 
+   # "Time" gespeichert
    NewTime = datetime.strptime(lastGeneratedTime, "%Y-%m-%d %H:%M:%S.%f") + timedelta(hours=addingHourse)
    Time = str(NewTime)
-      # Abfrage, die bestimmt, ob es Tag oder Nacht ist und entsprechend die Maximaltempetur anpasst. 
 
+   # Die neue Zeit wird geteilt in Datum und Stundenangabe
    splittedTime = Time.split(" ", )
+   # Das Datum sowie die Stundenangabe wird noch einmal geteilt
    splittedTimeHour = splittedTime[1].split(":")
    splittedTimeMonth = splittedTime[0].split("-")
+   # Die Monatsangabe wird herraus gefiltert und in der Variable "intSplittedTimeMonth" gespeichert
    intSplittedTimeMonth = int(splittedTimeMonth[1])
+   # Die Stundenangabe wird herraus gefiltert und in der Variable "intSplittedTimeHour" gespeichert
    intSplittedTimeHour = int(splittedTimeHour[0])
 
-
+   # Die Abfrage überprüft, ob die Stundenangabe innerhalb der Nacht liegt
    if intSplittedTimeHour < nightEnd or intSplittedTimeHour > nightBeginn:
+      # Wenn dies der Fall ist, wird in der Variable "isNightBoolean" angegeben das es Nacht ist
       isNightBoolean = True
    
    elif intSplittedTimeHour > nightEnd and intSplittedTimeHour < nightBeginn or intSplittedTimeHour == nightEnd:
+      # Wenn dies nicht der Fall, wird in der Variable "isNightBoolean" angegeben das es nicht Nacht ist 
       isNightBoolean = False
 
-   # Aus Settings herraus
-  
+
+   # Die Abfragen überprüfen, um welchen Monat es sich handelt 
    if intSplittedTimeMonth in springMonths:
+      # Wenn der Monat im Frühling ist, werden die aktuelle Temperatur und die 
+      # Windgeschwindigkeit des Monat auf Frühling gesetzt  
       currentMonthTemperature = springTemperature
       currentMonthWindSpeed = springWindSpeed
 
    elif intSplittedTimeMonth in sommerMonths:
+      # Wenn der Monat im Sommer ist, werden die aktuelle Temperatur und die 
+      # Windgeschwindigkeit des Monat auf Sommer gesetzt
       currentMonthTemperature = sommerTemperature
       currentMonthWindSpeed = sommerWindSpeed
 
    elif intSplittedTimeMonth in autumnMonths:
+      # Wenn der Monat im Herbst ist, werden die aktuelle Temperatur und die 
+      # Windgeschwindigkeit des Monat auf Herbst gesetzt
       currentMonthTemperature = autumnTemperature
       currentMonthWindSpeed = autumnWindSpeed
 
    elif intSplittedTimeMonth in winterMonths:
+      # Wenn der Monat im Winter ist, werden die aktuelle Temperatur und die 
+      # Windgeschwindigkeit des Monat auf Winter gesetzt
       currentMonthTemperature = winterTemperature
       currentMonthWindSpeed = winterWindSpeed
 
-   # print(Back.CYAN + " generateWindDirection ")
+# Diese Funktion generiert die Windrichtung
+def GenerateWindDirection(): 
+   global generateDataSets # Zählt, wie viele Datensätze bereits generiert wurden
+   global windDirections # Abschließend generierte Windrichtung 
+   global windDirection # Alle möglichen Windrichtungen in einer Liste
 
-
-def GenerateWindDirection():
-   # Getting Data form settings.json 
-   global windDirection
-   global hurricaneMultiplicator
-   global generateDataSets
-
-   if generateDataSets == 0:
+   # Diese Abfrage überprüft, ob bereits Datensätze generiert wurden
+   if generateDataSets == 0: 
+      # Wenn noch keine Datensätze generiert wurden wird eine vollständig Zufällige 
+      # Windrichtung generiert
       generateDirection = str(round(random.uniform(1,4)))
       generatePreciseDirection = str(round(random.uniform(0,3)))
 
+      # Baut die Windrichtungen mit ihren zwei Faktoren zusammen und sucht den dazugehörigen
+      # string in der Windrichtungsliste "windDirection"
       generatedWindDirection = generateDirection + "." + generatePreciseDirection
-   
       newWindDirection = windDirection[generatedWindDirection]
 
    else: 
-      keyList = [3,0,1] # List all possible new Keys for x.0 and x.3
-      lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
+      # Wenn bereits Datensätze generiert wruden, wird aufbauenend auf der letzten 
+      # Windrichtung eine neue Windrichtung gebildet. 
+      
+      # Liste von möglichen Schlüsseln für Windrichtungen, wichtig um berechnung 
+      # einfacher zu machen
+      keyList = [3,0,1] 
+   
+      # Lädt die letzte Windrichtung
+      lastGeneratedLen = len(generatedData) - 1 
       lastGeneratedWindDirection = generatedData[lastGeneratedLen]["Wind-Direction"]
 
+      # Sucht nach dem Schlüssel für die letzte Windrichtung und teilt ihn in den ersten
+      # ("splittedLastGeneratedWindDirectionKey[0]") und zweiten Schlüssel 
+      # "(splittedLastGeneratedWindDirectionKey[1])"
       lastGeneratedWindDirectionKey = list(windDirection.keys())[list(windDirection.values()).index(lastGeneratedWindDirection)]
       splittedLastGeneratedWindDirectionKey = lastGeneratedWindDirectionKey.split(".")
 
+      # Abfrage, ob der zweite Schlüssel 0 ist
       if splittedLastGeneratedWindDirectionKey[1] ==  "0":
+         # Wenn der zweite Schlüssel 0 ist wird die "keyList" genommen und ein Zufällige 
+         # genauere Windrichtung bestimmt
          newWindDirectionSecoundKey = random.choice(keyList)
          
-         if newWindDirectionSecoundKey == 0:
+         # Abfrage, ob der erste Schlüssel 0 oder 3 ist
+         if newWindDirectionSecoundKey == 0 or newWindDirectionSecoundKey == 3:
+            # Wenn der erste Schlüssel 0 oder 3 ist wird eine komplett neue Windrichtung
+            # generiert
             splittedLastGeneratedWindDirectionKey[0] = round(random.uniform(1,4))
 
-      if splittedLastGeneratedWindDirectionKey[1] == "1":
+      # Abfrage, ob der zweite Schlüssel 1 ist
+      elif splittedLastGeneratedWindDirectionKey[1] == "1":
+         # Wenn der zweite Schlüssel 1 ist wir eine Zufällige genauere Windrichtung 
+         # bestimmt
          newWindDirectionSecoundKey = round(random.uniform(0,2))
-         
-      if splittedLastGeneratedWindDirectionKey[1] == "2":
+      
+      # Abfrage, ob der zweite Schlüssel 2 ist
+      elif splittedLastGeneratedWindDirectionKey[1] == "2":
+         # Wenn der zweite Schlüssel 2 ist wir eine Zufällige genauere Windrichtung 
+         # bestimmt
          newWindDirectionSecoundKey = round(random.uniform(1,3))
 
-      if splittedLastGeneratedWindDirectionKey[1] == "3":   
+      # Abfrage, ob der zweite Schlüssel 3 ist
+      elif splittedLastGeneratedWindDirectionKey[1] == "3":
+         # Wenn der zweite Schlüssel 3 ist wird die "keyList" genommen und ein Zufällige 
+         # genauere Windrichtung bestimmt   
          newWindDirectionSecoundKey = random.choice(keyList)
 
-         if newWindDirectionSecoundKey == 0:
+         # Abfrage, ob der erste Schlüssel 0 oder 1 ist
+         if newWindDirectionSecoundKey == 0 or newWindDirectionSecoundKey == 1:
+            # Wenn der erste Schlüssel 0 oder 1 ist wird eine komplett neue Windrichtung
+            # generiert
             splittedLastGeneratedWindDirectionKey[0] = round(random.uniform(1,4))
         
-
+      # Setzt die Schüssel der evtl. neue Windrichtung und die genauere Windrichtung zusammen 
       generatedWindDirection = str(splittedLastGeneratedWindDirectionKey[0]) + "." + str(newWindDirectionSecoundKey)
+      # Formt den Schlüssel wieder in eine Windrichtung als String um 
       newWindDirection = windDirection[generatedWindDirection]
 
-   global windDirections
+   # Speichert die abschließende Windrichtung in der globalen Variable
    windDirections = newWindDirection
-
-
-   # print(Back.BLUE + " generateWindDirection ")
-
-   # Nur einmal bestimmen, damit die richtung nicht dauerhaft wechselt
 
 
 def GenerateTemperature():
@@ -653,14 +708,7 @@ def GenerateTemperature():
             lastGeneratedTemperature = round(random.uniform(lastGeneratedTemperatureMinimal, lastGeneratedTemperatureMaximum))
               
             if isNightBoolean == True and (lastGeneratedTemperature/5) *4 >= temperatureMinimal:
-               lastGeneratedTemperature = (lastGeneratedTemperature/5) *4
-
-            # if hurricaneInAction == True and lastGeneratedTemperature * hurricaneMultiplicator >= temperatureMinimal:
-            #    lastGeneratedTemperature = lastGeneratedTemperature * hurricaneMultiplicator
-            #    # Der Multiplikator muss so eingesetzt werden, dass auch wirklich ein Hurrikan entsteht 
-
-            # if hurricaneInAction == True and lastGeneratedTemperature * hurricaneMultiplicator < temperatureMinimal:
-            #    lastGeneratedTemperature = lastGeneratedTemperature    
+               lastGeneratedTemperature = (lastGeneratedTemperature/5) *4   
 
             if currentTemperatureMonth != currentMonthTemperature:
                lastGeneratedTemperature = currentMonthTemperature
@@ -711,7 +759,6 @@ def GenerateWindSpeed():
    global currentMonthWindSpeed
    global currentWindSpeedMonth
    global lastGeneratedWindSpeed
-   global blockingElifLoop
    global hurricaneInAction
 
    if generateDataSets == 0:
@@ -740,13 +787,6 @@ def GenerateWindSpeed():
 
             if isNightBoolean == True and (lastGeneratedWindSpeed/5) *6 >= windSpeedMinimal:
                lastGeneratedWindSpeed = (lastGeneratedWindSpeed/5) *6
-            
-            # if hurricaneInAction == True and lastGeneratedWindSpeed * hurricaneMultiplicator >= windSpeedMinimal:
-            #    lastGeneratedWindSpeed = lastGeneratedWindSpeed * hurricaneMultiplicator
-
-            # if hurricaneInAction == True and lastGeneratedWindSpeed * hurricaneMultiplicator < windSpeedMinimal:
-            #    lastGeneratedWindSpeed = lastGeneratedWindSpeed  
-
 
          elif windSpeedMinimal > lastGeneratedWindSpeedMinimal or windSpeedMinimal == lastGeneratedWindSpeedMinimal:
             lastGeneratedWindSpeed += 25
@@ -783,7 +823,6 @@ def GenerateWindSpeed():
 def GenerateAirPressure():
    global airPressureMinimal
    global airPressureMaximum
-   global hurricaneMultiplicator
    global generateDataSets
    global getAirPressureData
    global airPressureMeanValue
@@ -833,35 +872,22 @@ def GenerateAirPressure():
 
 def startHurricane():
    # Hier beginnt ein neuer Hurrikane
-   global Temperature
-   global WindSpeed
-   global AirPressure
-   global hurricaneInAction
    global hurricaneLength
-   global hurricaneBoolean
    global hurricaneInAction
-   global generateDataSets
 
-   # print(generateDataSets)
    hurricaneLength = round(random.uniform(1,10))
    hurricaneInAction = True
 
    GenerateTemperature()
    GenerateWindSpeed()
    GenerateAirPressure()
-
-   # Abfangen, dass der hurricane nicht endet, wenn die Werte zu groß werden
-   
    hurricaneLength -= 1 
 
 def actionHurricane():
+   # Hier wird der hurricane fortgeführt
    global hurricaneLength
-   global Temperature
-   global WindSpeed
-   global AirPressure
    global hurricaneInAction
    global hurricaneBoolean
-   global generateDataSets
 
    if hurricaneLength != 0:
       GenerateTemperature()
@@ -872,8 +898,6 @@ def actionHurricane():
    elif hurricaneLength == 0:
       hurricaneInAction = False
       hurricaneBoolean = False
-
-   # Hier wird der hurricane fortgeführt
 
 
 def SaveData():

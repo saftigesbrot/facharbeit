@@ -2,7 +2,7 @@
     "general-settings": {
         "hurricane-probability": 1,
         "hurricane-multiplicator": 3,
-        "generate-data-factor": 10000,
+        "generate-data-factor": 10,
         "generated-data-sets": 0,
         "adding-hourse": 1,
         "start-date": "2023-04-23 15:18:28.044869",
