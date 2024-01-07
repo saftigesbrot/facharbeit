@@ -475,6 +475,7 @@ def DataGeneration():
       # Variable "Temperature"
       GenerateTemperature()
       global Temperature
+      global WaterTemperature
 
       # Führt die Funktion "GenerateWindSpeed" aus und lädt dann die Globale 
       # Variable "WindSpeed" 
@@ -493,7 +494,8 @@ def DataGeneration():
       {
         "Time": Time,
         "Wind-Direction": windDirections,
-        "Temperature": Temperature,
+        "Luft-Temperature": Temperature,
+        "Wasser-Temperatur": WaterTemperature,
         "Wind-Speed": WindSpeed,
         "Air-Pressure": AirPressure,
         "Dataset": generateDataSets
@@ -697,7 +699,7 @@ def GenerateTemperature():
    else:
       if getTemperatureData == True: 
          lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
-         lastGeneratedTemperature = generatedData[lastGeneratedLen]["Temperature"]
+         lastGeneratedTemperature = generatedData[lastGeneratedLen]["Luft-Temperature"]
 
       lastGeneratedTemperatureMinimal = lastGeneratedTemperature - 2 
       lastGeneratedTemperatureMaximum = lastGeneratedTemperature + 2 
@@ -744,6 +746,10 @@ def GenerateTemperature():
         
    global Temperature
    Temperature = lastGeneratedTemperature
+
+   global WaterTemperature
+   WaterTemperature = lastGeneratedTemperature / 2 
+
 
 
 
