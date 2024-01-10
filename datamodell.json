@@ -1,9 +1,11 @@
 [
     {
         "Time": "2023-04-23 16:18:28.044869",
-        "Wind-Direction": "NNO",
-        "Temperature": "25",
-        "Wind-Speed": "60",
-        "Air-Pressure": "1020"
+        "Wind-Direction": "WNW",
+        "Luft-Temperature": 10,
+        "Wasser-Temperatur": 5.0,
+        "Wind-Speed": 40,
+        "Air-Pressure": 1050,
+        "Dataset": 0
     }
 ]

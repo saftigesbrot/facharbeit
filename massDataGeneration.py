@@ -98,10 +98,10 @@ def ProofSettings():
    splittedFileName = file.split(".")
 
    if type(file) == str and splittedFileName.pop() == "json":
-      Outprint = name + " erfolgreich gelanden! "
+      Outprint = " Speicherdatei erfolgreich gelanden! "
       print(Fore.GREEN + Outprint)
    else:
-      Outprint = name + " konnten nicht gelanden werden! Exit Code 1 "
+      Outprint = " Speicherdatei konnten nicht gelanden werden! Exit Code 1 "
       print(Back.RED + Outprint)
       exit()
    savingDataFile = file
@@ -474,8 +474,8 @@ def DataGeneration():
       # Führt die Funktion "GenerateTemperature" aus und lädt dann die Globale 
       # Variable "Temperature"
       GenerateTemperature()
-      global Temperature
-      global WaterTemperature
+      global airTemperature
+      global waterTemperature
 
       # Führt die Funktion "GenerateWindSpeed" aus und lädt dann die Globale 
       # Variable "WindSpeed" 
@@ -494,8 +494,8 @@ def DataGeneration():
       {
         "Time": Time,
         "Wind-Direction": windDirections,
-        "Luft-Temperature": Temperature,
-        "Wasser-Temperatur": WaterTemperature,
+        "Air-Temperature": airTemperature,
+        "Water-Temperature": waterTemperature,
         "Wind-Speed": WindSpeed,
         "Air-Pressure": AirPressure,
         "Dataset": generateDataSets
@@ -699,7 +699,7 @@ def GenerateTemperature():
    else:
       if getTemperatureData == True: 
          lastGeneratedLen = len(generatedData) - 1 #Weil er bei 0 beginnt zu zählen
-         lastGeneratedTemperature = generatedData[lastGeneratedLen]["Luft-Temperature"]
+         lastGeneratedTemperature = generatedData[lastGeneratedLen]["Water-Temperature"]
 
       lastGeneratedTemperatureMinimal = lastGeneratedTemperature - 2 
       lastGeneratedTemperatureMaximum = lastGeneratedTemperature + 2 
@@ -744,11 +744,11 @@ def GenerateTemperature():
             getTemperatureData = not getTemperatureData
             GenerateTemperature()
         
-   global Temperature
-   Temperature = lastGeneratedTemperature
+   global waterTemperature
+   waterTemperature = lastGeneratedTemperature
 
-   global WaterTemperature
-   WaterTemperature = lastGeneratedTemperature / 2 
+   global airTemperature
+   airTemperature = lastGeneratedTemperature / 2 
 
 
 
