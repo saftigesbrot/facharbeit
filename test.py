@@ -11,3 +11,4 @@ if temperatureMinimal < lastGeneratedTemperatureMinimal and temperatureMaximum >
     print("Es wurde if ausgeführt")
 else:
     print("Es wurde Else ausgeführt")
+

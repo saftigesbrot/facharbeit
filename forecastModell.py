@@ -5,6 +5,8 @@ import json
 from colorama import * 
 init(autoreset=True) 
 
+from pprint import pprint
+
 def MainModell():
     with open('settings.json','r') as file: 
       obj = json.load(file)
@@ -31,6 +33,17 @@ def SearchForHurrikans():
 
     dataSetCounter = 0
     hurricaneCounter = 0
+
+    hurricaneCounterOne = 0
+    hurricaneDatasetsOne = []
+    hurricaneCounterTwo = 0
+    hurricaneDatasetsTwo = []
+    hurricaneCounterThree = 0
+    hurricaneDatasetsThree = []
+    hurricaneCounterFour = 0
+    hurricaneDatasetsFour = []
+    hurricaneCounterFive = 0
+    hurricaneDatasetsFive = []
     lastDataSet = generatedData.pop()["Dataset"]
 
     while dataSetCounter < lastDataSet:
@@ -42,28 +55,55 @@ def SearchForHurrikans():
         windSpeed = generatedData[dataSetCounter]["Wind-Speed"]
         airPressure = generatedData[dataSetCounter]["Air-Pressure"]
 
-        if waterTemperature > 24 and airPressure > 700 and windSpeed > 60:
-            print("Hurrikan der Stufe 1 Wahrscheinlich im nächsten Datensatz. Aktueller Datensatz: ", dataSetCounter)
+        if waterTemperature > 24 and airPressure > 700 and windSpeed > 76:
+            nextHurricane = dataSetCounter + 1
+            hurricaneDatasetsOne.append(nextHurricane)
             hurricaneCounter += 1
-
+            hurricaneCounterOne += 1
         
+        elif waterTemperature > 24 and (airPressure > 706 and airPressure < 722) and (windSpeed > 91 and windSpeed < 131):
+            nextHurricane = dataSetCounter + 1
+            hurricaneDatasetsTwo.append(nextHurricane)
+            hurricaneCounter += 1
+            hurricaneCounterTwo += 1
+        
+        elif waterTemperature > 24 and (airPressure > 692 and airPressure < 711) and (windSpeed > 90 and windSpeed < 151):
+            nextHurricane = dataSetCounter + 1
+            hurricaneDatasetsThree.append(nextHurricane)
+            hurricaneCounter += 1
+            hurricaneCounterThree += 1
+
+        elif waterTemperature > 24 and (airPressure < 710 and airPressure > 675) and (windSpeed > 110 and windSpeed < 176):
+            nextHurricane = dataSetCounter + 1
+            hurricaneDatasetsFour.append(nextHurricane)
+            hurricaneCounter += 1
+            hurricaneCounterFour += 1
+
+        elif waterTemperature > 24 and airPressure > 674 and windSpeed > 135:
+            nextHurricane = dataSetCounter + 1
+            hurricaneDatasetsFive.append(nextHurricane)
+            hurricaneCounter += 1
+            hurricaneCounterFive += 1
 
         dataSetCounter += 1
 
-    with open('result.json', 'w') as file:
-        data = []
-        print(data)
+
+    with open('resultCache.json', 'w') as file:
         forecastData = {
             "forecast-data": {
-                "predicted-hurricanes": 0,
-                "predicted-hurricanes-1": 0,
-                "predicted-hurricanes-2": 0,
-                "predicted-hurricanes-3": 0,
-                "predicted-hurricanes-4": 0,
-                "predicted-hurricanes-5": 0       
+                "predicted-hurricanes": hurricaneCounter,
+                "predicted-hurricanes-1": hurricaneCounterOne,
+                "predicted-hurricanes-1-datasets": hurricaneDatasetsOne,  
+                "predicted-hurricanes-2": hurricaneCounterTwo,
+                "predicted-hurricanes-2-datasets": hurricaneDatasetsTwo, 
+                "predicted-hurricanes-3": hurricaneCounterThree,
+                "predicted-hurricanes-3-datasets": hurricaneDatasetsThree, 
+                "predicted-hurricanes-4": hurricaneCounterFour,
+                "predicted-hurricanes-4-datasets": hurricaneDatasetsFour, 
+                "predicted-hurricanes-5": hurricaneCounterFive,
+                "predicted-hurricanes-5-datasets": hurricaneDatasetsFive
             }
         }
-        data.append(forecastData)
-        json.dump(forecastData, file, indent=4)
+        json.dump(forecastData, file, indent=4,)
 
 MainModell()
