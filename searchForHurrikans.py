@@ -36,7 +36,6 @@ def SearchAlgorithmen():
         airPressure = dataSet["Air-Pressure"]
         dataset = dataSet["Dataset"]
 
-        
         if windSpeed > 73 and windSpeed < 96 and airPressure > 720 and waterTemperature >= 26 and airTemperature == waterTemperature/2:
             # print("Am", time, "war ein Hurrikan mit der Stufe 1. Der Datensatz ist: ", dataset)
             # print(dataSet, "\n")
@@ -78,63 +77,102 @@ def SearchAlgorithmen():
 def CompareForecastWithSearch():
 
     global countingHurrikans 
+    hurricaneDatasetsInCorrect = []
 
     global hurricaneCounterOne 
     global hurricaneDatasetsOne 
     global hurricaneDatasetsOneCorrect
     hurricaneDatasetsOneCorrect = []
-    hurricaneDatasetsOneInCorrect = []
 
     global hurricaneCounterTwo  
     global hurricaneDatasetsTwo 
     global hurricaneDatasetsTwoCorrect
     hurricaneDatasetsTwoCorrect = []
-    hurricaneDatasetsTwoInCorrect = []
 
     global hurricaneCounterThree 
     global hurricaneDatasetsThree
     global hurricaneDatasetsThreeCorrect
     hurricaneDatasetsThreeCorrect = []
-    hurricaneDatasetsThreeInCorrect = []
 
     global hurricaneCounterFour 
     global hurricaneDatasetsFour 
     global hurricaneDatasetsFourCorrect
     hurricaneDatasetsFourCorrect = []
-    hurricaneDatasetsFourInCorrect = []
 
     global hurricaneCounterFive 
     global hurricaneDatasetsFive 
     global hurricaneDatasetsFiveCorrect
     hurricaneDatasetsFiveCorrect = []
-    hurricaneDatasetsFiveInCorrect = []
 
     file = open('resultCache.json')
     cacheData = json.load(file)
     
     hurricaneSteps = 5
     hurricaneProofing = 1
-    hurricaneProofingNumberStr = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five"}
+    correctHurrikanForecasts = []
 
     while hurricaneSteps > hurricaneProofing or hurricaneSteps == hurricaneProofing:
         hurricaneProofingName = "predicted-hurricanes-" + str(hurricaneProofing) + "-datasets"
 
         for dataSetProofing in cacheData["forecast-data"][hurricaneProofingName]:
             
-            # Funktioniert nicht (Erstellt die Variable nicht richtig)
-            proofingDataset = "hurricaneDatasets" +  hurricaneProofingNumberStr[hurricaneProofing] 
-            proofingDatasetCorrect = proofingDataset + "Correct"
-            proofingDatasetInCorrect = proofingDataset + "InCorrect"
+            proofingDatasets = []
+            
+            if hurricaneProofing == 1:
+                proofingDatasets = hurricaneDatasetsOne
+            if hurricaneProofing == 2: 
+                proofingDatasets = hurricaneDatasetsTwo
+            if hurricaneProofing == 3: 
+                proofingDatasets = hurricaneDatasetsThree
+            if hurricaneProofing == 4: 
+                proofingDatasets = hurricaneDatasetsFour
+            if hurricaneProofing == 5: 
+                proofingDatasets = hurricaneDatasetsFive
 
-            print(proofingDataset)
+            if proofingDatasets != []: 
+ 
+                correctHurrikanForecastsDataset = set(proofingDatasets) & set(cacheData["forecast-data"][hurricaneProofingName])
+                correctHurrikanForecasts.append(correctHurrikanForecastsDataset)
 
-            for hurricaneDataSet in proofingDataset:
-                if dataSetProofing == hurricaneDataSet:
-                    proofingDatasetCorrect.append(dataSetProofing)
-                else:
-                    proofingDatasetInCorrect.append(dataSetProofing)
-        
+                for hurricaneDataSet in proofingDatasets:
+                    if dataSetProofing == hurricaneDataSet:
+                        if hurricaneProofing == 1: hurricaneDatasetsOneCorrect.append(dataSetProofing)
+                        elif hurricaneProofing == 2: hurricaneDatasetsTwoCorrect.append(dataSetProofing)
+                        elif hurricaneProofing == 3: hurricaneDatasetsThreeCorrect.append(dataSetProofing)
+                        elif hurricaneProofing == 4: hurricaneDatasetsFourCorrect.append(dataSetProofing)
+                        else: hurricaneDatasetsFiveCorrect.append(dataSetProofing)
+                    
+                    elif dataSetProofing != hurricaneDataSet: 
+                  
+                        if dataSetProofing not in hurricaneDatasetsInCorrect:
+                            hurricaneDatasetsInCorrect.append(dataSetProofing)
+            else: 
+                hurricaneDatasetsInCorrect.append(dataSetProofing)
+                    
         hurricaneProofing += 1
-    # print("Incorrect: ", hurricaneDatasetsFourInCorrect)
-    # print("Corect: ", hurricaneDatasetsFourCorrect)
+
+    correctHurrikanForecastsList = list(correctHurrikanForecasts)
+        
+    for each in correctHurrikanForecastsList:
+        listEach = list(each)
+        strEach = str(listEach)
+        splittedStrEach = strEach.split("[")
+        secoundSplittedStrEach = splittedStrEach[1].split("]")
+        intEach = int(secoundSplittedStrEach[0])
+
+        try:
+            hurricaneDatasetsInCorrect.remove(intEach)
+        except ValueError:
+            pass
+
+    sortedHurricaneDatasetsInCorrect = hurricaneDatasetsInCorrect.sort()
+    sortedhurricaneDatasetsOneCorrect = hurricaneDatasetsOneCorrect.sort()
+    sortedhurricaneDatasetsTwoCorrect = hurricaneDatasetsTwoCorrect.sort()
+    sortedhurricaneDatasetsThreeCorrect = hurricaneDatasetsThreeCorrect.sort()
+    sortedhurricaneDatasetsFourCorrect = hurricaneDatasetsFourCorrect.sort()
+    sortedhurricaneDatasetsFiveCorrect = hurricaneDatasetsFiveCorrect.sort()
+
+    print("Incorrect: ", hurricaneDatasetsInCorrect)
+    print("Corect: ", hurricaneDatasetsFourCorrect)
+
 SearchAlgorithmen()
