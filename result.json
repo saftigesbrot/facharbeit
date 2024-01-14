@@ -1,0 +1,107 @@
+{
+    "First-Hurrikan-Level": {
+        "Correct-Forecast-Datasets": [],
+        "Correct-Forecast-Counter": 0,
+        "Confirmed-Hurrikans-Datasets": [],
+        "Confirmed-Hurrikans-Counter": 0,
+        "Not-Predicted-Hurrikans": 0
+    },
+    "Secound-Hurrikan-Level": {
+        "Correct-Forecast-Datasets": [],
+        "Correct-Forecast-Counter": 0,
+        "Confirmed-Hurrikans-Datasets": [],
+        "Confirmed-Hurrikans-Counter": 0,
+        "Not-Predicted-Hurrikans": 0
+    },
+    "Third-Hurrikan-Level": {
+        "Correct-Forecast-Datasets": [],
+        "Correct-Forecast-Counter": 0,
+        "Confirmed-Hurrikans-Datasets": [],
+        "Confirmed-Hurrikans-Counter": 0,
+        "Not-Predicted-Hurrikans": 0
+    },
+    "Fourth-Hurrikan-Level": {
+        "Correct-Forecast-Datasets": [
+            7872
+        ],
+        "Correct-Forecast-Counter": 1,
+        "Confirmed-Hurrikans-Datasets": [
+            7871,
+            7872
+        ],
+        "Confirmed-Hurrikans-Counter": 2,
+        "Not-Predicted-Hurrikans": 1
+    },
+    "Fifth-Hurrikan-Level": {
+        "Correct-Forecast-Datasets:": [],
+        "Correct-Forecast-Counter": 0,
+        "Confirmed-Hurrikans-Datasets": [],
+        "Confirmed-Hurrikans-Counter": 0,
+        "Not-Predicted-Hurrikans": 0
+    },
+    "Conclusion": {
+        "Correct-Forecast-Hurrikans": "",
+        "Confirmed-Hurrikans-Counter": 2,
+        "Not-Predicted-Hurrikans": 1
+    },
+    "Incorrect-Comparison-Result": {
+        "Incorrect-Forecast-Hurrikans": 55,
+        "Incorrect-Forecast-Hurrikans-Datasets": [
+            279,
+            280,
+            281,
+            282,
+            283,
+            318,
+            319,
+            320,
+            321,
+            322,
+            2353,
+            2354,
+            2355,
+            2356,
+            2359,
+            2360,
+            2361,
+            4227,
+            4228,
+            4229,
+            4230,
+            4231,
+            4232,
+            4233,
+            4234,
+            5979,
+            5980,
+            6664,
+            6665,
+            6666,
+            6667,
+            6668,
+            7873,
+            8011,
+            8012,
+            8365,
+            8366,
+            8367,
+            8368,
+            8369,
+            8370,
+            8938,
+            8939,
+            8940,
+            8941,
+            8942,
+            8943,
+            8944,
+            9060,
+            9061,
+            9062,
+            9063,
+            9064,
+            9065,
+            9066
+        ]
+    }
+}

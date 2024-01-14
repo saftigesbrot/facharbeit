@@ -1,4 +1,5 @@
 import json
+from operator import length_hint
 
 def SearchAlgorithmen():
     with open('massDataGeneration.json','r') as file:
@@ -77,6 +78,7 @@ def SearchAlgorithmen():
 def CompareForecastWithSearch():
 
     global countingHurrikans 
+    global hurricaneDatasetsInCorrect
     hurricaneDatasetsInCorrect = []
 
     global hurricaneCounterOne 
@@ -110,7 +112,6 @@ def CompareForecastWithSearch():
     hurricaneSteps = 5
     hurricaneProofing = 1
     correctHurrikanForecasts = []
-
     while hurricaneSteps > hurricaneProofing or hurricaneSteps == hurricaneProofing:
         hurricaneProofingName = "predicted-hurricanes-" + str(hurricaneProofing) + "-datasets"
 
@@ -165,14 +166,98 @@ def CompareForecastWithSearch():
         except ValueError:
             pass
 
-    sortedHurricaneDatasetsInCorrect = hurricaneDatasetsInCorrect.sort()
-    sortedhurricaneDatasetsOneCorrect = hurricaneDatasetsOneCorrect.sort()
-    sortedhurricaneDatasetsTwoCorrect = hurricaneDatasetsTwoCorrect.sort()
-    sortedhurricaneDatasetsThreeCorrect = hurricaneDatasetsThreeCorrect.sort()
-    sortedhurricaneDatasetsFourCorrect = hurricaneDatasetsFourCorrect.sort()
-    sortedhurricaneDatasetsFiveCorrect = hurricaneDatasetsFiveCorrect.sort()
+    hurricaneDatasetsInCorrect.sort()
+    hurricaneDatasetsOneCorrect.sort()
+    hurricaneDatasetsTwoCorrect.sort()
+    hurricaneDatasetsThreeCorrect.sort()
+    hurricaneDatasetsFourCorrect.sort()
+    hurricaneDatasetsFiveCorrect.sort()
 
-    print("Incorrect: ", hurricaneDatasetsInCorrect)
-    print("Corect: ", hurricaneDatasetsFourCorrect)
+    global lengthSortedHurricaneDatasetsInCorrect
+    lengthSortedHurricaneDatasetsInCorrect = length_hint(hurricaneDatasetsInCorrect)
+
+    SaveInResult()
+
+def SaveInResult():
+
+    global hurricaneCounterOne
+    global hurricaneCounterTwo
+    global hurricaneCounterThree
+    global hurricaneCounterFour
+    global hurricaneCounterFive
+
+    global hurricaneDatasetsOne
+    global hurricaneDatasetsTwo
+    global hurricaneDatasetsThree
+    global hurricaneDatasetsFour
+    global hurricaneDatasetsFive
+
+    global hurricaneDatasetsInCorrect
+    global hurricaneDatasetsOneCorrect
+    global hurricaneDatasetsTwoCorrect
+    global hurricaneDatasetsThreeCorrect
+    global hurricaneDatasetsFourCorrect
+    global hurricaneDatasetsFiveCorrect
+
+    global lengthSortedHurricaneDatasetsInCorrect
+    global countingHurrikans 
+
+    with open('result.json', 'w') as file:
+        resultData = {
+            "First-Hurrikan-Level": {
+                "Correct-Forecast-Datasets": hurricaneDatasetsOneCorrect,
+                "Correct-Forecast-Counter": length_hint(hurricaneDatasetsOneCorrect),
+
+                "Confirmed-Hurrikans-Datasets": hurricaneDatasetsOne,
+                "Confirmed-Hurrikans-Counter": hurricaneCounterOne,
+                "Not-Predicted-Hurrikans": hurricaneCounterOne - length_hint(hurricaneDatasetsOneCorrect) 
+            },
+            "Secound-Hurrikan-Level": {
+                "Correct-Forecast-Datasets": hurricaneDatasetsTwoCorrect,
+                "Correct-Forecast-Counter": length_hint(hurricaneDatasetsTwoCorrect),
+
+                "Confirmed-Hurrikans-Datasets": hurricaneDatasetsTwo,
+                "Confirmed-Hurrikans-Counter": hurricaneCounterTwo,
+                "Not-Predicted-Hurrikans": hurricaneCounterTwo - length_hint(hurricaneDatasetsTwoCorrect)
+            },
+            "Third-Hurrikan-Level": {
+                "Correct-Forecast-Datasets": hurricaneDatasetsThreeCorrect,
+                "Correct-Forecast-Counter": length_hint(hurricaneDatasetsThreeCorrect),
+
+                "Confirmed-Hurrikans-Datasets": hurricaneDatasetsThree,
+                "Confirmed-Hurrikans-Counter": hurricaneCounterThree,
+                "Not-Predicted-Hurrikans": hurricaneCounterThree - length_hint(hurricaneDatasetsThreeCorrect)
+            },
+            "Fourth-Hurrikan-Level": {
+                "Correct-Forecast-Datasets": hurricaneDatasetsFourCorrect,
+                "Correct-Forecast-Counter": length_hint(hurricaneDatasetsFourCorrect),
+
+                "Confirmed-Hurrikans-Datasets": hurricaneDatasetsFour,
+                "Confirmed-Hurrikans-Counter": hurricaneCounterFour,
+                "Not-Predicted-Hurrikans": hurricaneCounterFour - length_hint(hurricaneDatasetsFourCorrect)
+            },
+            "Fifth-Hurrikan-Level": {
+                "Correct-Forecast-Datasets:": hurricaneDatasetsFiveCorrect,
+                "Correct-Forecast-Counter": length_hint(hurricaneDatasetsFiveCorrect),
+
+                "Confirmed-Hurrikans-Datasets": hurricaneDatasetsFive,
+                "Confirmed-Hurrikans-Counter": hurricaneCounterFive,
+                "Not-Predicted-Hurrikans": hurricaneCounterFive - length_hint(hurricaneDatasetsFiveCorrect)
+            },
+            "Conclusion": {
+                "Correct-Forecast-Hurrikans": "", # Hier fehlt eine Variable, die angibt, wieviele richtig vorhergesagt wurden
+                "Confirmed-Hurrikans-Counter": countingHurrikans,
+                "Not-Predicted-Hurrikans": (hurricaneCounterOne - length_hint(hurricaneDatasetsOneCorrect)) 
+                                            + (hurricaneCounterTwo - length_hint(hurricaneDatasetsTwoCorrect)) 
+                                            + (hurricaneCounterThree - length_hint(hurricaneDatasetsThreeCorrect)) 
+                                            + (hurricaneCounterFour - length_hint(hurricaneDatasetsFourCorrect)) 
+                                            + (hurricaneCounterFive - length_hint(hurricaneDatasetsFiveCorrect))
+            },
+            "Incorrect-Comparison-Result": {
+                "Incorrect-Forecast-Hurrikans": lengthSortedHurricaneDatasetsInCorrect,
+                "Incorrect-Forecast-Hurrikans-Datasets": hurricaneDatasetsInCorrect
+            }
+        }
+        json.dump(resultData, file, indent=4,)
 
 SearchAlgorithmen()
